@@ -13,6 +13,7 @@
 | Tag 3     | 18.02.2026    | Detailanalyse & Lösungswege        | ✅         |
 | Tag 4     | 19.02.2026    | Finalisierung & Übergabe-Vorbereitung | ✅      |
 | Tag 5     | 20.02.2026    | Puffer, Reflexion & finale Übergabe | ✅      |
+| Tag 1-3   | 04.03.2026    | Vault-Optimierung & Cisco TF2 Setup | ✅      |
 
 ## Phasen-Übersicht
 
@@ -22,18 +23,29 @@
 | 2     | Woche 2 – 5,5    | ~3,5 Wochen | 🗓️ Geplant      | Mainz VPN, AD, Backup, LDAP                     |
 | 3     | Woche 6          | ~1 Woche    | 🗓️ Geplant      | Monitoring, IDS, ISO 27001                      |
 
+### Meilensteine & Fortschritt
+- [[Projekt_Meilensteine]] – Grafische Übersicht der Projektphasen
+
 ## Zentrale Ressourcen
 
-- [[Digitale_Kundenakte]]
+### 📡 Netzwerk & Konfiguration
 - [[Netzplan_Kaiserslautern]]
+- [[Netzwerk_Diagramme_Sammlung]] – Physische & logische Topologien
 - [[VLAN & IP Matrix]]
 - [[Cisco_Cheatsheet]]
-- [[Uebergabe_Netzwerk_Team]]
+- [[Cisco_Config_Themenfeld2]] – Routing (OSPF) & Switching Konfigurationen
+
+### 🛡️ Security & Analyse
+- [[Firewall-Hardening_pfSense]] – Strategie & Regeln für die pfSense
+- [[Zertifikats_Struktur]] – PKI Übersicht für OpenVPN
+- [[ISO27001_Checkliste]]
+- [[Incident_Response_Plan]]
+
+### 📂 Projektmanagement & Übergabe
+- [[Digitale_Kundenakte]]
 - [[Risiko-Register BetaTrade]]
-- [[Phase_1_Kaiserslautern]]
-- [[Phase_2_Mainz]]
-- [[Phase_3_Security]]
-- [[2026-02-20_Tag_5]]
+- [[Uebergabe_Netzwerk_Team]]
+- [[2026_03_04_Tag_3_Vault-Optimierung_&_Dokumentation]]
 
 > [!success] Aktueller Meilenstein erreicht
 > Planungsphase vollständig dokumentiert und übergeben  
