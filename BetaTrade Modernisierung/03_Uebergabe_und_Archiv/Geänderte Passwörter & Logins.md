@@ -24,7 +24,7 @@ _Gehärtete Zugangsdaten für die pfSense-Umgebung und Kern-Dienste._
 | **Linux Mail-Server** | `root`       | `[Linux_Root_PW]`      | ✅ Geändert       |
 |                       |              |                        |                  |
 
-
+Ug5U3pL]>=rDA5X
 ---
 
 ## 🏢 2. Active Directory & Windows (DC13)
