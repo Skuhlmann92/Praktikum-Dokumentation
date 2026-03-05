@@ -24,9 +24,6 @@ _Gehärtete Zugangsdaten für die pfSense-Umgebung und Kern-Dienste._
 | **Linux Mail-Server** | `root`       | `[Linux_Root_PW]`      | ✅ Geändert       |
 |                       |              |                        |                  |
 
-$Password = Read-Host -AsSecureString "Bitte neues Passwort eingeben"
-$UserAccount = Get-LocalUser -Name "Administrator"
-$UserAccount | Set-LocalUser -Password $Password
 
 ---
 
