@@ -184,3 +184,9 @@ Das Projekt wurde erfolgreich abgeschlossen. Alle 20 Mitarbeiter haben Zugriff a
 - [x] GPOs verknüpft und mit `gpupdate /force` getestet?
     
 - [x] Netzlaufwerke erscheinen automatisch?
+
+
+
+net localgroup "Remote Desktop Users" 
+
+net localgroup "Remote Desktop Users" "NET09\Domain Users" /add
