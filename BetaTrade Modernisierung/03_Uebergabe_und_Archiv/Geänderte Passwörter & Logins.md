@@ -38,12 +38,12 @@ Ug5U3pL]>=rDA5X
 
 _Administrative Zugänge und Service-Accounts._
 
-|Account-Typ|Benutzername|Passwort / Kennwort|Hinweis|
-|---|---|---|---|
-|**Domain Admin**|`Administrator`|`[Sicheres_Admin_PW]`|12+ Zeichen|
-|**Test-User (IT)**|`d.zimmermann`|`BetaTrade@TQ3b!`|Standard-Initial-PW|
-|**Test-User (Corp)**|`a.mueller`|`BetaTrade@TQ3b!`|Standard-Initial-PW|
-|**DHCP Service**|`svc_dhcp`|`[Service_Account_PW]`|Läuft auf DC13|
+| Account-Typ          | Benutzername    | Passwort / Kennwort    | Hinweis             |
+| -------------------- | --------------- | ---------------------- | ------------------- |
+| **Domain Admin**     | `Administrator` | `[Sicheres_Admin_PW]`  | 12+ Zeichen         |
+| **Test-User (IT)**   | `d.zimmermann`  | `BetaTrade@TQ3b!`      | Standard-Initial-PW |
+| **Test-User (Corp)** | `a.mueller`     | `BetaTrade@TQ3b!`      | Standard-Initial-PW |
+| **DHCP Service**     | `svc_dhcp`      | `[Service_Account_PW]` | Läuft auf DC13      |
 
 In Google Sheets exportieren
 
