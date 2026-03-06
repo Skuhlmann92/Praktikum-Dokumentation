@@ -24,7 +24,13 @@ _Gehärtete Zugangsdaten für die pfSense-Umgebung und Kern-Dienste._
 | **Linux Mail-Server**                                                          | `root`                                                                         | `[Linux_Root_PW]`             | ✅ Geändert       |
 |                                                                                |                                                                                |                               |                  |
 | [rene@mindrefined.de](mailto:rene@mindrefined.de "mailto:rene@mindrefined.de") | [rene@mindrefined.de](mailto:rene@mindrefined.de "mailto:rene@mindrefined.de") | sucht euch ein besseres hobby |                  |
+**E-Mail Adresse:** student.samuel@mindrefined.de
 
+**Username Dashboard:** student.samuel@mindrefined.de
+
+**Password Dashboard**: N8yvJ8Y6gD$p
+
+**Interne ID Netzwerk:** 13
 Ug5U3pL]>=rDA5X
 ---
 
