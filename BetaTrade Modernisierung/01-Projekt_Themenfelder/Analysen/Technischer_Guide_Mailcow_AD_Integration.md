@@ -64,3 +64,4 @@ graph LR
     Dovecot -- LDAPS (636) --> AD[Windows Active Directory]
     AD -- Auth OK --> Dovecot
 ```
+samaccountname
