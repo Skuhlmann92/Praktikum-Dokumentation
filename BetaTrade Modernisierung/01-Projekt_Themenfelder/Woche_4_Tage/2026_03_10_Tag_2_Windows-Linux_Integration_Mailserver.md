@@ -30,6 +30,8 @@ status: done
 3. **Validierung:** Erfolgreiche Anmeldung am SOGo Webmail mit Test-Usern aus den OUs `HR` und `IT`.
 
 ## 📸 Dokumentation & Screenshots
+
+![[Pasted image 20260309160937.png]]
 - **Screenshot 1:** Status der Mailcow-Container in Docker (`docker ps`).  
   `![[mailcow_status.png]]`
 - **Screenshot 2:** LDAP-Konfigurationsmaske (Test Connection erfolgreich).  
