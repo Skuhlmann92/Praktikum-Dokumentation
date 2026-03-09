@@ -4,7 +4,7 @@ kategorie: Systemadministration
 status: Abgeschlossen
 datum: 2026-03-09
 ---
-
+ 
 # 🛠️ Technischer Guide: Docker-Management & SQL-Analyse
 
 **Ziel:** Aufbau einer containerisierten MySQL-Umgebung für BetaTrade und Durchführung von Datenanalysen zur Vorbereitung der Systemmigration.
