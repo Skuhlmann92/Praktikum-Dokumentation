@@ -1,4 +1,4 @@
-# Master-Dokumentation: BetaTrade AG (ID 13)
+p# Master-Dokumentation: BetaTrade AG (ID 13)
 
 **Projektleitung:** AlphaTech GmbH  
 **Status Planungsphase:** ✅ Abgeschlossen (20.02.2026)  
