@@ -39,13 +39,13 @@ stub-zone:
 ## 3. LDAP-Konfiguration in Mailcow
 Die Konfiguration erfolgt über das Admin-Panel (`mail.betatrade.beta/admin`).
 
-| Feld | Wert (Beispiel) |
-| :--- | :--- |
-| **Hostname** | `dc01.beta.local` |
-| **Port** | `636` (LDAPS) |
-| **Base DN** | `DC=beta,DC=local` |
-| **Username Field** | `sAMAccountName` |
-| **Filter** | `(&(objectClass=user)(objectCategory=person))` |
+| Feld               | Wert (Beispiel)                                |
+| :----------------- | :--------------------------------------------- |
+| **Hostname**       | `dc01.beta.local`                              |
+| **Port**           | `636` (LDAPS)                                  |
+| **Base DN**        | `DC=beta,DC=local`                             |
+| **Username Field** | `sAMAccountName`                               |
+| **Filter**         | `(&(objectClass=user)(objectCategory=person))` |
 
 > [!TIP]
 > **Screenshot-Platzhalter:** Hier Screenshot der ausgefüllten LDAP-Maske in Mailcow einfügen.
