@@ -1,0 +1,83 @@
+## Tag 1: Onboarding & Analyse
+
+**Datum:** 16.02.2026  
+**Bearbeiter:** Projektassistenz (AlphaTech GmbH)  
+**Status:** ✅ Erledigt
+
+### Tagesziele (PM-1)
+
+- [x] Team-Kick-off und Projektverständnis entwickeln
+- [x] Netzwerk-Szenarien verstehen (Kaiserslautern & Mainz)
+- [x] Technische Arbeitsumgebung einrichten
+- [x] Projektdokumentation strukturieren
+- [x] Erste Anforderungsanalyse durchführen
+
+### Gruppenarbeit
+
+1. **Team-Kick-off**
+   - MS Teams Meeting
+   - Gemeinsames Lesen der digitalen Kundenakte
+   - Klärung: Welche Aufgaben übernimmt AlphaTech in den drei Phasen?
+   - Aufgabenteilung Dokumentation
+   - Dokumentationstool: Obsidian (PDF-Export zwingend erforderlich)
+
+2. **Netzwerk-Szenarien verstehen**
+   - Packet Tracer Topologie Filiale Kaiserslautern analysiert (3 Abteilungen, hierarchisches Design)
+   - Topologie Zentrale Mainz betrachtet (kleine Abteilung + Server)
+   - Unterschiede: Kaiserslautern = neues Netz mit Segmentierung, Mainz = Modernisierung Live-Systeme
+
+### Einzelarbeit
+
+1. **Technische Arbeitsumgebung**
+   - [x] Dashboard-Login und Erkundung
+   - [x] Admin-VM gestartet
+   - [x] VPN-Config installiert & Verbindung getestet
+   - [x] RDP-Verbindung zur Admin-VM stabil
+   - [x] Grundfunktionen überprüft (keine Probleme)
+
+2. **Dokumentation strukturieren**
+   - Projektordner "BetaTrade-Modernisierung" angelegt
+   - Startseite mit Projektüberblick erstellt
+
+3. **Erste Anforderungsanalyse**
+   - Kritische Schwachstellen aus Kundenakte:
+     - Keine VLAN-Segmentierung → Broadcast-Domänen vermischt
+     - Externer Zugriff nur Passwort-gesichert → unsicher
+     - Kein externes / zentrales Backup-Konzept
+     - Fehlende abteilungsübergreifende VoIP-Telefonie
+
+### Grobe Projektstruktur 
+
+```mermaid
+flowchart LR
+    Start((Projektstart<br>16.02.2026)) --> Phase1[Phase 1<br>Filiale Kaiserslautern<br>VLAN / DHCP-Relay / VoIP<br>Woche 1]
+    Start --> Phase2[Phase 2<br>Zentrale Mainz<br>VPN / AD / Backup / LDAP<br>Wochen 2–5,5]
+    Start --> Phase3[Phase 3<br>Security & Monitoring<br>IDS / ISO 27001<br>Woche 6]
+
+    Phase1 --> Sim[Planung &<br>Packet Tracer Simulation]
+    Phase2 --> Mig[Live-Migration<br>& Umsetzung]
+    Phase3 --> Abs[Compliance &<br>Abschlusstest]
+
+    classDef start fill:#ff9f1c,stroke:#d62828
+    classDef phase fill:#90e0ef,stroke:#0077b6
+    class Start start
+    class Phase1,Phase2,Phase3 phase
+```
+
+# Tag 1: Strukturierung & Tool-Entscheidung (Ergänzung)
+
+> **INFO:** Fokus
+> Aufbau einer nachhaltigen Dokumentationsstruktur und methodische Vorbereitung des Kundenprojekts BetaTrade AG.
+
+## 1. Aufbau der Wissensdatenbank
+- **Ordnerstruktur:** Die initiale Struktur im Obsidian-Vault wurde strikt getrennt nach: `Daily Notes`, `Ressourcen`, `Kundenakte BetaTrade` und `Netzwerk-Configs`.
+- **Metadaten-Konzept:** Einführung von YAML-Frontmatter für alle Markdown-Dateien zur besseren Filterung (Standard-Tags: `Autor`, `Datum`, `Status`, `Priorität`).
+
+## 2. Tool-Entscheidungsmatrix
+> **CHECK:** Entscheidung: Obsidian vs. Confluence/Notion
+> Die Wahl fiel auf Obsidian. **Ausschlaggebende Argumente:** Volle Offline-Verfügbarkeit, lokale Datenhaltung (erfüllt strenge Datenschutzvorgaben) und zukunftssichere, exportierbare Markdown-Dateien.
+
+## 3. Kick-off-Protokoll (Meeting Minutes)
+- Strukturierte Erfassung des Initial-Meetings.
+- **Kernziele:** Nahtlose Modernisierung ohne lange Downtimes.
+- **Pain Points der BetaTrade AG:** Bisher ungeordnete Netzwerkstruktur und fehlende IT-Security in der Zentrale Mainz.
