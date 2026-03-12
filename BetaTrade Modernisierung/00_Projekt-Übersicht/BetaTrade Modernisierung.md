@@ -38,9 +38,6 @@
 - [[Cisco_Cheatsheet]]
 - [[Digitale_Kundenakte_Zusammenfassung]]
 
-> [!tip] Aktueller Fokus (20.02.2026)
-> Übergabe an Themenfeld 2 abschließen  
-> Erste praktische Umsetzung in Packet Tracer / realer Umgebung starten
 
 → [[Risiko-Register_BetaTrade]] für offene Punkte  
 → [[Markwhen/BetaTrade_Projekt_als_Markwhen_Timeline.mw]] für Gesamt-Timeline
