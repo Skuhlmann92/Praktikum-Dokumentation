@@ -38,6 +38,7 @@
 - [00-31 Cisco Config TF2](../04_Recourcen_und_Referenzen/00-31_Cisco_Config_TF2.md)
 - [00-32 Default Credentials](../04_Recourcen_und_Referenzen/00-32_Default_Credentials.md)
 - [00-33 Digitale Kundenakte](../04_Recourcen_und_Referenzen/00-33_Digitale_Kundenakte.md)
+- [00-34 Screenshot-Anlage](../04_Recourcen_und_Referenzen/00-34_Screenshot_Anlage.md)
 
 ## 4. Übergabe & Abschluss
 - [00-40 Passwörter & Logins](../03_Uebergabe_und_Archiv/00-40_Passwoerter_und_Logins.md)

@@ -35,6 +35,8 @@ graph TD
     WIN -- "Reservierung (via MAC)" --> SEC
 ```
 
+![Netzwerkplan mit DHCP-Relay, Reservierungen und Rollenverteilung](../../_assets/dhcp_dns_network_plan.png)
+
 ***
 
 ## 🛠️ Konfigurations-Details
@@ -84,6 +86,8 @@ In Google Sheets exportieren
 ## 🔍 Wichtige technische Hinweise
 
 > **IMPORTANT:** Linux-Migration Für den Ubuntu Server wurde in der Netplan-Konfiguration `dhcp-identifier: mac` gesetzt. Ohne diese Einstellung schlagen MAC-basierte Reservierungen im Windows DHCP fehl.
+
+![Netplan-Anpassung fuer MAC-basierte DHCP-Reservierungen](../../_assets/ubuntu_netplan_mac_dhcp_identifier.png)
 
 > **TIP:** Konnektivitäts-Test Der Zugang von der Admin-VM erfolgt über die statische Route 192.168.13.0/24 via 10.8.13.3. Dieser Zugriff muss während der gesamten Migration aufrechterhalten werden, um den Administrations-Zugang nicht zu verlieren.
 

@@ -98,6 +98,8 @@ Dient der Bereitstellung von Firmendiensten (Mail und Support).
 - **MX-Record**: Verweist auf den Hostnamen `mail.betatrade.beta` (Priorität 10).
     
 
+![DNS Manager mit den A- und MX-Records fuer Mail und Support](../../_assets/dns_manager_records_mailserver.png)
+
 ### 2. Reverse Lookup Zone
 
 Zur Ermittlung von Hostnamen basierend auf IP-Adressen wurde eine IPv4-Reverse-Lookup-Zone für das Netz `192.168.13.0` erstellt.

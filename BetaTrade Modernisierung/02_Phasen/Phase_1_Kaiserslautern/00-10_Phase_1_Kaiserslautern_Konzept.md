@@ -1,46 +1,34 @@
-# 📍 Phase 1: Regional-Hub Kaiserslautern
-**Zeitraum:** Woche 1 | **Status:** 🔄 In Bearbeitung
+# Phase 1: Regional-Hub Kaiserslautern
 
-## 🎯 Hauptziele
-* **Netzwerk-Segmentierung:** Einrichtung von 3 VLANs (Vertrieb, IT, HR).
-* **IP-Adresskonzept:** Strukturierte Vergabe im Subnetz `10.13.X.X`.
-* **Connectivity:** DHCP-Relay Konfiguration zur zentralen Admin-VM.
-* **Telefonie:** Implementierung einer abteilungsübergreifenden VoIP-Lösung.
+**Zeitraum:** Woche 1  
+**Status:** Abgeschlossen (Planungs- und Zielbildphase)  
+**Fokus:** Segmentierung, Routing, DHCP-Relay, VoIP und technische Uebergabe an die Umsetzung
 
-## 🏗️ Infrastruktur-Details
-* **Hardware:** 2x Core-Switches (L3), 3x Access-Switches.
-* **Gateways:** SVIs auf den Core-Switches mit HSRP-Redundanz.
-* **Services:** DHCP via Relay-Agent (`10.8.13.2`).
+## Kernziele
 
-## 📑 Verknüpfte Berichte
-* [2026-02-16_Tag_1](2026-02-16_Tag_1.md) - Initiales Setup & VLAN-Basis.
-* [2026-02-17_Tag_2](2026-02-17_Tag_2.md) - GANTT & Risikoanalyse.
+- VLAN-Struktur fuer Vertrieb, IT, HR, VoIP und Management definieren
+- Adressschema `10.13.X.0/24` festlegen
+- Inter-VLAN-Routing ueber L3-Switches planen
+- DHCP-Relay und zentrales Service-Modell dokumentieren
+- Anforderungen fuer VoIP, QoS und HSRP-Redundanz vorbereiten
 
-***
-## 🛠️ Technischer Nachweis (CLI)
-> **TIP:** Wichtigster Befehl dieser Phase
-> `ip helper-address 10.8.13.2` auf den VLAN-Interfaces.
+## Technischer Zielzustand
 
-# 📍 Phase 1: Regional-Hub Kaiserslautern
-**Status:** 🔄 In Arbeit (Woche 1)
-**Fokus:** LAN-Infrastruktur, Segmentierung & Dienste
+- Zwei Catalyst-3650-Switche als Core/L3-Ebene
+- Mehrere Access-Switche fuer Abteilungsanschluesse
+- Trunk-Uplinks zwischen Access- und Core-Ebene
+- DHCP-Relay im Zielbild fuer die zentralen Dienste
+- Voice-VLAN fuer Telefonie und QoS-Priorisierung
 
-## 🎯 Kernziele
-- [ ] **VLAN-Struktur:** Aufbau der Netze für Vertrieb (10), IT (20) und HR (30).
-- [ ] **IP-Adresskonzept:** Implementierung des Schemas `10.13.X.0/24`.
-- [ ] **Routing:** Inter-VLAN Routing auf den Core-Switches aktivieren.
-- [ ] **DHCP-Relay:** Weiterleitung der Anfragen an die Admin-VM (`10.8.13.2`).
-- [ ] **VoIP:** Einrichtung der IP-Telefonie für alle Abteilungen.
+## Relevante Dokumente
 
-## 🏗️ Topologie-Details
-* **Core-Layer:** 2x Catalyst 3650 (Redundant).
-* **Access-Layer:** 3x Switches (Sales, IT, HR).
-* **Uplinks:** 802.1Q Trunks zwischen allen Switchen.
+- [00-10a Netzplan Kaiserslautern](00-10a_Netzplan_Kaiserslautern.md)
+- [00-10b VLAN & IP Matrix](00-10b_VLAN_IP_Matrix.md)
+- [01-01 Tag 1 Onboarding & Analyse](../../01-Projekt_Themenfelder/Woche_1_Tage/01-01_Tag_1_Onboarding_Analyse.md)
+- [01-02 Tag 2 Projektstruktur & Risikoanalyse](../../01-Projekt_Themenfelder/Woche_1_Tage/01-02_Tag_2_Projektstruktur_Risikoanalyse.md)
+- [01-03 Tag 3 Detailanalyse & Loesungswege](../../01-Projekt_Themenfelder/Woche_1_Tage/01-03_Tag_3_Detailanalyse_Loesungswege.md)
+- [01-04 Tag 4 Finalisierung & Uebergabe](../../01-Projekt_Themenfelder/Woche_1_Tage/01-04_Tag_4_Finalisierung_Uebergabe.md)
 
-## 🔗 Relevante Berichte
-* [Tag 1: Initiales VLAN-Setup & Troubleshooting](2026-02-16_Tag_1.md)
-* [Tag 2: GANTT-Planung & Meilensteine](2026-02-17_Tag_2.md)
+## Ergebnis von Phase 1
 
-***
-> **INFO:** Status-Quo
-> Die physische Verkabelung im Packet Tracer steht. Aktueller Fokus liegt auf der korrekten Trunk-Konfiguration und dem IP-Helper.
+Phase 1 ist keine Live-Umsetzung, sondern die abgeschlossene Planungs- und Vorbereitungsphase fuer Kaiserslautern. Die fachliche Basis fuer VLANs, Adressierung, Routing, DHCP-Relay und Uebergabe an die spaetere Umsetzung ist vorhanden.

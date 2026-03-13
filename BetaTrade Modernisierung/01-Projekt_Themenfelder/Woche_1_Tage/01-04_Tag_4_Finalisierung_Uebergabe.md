@@ -39,7 +39,7 @@ Das Netzwerk-Team erhält von uns folgendes **finales Paket** für die Umsetzung
   2× Catalyst 3650 (Core – Stacking + HSRP-Redundanz geplant)  
   3× Catalyst 2960 (Access)  
   1× pfSense (Mainz – VPN-Termination)
-![Screenshot 2026-02-20 120006.png](Screenshot%202026-02-20%20120006.png)
+![Screenshot 2026-02-20 120006.png](../../_assets/Screenshot%202026-02-20%20120006.png)
 ***
 
 ## 2. Finale Übergabe-Dokumentation (Struktur)
@@ -58,7 +58,7 @@ Modernisierung der BetaTrade-Infrastruktur. Kernstück ist der Ausbau Kaiserslau
 3. **Dienste**  
    DHCP-Relay muss auf den Core-Switches für alle Client-VLANs aktiv sein (`ip helper-address 10.8.13.2`).
 
-→ Detaillierte Übergabe: [Uebergabe_Netzwerk_Team](Uebergabe_Netzwerk_Team.md)
+→ Detaillierte Uebergabe: [00-42 Uebergabe-Protokoll](../../03_Uebergabe_und_Archiv/00-42_Uebergabe_Protokoll.md)
 
 ### Ausgearbeitete Lösung (A – Security-Fokus)
 Wir implementieren **Lösung A**. Diese beinhaltet:
@@ -91,6 +91,31 @@ Neu: Es sind bereits IP-Telefone und PCs an den Access-Switches angeschlossen, j
 - Voice-VLAN: Inline-Power + Data-VLAN durchschleifen (PC hinter Telefon) korrekt unterstützt?
 
 
+### Proof of Concept (Packet Tracer Lab)
+Zur Validierung wurde eine initiale Konfiguration im Packet Tracer erstellt.
+
+**VLAN-Datenbank (Switch):**
+```cisco
+vlan 10
+ name SALES
+vlan 20
+ name IT
+vlan 30
+ name HR
+vlan 40
+ name VOIP
+```
+
+**OSPF-Routing (Core):**
+```cisco
+router ospf 1
+ network 10.13.0.0 0.0.255.255 area 0
+ passive-interface Vlan10
+ passive-interface Vlan20
+ passive-interface Vlan30
+```
+> **Ergebnis:** Pings zwischen VLAN 10 und VLAN 20 sind erfolgreich. DHCP-Relay wurde vorbereitet (`ip helper-address`).
+
 ***
 
 ## 4. Organisationsstruktur (Organigramm-Erkenntnisse)
@@ -101,7 +126,7 @@ Das Organigramm wurde erstellt und zeigt die strikte Trennung:
     
 - **Regional-Hub KL:** Operatives Geschäft (Vertrieb, HR) mit lokaler IT-Präsenz.
     
-- **Infrastruktur-Diagramm:** Ein zweites Diagramm wurde erstellt, das die logische Zuordnung der Server in Mainz zu den neuen VLANs in KL visualisiert.![Screenshot 2026-02-20 120542.png](Screenshot%202026-02-20%20120542.png)
+- **Infrastruktur-Diagramm:** Ein zweites Diagramm wurde erstellt, das die logische Zuordnung der Server in Mainz zu den neuen VLANs in KL visualisiert. ![Screenshot 2026-02-20 120542.png](../../_assets/Screenshot%202026-02-20%20120542.png)
 ***
 
 ## 5. Offene Fragen & Risikomanagement (Update Tag 4)
@@ -111,26 +136,7 @@ Das Organigramm wurde erstellt und zeigt die strikte Trennung:
 - **Frage an Technik/Kunde:** Management-Zugriff (VLAN 99) → separates Subnetz (z. B. 10.99.99.0/24) oder innerhalb 10.13.99.0/24 belassen?
 
 → Verlinkte Dokumente:  
-[Uebergabe_Netzwerk_Team](Uebergabe_Netzwerk_Team.md) | [Risiko-Register BetaTrade](Risiko-Register%20BetaTrade.md) | [Phase 1 Kaiserslautern](Phase%201%20Kaiserslautern.md) | [BetaTrade Modernisierung](BetaTrade%20Modernisierung.md)
+[00-42 Uebergabe-Protokoll](../../03_Uebergabe_und_Archiv/00-42_Uebergabe_Protokoll.md) | [00-41 Risiko-Register](../../03_Uebergabe_und_Archiv/00-41_Risiko_Register.md) | [00-10 Phase 1 Kaiserslautern Konzept](../../02_Phasen/Phase_1_Kaiserslautern/00-10_Phase_1_Kaiserslautern_Konzept.md)
 
 **Letzte Aktualisierung:** 19.02.2026 – Projektassistenz  
 **Nächster Schritt:** Übergabe-Meeting Themenfeld 2 (KW 8)
-
-
-# Tag 4: Visualisierung & Handover-Vorbereitung (Ergänzung)
-
-> **INFO:** Fokus
-> Grafische Aufbereitung der Netzwerkstruktur und formale Vorbereitung der Übergabe an das IT-Implementierungsteam.
-
-## 1. Diagramm-Integration und Workflow
-- **Prozess:** Dokumentation, wie logische Netzwerktopologien (Packet Tracer Exporte, D2-Skripte) versioniert und als Bild-Assets sauber in den Markdown-Text eingebunden werden, ohne den Lesefluss zu stören.
-
-## 2. Roadmap-Formatierung
-- Aufbereitung der mehrstufigen Modernisierungs-Roadmap für die Zentrale Mainz in einem präsentationstauglichen Format für das Management-Meeting.
-
-## 3. Übergabe-Checkliste (Handover)
-> **CHECK:** Handover-Status
-> Formale Checkliste erstellt, um sicherzustellen, dass das Netzwerk-Team starten kann:
-> - [x] VLAN-IDs und Namenskonventionen definiert.
-> - [x] IP-Adressbereiche (Subnetze) zugewiesen.
-> - [x] DHCP-Relay-Strategie dokumentiert.

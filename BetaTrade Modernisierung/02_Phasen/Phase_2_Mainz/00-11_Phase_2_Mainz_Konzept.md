@@ -1,42 +1,36 @@
-# 🏢 Phase 2: Zentrale Mainz Modernisierung
-**Zeitraum:** Woche 2 - 5 | **Status:** 📅 Geplant
+# Phase 2: Zentrale Mainz Modernisierung
 
-## 🎯 Hauptziele
-* **VPN-Termination:** Einrichtung eines pfSense-Gateways für sichere Fernwartung.
-* **Zentrale Dienste:** Optimierung von DHCP, DNS und Active Directory (AD).
-* **Backup-Strategie:** Integration von Cloud-Storage für die Datensicherung.
-* **Identity Management:** LDAP-Integration für den Mailserver.
+**Zeitraum:** Woche 2 bis 4  
+**Status:** Abgeschlossen  
+**Fokus:** VPN, DHCP, DNS, Active Directory, Docker, SQL und LDAP-Integration
 
-## 🔒 Security-Fokus
-* VPN-Zugang für Dienstleister (Weg von reiner Passwort-Auth).
-* AD Security Policies & Gruppenrichtlinien.
+## Kernziele
 
-## 📑 Relevante Dokumente
-* [Digitale_Kundenakte](Digitale_Kundenakte.md)
-* [VPN_Konfigurationsguide](VPN_Konfigurationsguide.md)
+- pfSense als zentrales Gateway fuer Admin-Zugriff und VPN aufbauen
+- DHCP und DNS auf Windows Server 2025 konsolidieren
+- Active Directory `net13.beta` strukturieren und haerten
+- Dockerisierte SQL-Umgebung bereitstellen und validieren
+- Mailcow an das AD anbinden
 
-***
-## 📝 Planungs-Notizen
-Die Modernisierung in Mainz ist zeitintensiv (3,5 Wochen), da hier Live-Dienste (Datenbanken) migriert und gesichert werden müssen.
+## Umgesetzte Bausteine
 
-# 🏢 Phase 2: Zentrale Mainz Modernisierung
-**Status:** 📅 Geplant (Woche 2 - 5,5)
-**Fokus:** Server-Infrastruktur, VPN & Cloud
+- pfSense-Routing, statische Routen und WAN/LAN-Zugriff eingerichtet
+- OpenVPN mit Zertifikaten und DNS-Routing umgesetzt
+- DHCP- und DNS-Infrastruktur auf `192.168.13.10` dokumentiert
+- AD mit OUs, Gruppen, User-Import und GPO-Haertung aufgebaut
+- Docker-/MySQL-Umgebung fuer `betatrade_db` verifiziert
+- Mailcow mit LDAP/LDAPS gegen AD integriert
 
-## 🎯 Kernziele
-- [ ] **VPN-Gateway:** Migration von Passwort-Auth zu Zertifikats-basiertem VPN (pfSense).
-- [ ] **Active Directory:** Optimierung der Group Policies (GPOs) und Security-Level.
-- [ ] **Mailserver:** Integration von LDAP für die Benutzerauthentifizierung.
-- [ ] **Cloud-Backup:** Automatisierte Sicherung der Kundendatenbank (MySQL).
+## Relevante Dokumente
 
-## 🔒 Sicherheits-Fokus
-- Fernwartungszugang für AlphaTech absichern.
-- Trennung von Management- und Produktivnetz.
+- [00-33 Digitale Kundenakte](../../04_Recourcen_und_Referenzen/00-33_Digitale_Kundenakte.md)
+- [00-20 Analyse Abhaengigkeiten Phase 2](../../01-Projekt_Themenfelder/Analysen/00-20_Analyse_Abhaengigkeiten_Phase_2.md)
+- [02-04 Connectivity & DHCP Vorbereitung](../../01-Projekt_Themenfelder/Woche_2_Tage/02-04_Woche_2_Tag_4_Connectivity_DHCP_Vorbereitung.md)
+- [02-08 VPN Infrastruktur](../../01-Projekt_Themenfelder/Woche_2_Tage/02-08_Woche_2_Tag_5_VPN_Infrastruktur.md)
+- [03-01 AD Infrastruktur](../../01-Projekt_Themenfelder/Woche_3_Tage/03-01_Woche_3_Tag_1-2_AD_Infrastruktur.md)
+- [04-01 Docker & SQL Infrastruktur](../../01-Projekt_Themenfelder/Woche_4_Tage/04-01_Woche_4_Tag_1_Docker_SQL_Infrastruktur.md)
+- [04-02 Mailcow AD Integration](../../01-Projekt_Themenfelder/Woche_4_Tage/04-02_Woche_4_Tag_2_Mailcow_AD_Integration.md)
 
-## 🔗 Ressourcen
-* [Zusammenfassung Digitale Kundenakte](Digitale_Kundenakte.md)
-* [Analyse der Abhängigkeiten (Phase 2)](Thema1_Tag_3.md)
+## Ergebnis von Phase 2
 
-***
-> **WARNING:** Herausforderung
-> Phase 2 ist mit 3,5 Wochen die zeitintensivste Phase. Die Abhängigkeiten zwischen AD, DNS und dem Backup-System müssen strikt eingehalten werden.
+Die fachliche und technische Umsetzung fuer Mainz ist dokumentiert und abgeschlossen. Offene Punkte betreffen vor allem Security-, Monitoring- und Audit-Themen der nachgelagerten Phase 3.

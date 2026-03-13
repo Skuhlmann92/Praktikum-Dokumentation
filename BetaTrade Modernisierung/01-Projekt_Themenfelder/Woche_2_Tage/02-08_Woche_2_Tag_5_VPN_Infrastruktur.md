@@ -1,6 +1,4 @@
 
-***
-
 # 🛡️ Tätigkeitsbericht: VPN-Infrastruktur für BetaTrade AG (Labor 13)
 
 **Datum:** 27.02.2026
@@ -90,6 +88,16 @@ Um den Client auf meiner **XFCE-Admin-VM** einzurichten, habe ich folgende Schri
         
     - **Konnektivität:** Ein Ping auf das interne Gateway (`192.168.13.1`) und den Windows-Server (`192.168.13.10`) war erfolgreich.
         
+### Screenshot-Nachweise
+
+![OpenVPN Client Export Utility auf der pfSense](../../_assets/openvpn_client_export_utility.png)
+
+![Linux OpenVPN Client GUI mit Zertifikatsmodus](../../_assets/openvpn_linux_client_gui.png)
+
+![pfSense OpenVPN Clients Uebersicht](../../_assets/pfsense_openvpn_clients_page.png)
+
+![OpenVPN-Client-Log mit erfolgreichem Tunnelaufbau](../../_assets/openvpn_client_connection_log.png)
+
 
 ***
 

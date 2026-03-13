@@ -42,5 +42,5 @@
 - PoE-Budget ausreichend für alle Telefone + PCs?
 - IOS-Version der 3650 unterstützt HSRP + Rapid-PVST?
 
-→ Nächster Schritt: Alle Lücken in TF-2 schließen & Test-Konfiguration erstellen  
-→ Verlinkung: [2026-02-19_Tag_4](2026-02-19_Tag_4.md) | [Phase_1_Kaiserslautern](Phase_1_Kaiserslautern.md)
+→ Naechster Schritt: Alle Luecken in TF-2 schliessen und Test-Konfiguration erstellen  
+→ Verlinkung: [01-04 Tag 4 Finalisierung & Uebergabe](../Woche_1_Tage/01-04_Tag_4_Finalisierung_Uebergabe.md) | [00-10 Phase 1 Kaiserslautern Konzept](../../02_Phasen/Phase_1_Kaiserslautern/00-10_Phase_1_Kaiserslautern_Konzept.md)

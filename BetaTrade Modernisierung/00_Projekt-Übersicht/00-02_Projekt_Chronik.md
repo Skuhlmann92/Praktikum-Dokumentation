@@ -1,33 +1,33 @@
 # Projekt-Chronik – BetaTrade Modernisierung
 
 **Projektstart:** 16.02.2026  
-**Aktueller Status:** 12.03.2026 (Abschluss Phase 2 / Woche 4) ✅
+**Letzter dokumentierter Stand:** 12.03.2026  
+**Arbeitsstand:** Phase 2 abgeschlossen, Phase 3 vorbereitet
 
-| Datum          | Ereignis / Meilenstein                               | Status     | Bemerkung / Link                              |
-|----------------|-------------------------------------------------------|------------|-----------------------------------------------|
-| 16.02. - 20.02.| **Woche 1: Analyse & Planung**                        | ✅         | Initial-Setup & L3-Konzept                    |
-| 23.02. - 27.02.| **Woche 2: Netzwerkadministration**                  | ✅         | VLANs, DHCP, DNS & VPN Basis                  |
-| 23.02.2026     | Start Umsetzung Phase 1 Kaiserslautern                | ✅         | [Netzwerkimplementierung](../01-Projekt_Themenfelder/Woche_2_Tage/2026_02_23_-_02_25_Tag_1_bis_3.md) |
-| 27.02.2026     | DHCP, DNS & VPN Infrastruktur Rollout                 | ✅         | [VPN-Infrastruktur](../01-Projekt_Themenfelder/Woche_2_Tage/2026_02_27_Tag_5_VPN-Infrastruktur.md) |
-| 02.03. - 06.03.| **Woche 3: Systemadministration & Security**          | ✅         | AD-Infrastruktur & Firewall-Härtung           |
-| 02.03.2026     | Active Directory Domain Services (ADDS) Setup         | ✅         | [AD-Infrastruktur](../01-Projekt_Themenfelder/Woche_3_Tage/2026_03_2_Tag_1_-_2_Active%20Directory%20Infrastruktur.md) |
-| 06.03.2026     | VPN-Härtung & Firewall-Least-Privilege                | ✅         | [Security-Hardening](../01-Projekt_Themenfelder/Woche_3_Tage/2026_03_06_VPN-Infrastruktur_&_Firewall-Härtung.md) |
-| 09.03. - 12.03.| **Woche 4: Applikations-Integration**                 | ✅         | Docker, SQL & Mailserver-LDAP                 |
-| 09.03.2026     | Docker & SQL Infrastruktur                            | ✅         | [Docker-SQL](../01-Projekt_Themenfelder/Woche_4_Tage/2026_03_09_Tag_1_Docker_&_SQL_Infrastruktur.md) |
-| 10.03.2026     | Mailserver-LDAP Integration                           | ✅         | [Mailcow-LDAP](../01-Projekt_Themenfelder/Woche_4_Tage/2026_03_10_Tag_2_Windows-Linux_Integration_Mailserver.md) |
-| 12.03.2026     | Finales Review & Vorbereitung Phase 3 (Security)      | ✅         | [Masterdokumentation](Masterdokumentation.md) |
+| Datum | Ereignis / Meilenstein | Status | Verweis |
+|---|---|---|---|
+| 16.02.2026 | Projektstart, Onboarding und Kundenakte-Analyse | Abgeschlossen | [01-01 Tag 1](../01-Projekt_Themenfelder/Woche_1_Tage/01-01_Tag_1_Onboarding_Analyse.md) |
+| 17.02.2026 | Gantt-Plan, Risikoanalyse und Scope-Definition | Abgeschlossen | [01-02 Tag 2](../01-Projekt_Themenfelder/Woche_1_Tage/01-02_Tag_2_Projektstruktur_Risikoanalyse.md) |
+| 18.02.2026 | Detailanalyse Phase 1 und 2, Loesungswege | Abgeschlossen | [01-03 Tag 3](../01-Projekt_Themenfelder/Woche_1_Tage/01-03_Tag_3_Detailanalyse_Loesungswege.md) |
+| 19.02.2026 | Uebergabevorbereitung und Packet-Tracer-Analyse | Abgeschlossen | [01-04 Tag 4](../01-Projekt_Themenfelder/Woche_1_Tage/01-04_Tag_4_Finalisierung_Uebergabe.md) |
+| 20.02.2026 | QA, Reflexion, Risiko- und KPI-Schaerfung | Abgeschlossen | [01-05 Tag 5](../01-Projekt_Themenfelder/Woche_1_Tage/01-05_Tag_5_Puffer_Reflexion.md) |
+| 23.02.-27.02.2026 | Netzwerkumsetzung in Mainz und Labor 13 | Abgeschlossen | [Woche 2](../01-Projekt_Themenfelder/Woche_2_Tage/02-01_Woche_2_Tag_1-3_Netzwerkimplementierung.md) |
+| 27.02.2026 | VPN-Infrastruktur und PKI aufgebaut | Abgeschlossen | [02-08 VPN Infrastruktur](../01-Projekt_Themenfelder/Woche_2_Tage/02-08_Woche_2_Tag_5_VPN_Infrastruktur.md) |
+| 02.03.-06.03.2026 | AD-Aufbau, GPOs und Firewall-Haertung | Abgeschlossen | [03-01 AD Infrastruktur](../01-Projekt_Themenfelder/Woche_3_Tage/03-01_Woche_3_Tag_1-2_AD_Infrastruktur.md) |
+| 09.03.-12.03.2026 | Docker, SQL, Mailcow-Integration und VPN-/SSH-Optimierung | Abgeschlossen | [Woche 4](../01-Projekt_Themenfelder/Woche_4_Tage/04-01_Woche_4_Tag_1_Docker_SQL_Infrastruktur.md) |
+| 12.03.2026 | Uebergabe vorbereitet, Security-Phase als naechster Schritt markiert | Abgeschlossen | [00-42 Uebergabe-Protokoll](../03_Uebergabe_und_Archiv/00-42_Uebergabe_Protokoll.md) |
 
-**Wichtige erreichte Meilensteine:**
-- [x] Erfolgreiche Implementierung der L3-Netzwerkstruktur (Kaiserslautern)
-- [x] Migration DHCP/DNS auf Windows Server 2025 (Mainz)
-- [x] Standorterweiterung via OpenVPN & Zertifikats-PKI
-- [x] Vollständige AD-Benutzeranlage & Gruppenrichtlinien-Härtung
-- [x] AD-Integration von Linux-Diensten (Mailcow via LDAPS)
-- [x] Versionierbare Docker-Infrastruktur (betatrade-db)
+## Erreichte Meilensteine
 
-**Nächste Schritte:**
-- [ ] Beginn Phase 3: Monitoring & ISO 27001-Zertifizierungsvorbereitung
-- [ ] Übergabe des Systems an den IT-Betrieb der BetaTrade AG
-- [ ] Archivierung der Projektunterlagen
+- L3-Netzstruktur fuer Kaiserslautern konzipiert und im Packet Tracer validiert
+- DHCP und DNS auf Windows Server 2025 in Mainz umgesetzt
+- OpenVPN mit Zertifikatsstruktur aufgebaut und gehaertet
+- AD-Benutzer, OUs, Gruppen und GPOs eingerichtet
+- Dockerisierte Datenbankumgebung dokumentiert und validiert
+- Mailcow gegen Active Directory angebunden
 
-→ [Risiko-Register BetaTrade](../03_Uebergabe_und_Archiv/Risiko-Register%20BetaTrade.md)
+## Naechste Schritte
+
+- [ ] Phase 3 Security mit Monitoring und IDS konkretisieren
+- [ ] ISO-27001-Lueckenanalyse fortsetzen
+- [ ] Abschlussdokumentation fuer Export und Uebergabe weiter bereinigen

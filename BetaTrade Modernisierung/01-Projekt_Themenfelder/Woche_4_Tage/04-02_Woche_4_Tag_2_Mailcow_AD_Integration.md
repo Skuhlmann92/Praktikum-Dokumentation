@@ -24,20 +24,60 @@ status: done
 1. **Infrastruktur-Abstimmung:** Festlegung des Service-Accounts für den LDAP-Bind im Windows-Team.
 2. **DNS-Troubleshooting:** Behebung eines Auflösungsfehlers (beta.local wurde intern nicht korrekt auf den DC geroutet).
 
-## 👤 Einzelarbeit
-1. **Konfiguration:** Anpassung der `unbound.conf` und Neustart des Containers.
-2. **AD-Integration:** Einrichtung des LDAP Identity Providers im Mailcow-Admin-Panel.
-3. **Validierung:** Erfolgreiche Anmeldung am SOGo Webmail mit Test-Usern aus den OUs `HR` und `IT`.
+## 2. Technische Umsetzung (Detail-Dokumentation)
+
+### 2.1 Unbound DNS-Konfiguration
+Damit der Mailserver die Domäne `net13.beta` und den DC `192.168.13.10` finden kann, musste der interne Resolver angepasst werden.
+
+**Datei:** `data/conf/unbound/unbound.conf`
+```conf
+server:
+  # ... (bestehende Config)
+  
+  # Stub-Zone für lokale Domäne
+  local-zone: "net13.beta." transparent
+  domain-insecure: "net13.beta"
+
+stub-zone:
+  name: "net13.beta"
+  stub-addr: 192.168.13.10  # IP des Domain Controllers
+```
+*Aktion:* `docker compose restart unbound-mailcow`
+
+### 2.2 LDAP-Anbindung (Mailcow UI)
+Die Authentifizierung wurde im Admin-Panel unter `System > Configuration > Access > LDAP` konfiguriert.
+
+| Parameter | Wert | Erklärung |
+| :--- | :--- | :--- |
+| **Server Address** | `192.168.13.10` | IP des DC |
+| **Port** | `389` (StartTLS) oder `636` (LDAPS) | Hier: 636 mit "Skip Verify" (Labor) |
+| **Base DN** | `DC=net13,DC=beta` | Suchbereich |
+| **Bind DN** | `CN=svc_mailcow,OU=IT,DC=net13,DC=beta` | Service-User zum Lesen |
+| **User Filter** | `(&(objectClass=user)(sAMAccountName=%u))` | Login via sAMAccountName |
+| **Sync Interval** | `300` | Sync alle 5 Min |
+
+### 2.3 Validierung
+1. **Verbindungstest:** Button "Test Connection" -> **OK**.
+2. **SOGo Login:** User `d.zimmermann` (HR) konnte sich mit AD-Passwort anmelden.
+3. **Log-Check:** `docker compose logs -f dovecot-mailcow` zeigte erfolgreichen Auth-Handshake.
 
 ## 📸 Dokumentation & Screenshots
 
-![Pasted image 20260309160937.png](Pasted%20image%2020260309160937.png)
+![Mailcow Container-Status](../../_assets/mailcow_container_status.png)
 - **Screenshot 1:** Status der Mailcow-Container in Docker (`docker ps`).  
-  `![mailcow_status.png](mailcow_status.png)`
+  Siehe Abbildung oben.
 - **Screenshot 2:** LDAP-Konfigurationsmaske (Test Connection erfolgreich).  
-  `![mailcow_ldap_success.png](mailcow_ldap_success.png)`
+  ![Mailcow LDAP-Konfigurationsmaske](../../_assets/mailcow_ldap_configuration.png)
 - **Screenshot 3:** Erfolgreicher SOGo-Login eines AD-Benutzers.  
   `![sogo_login_success.png](sogo_login_success.png)`
+
+### Ergaenzende Nachweise fuer LDAPS
+
+![AD LDAP Service User](../../_assets/ad_ldap_service_user.png)
+
+![Windows Firewall Regelkonfiguration fuer LDAPS / Domain Services](../../_assets/windows_firewall_ldaps_rule.png)
+
+![LDAPS-Verbindungstest auf Port 636](../../_assets/ldp_ldaps_port_636_test.png)
 
 ## 📝 Reflexion / Offene Punkte
 - Die Integration vereinfacht die Benutzerverwaltung erheblich (Single Source of Truth im AD).

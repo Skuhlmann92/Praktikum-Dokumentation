@@ -1,42 +1,31 @@
-# 🛡️ Phase 3: Security & Monitoring
-**Zeitraum:** Woche 6 | **Status:** 📅 Geplant
+# Phase 3: Security und Monitoring
 
-## 🎯 Hauptziele
-* **Proaktive Überwachung:** IDS (Intrusion Detection System) & Alerting-Dashboards.
-* **Compliance:** Anpassung der Security-Richtlinien nach **ISO 27001**.
-* **Incident Response:** Erstellung eines Leitfadens für Sicherheitsvorfälle.
-* **Vulnerability Management:** Durchführung von Security-Assessments.
+**Zeitraum:** Nach Abschluss von Phase 2  
+**Status:** Vorbereitet / noch offen  
+**Fokus:** Monitoring, IDS/IPS, Incident Response und ISO 27001
 
-## 📊 Monitoring-Stack
-* **Logging:** Zentraler Syslog-Server.
-* **Dashboards:** Visualisierung kritischer Netzwerkzustände.
+## Kernziele
 
-## 📑 Verknüpfte Ressourcen
-* [ISO27001_Checkliste](ISO27001_Checkliste.md)
-* [Incident_Response_Plan](Incident_Response_Plan.md)
+- Zentrale Ueberwachung von Logs, Events und Netzwerkzustand aufbauen
+- IDS/IPS-Mechanismen und Alerting einfuehren
+- Incident-Response-Ablauf fachlich und organisatorisch absichern
+- ISO-27001-relevante Kontrollen auf den erreichten Infrastrukturstand abbilden
 
-***
-## 💡 Strategie
-Diese Phase bildet den Abschluss und stellt sicher, dass die Modernisierungen aus Phase 1 & 2 langfristig sicher betrieben werden können.
+## Geplante Bausteine
 
-# 🛡️ Phase 3: Security & Monitoring
-**Status:** 📅 Geplant (Woche 6)
-**Fokus:** Compliance, IDS & Vorfallmanagement
+- Zentraler Syslog- oder Monitoring-Stack
+- IDS-/Alerting-Konzept fuer pfSense und Server
+- Review der Backup- und Restore-Nachweise
+- Auditvorbereitung mit Control-Mapping und Lueckenanalyse
 
-## 🎯 Kernziele
-- [ ] **Monitoring:** Dashboard zur Echtzeit-Überwachung der Netzwerklast.
-- [ ] **IDS/IPS:** Implementierung eines Intrusion Detection Systems.
-- [ ] **ISO 27001:** Anpassung der IT-Richtlinien an den Sicherheitsstandard.
-- [ ] **Incident Response:** Erstellung eines Notfallplans für Cyber-Angriffe.
+## Relevante Dokumente
 
-## 📊 Geplante Tools
-* **pfSense:** Firewall-Logs & Paketfilterung.
-* **Linux-Server:** Zentrales Logging & Monitoring-Agenten.
+- [00-12a Incident Response Plan](00-12a_Incident_Response_Plan.md)
+- [00-12b ISO27001 Checkliste](00-12b_ISO27001_Checkliste.md)
+- [00-21 Analyse Firewall Hardening](../../01-Projekt_Themenfelder/Analysen/00-21_Analyse_Firewall_Hardening.md)
+- [00-41 Risiko-Register](../../03_Uebergabe_und_Archiv/00-41_Risiko_Register.md)
+- [00-42 Uebergabe-Protokoll](../../03_Uebergabe_und_Archiv/00-42_Uebergabe_Protokoll.md)
 
-## 🔗 Dokumentation
-* [Checkliste für das Audit](ISO27001_Checkliste.md)
-* [Vorlage Notfallmanagement](Incident_Response_Plan.md)
+## Einordnung
 
-***
-> **NOTE:** Zielsetzung
-> Diese Phase stellt den "Sack zu" und sorgt dafür, dass die Modernisierungen aus Phase 1 und 2 langfristig sicher und stabil laufen.
+Phase 3 ist noch nicht operativ umgesetzt. Die noetigen Vorarbeiten, Risiken und Leitdokumente sind jedoch vorhanden, sodass die Security-Phase direkt aus dem dokumentierten Stand von Phase 2 gestartet werden kann.

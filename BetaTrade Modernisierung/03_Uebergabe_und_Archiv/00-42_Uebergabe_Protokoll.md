@@ -26,8 +26,8 @@
 * **Backups:** MySQL-Dumps werden via Cron/Script erstellt (`backup_day3.sql`).
 
 ## 4. Offene Dokumentation & Referenzen
-* [Masterdokumentation](../00_Projekt-Übersicht/Masterdokumentation.md)
-* [Projekt-Chronik](../00_Projekt-Übersicht/Projekt-Chronik.md)
-* [Geänderte Passwörter & Logins](Geänderte%20Passwörter%20&%20Logins.md)
+* [00-01 Masterdokumentation](../00_Projekt-Übersicht/00-01_Masterdokumentation.md)
+* [00-02 Projekt-Chronik](../00_Projekt-Übersicht/00-02_Projekt_Chronik.md)
+* [00-40 Passwoerter und Logins](00-40_Passwoerter_und_Logins.md)
 
-> **HINWEIS:** Alle technischen Passwörter wurden im verschlüsselten Dokument [Geänderte Passwörter & Logins](Geänderte%20Passwörter%20&%20Logins.md) hinterlegt. Die Infrastruktur ist für das finale Security-Audit bereit.
+> **HINWEIS:** Alle technischen Passwoerter wurden in [00-40 Passwoerter und Logins](00-40_Passwoerter_und_Logins.md) dokumentiert. Die Infrastruktur ist fuer das finale Security-Audit vorbereitet.

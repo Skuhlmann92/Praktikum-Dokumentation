@@ -77,7 +77,7 @@ Team-Kommunikation (simuliert): **8,5**
 - Wöchentliche 15-min Stand-ups fix einplanen  
 - Automatische KPI-Übersicht (z. B. via Excel oder Power BI)
 
-→ [BetaTrade Modernisierung](BetaTrade%20Modernisierung.md) | [Risiko-Register BetaTrade](Risiko-Register%20BetaTrade.md) | [Uebergabe_Netzwerk_Team](Uebergabe_Netzwerk_Team.md)
+→ [00-41 Risiko-Register](../../03_Uebergabe_und_Archiv/00-41_Risiko_Register.md) | [00-42 Uebergabe-Protokoll](../../03_Uebergabe_und_Archiv/00-42_Uebergabe_Protokoll.md) | [00-01 Masterdokumentation](../../00_Projekt-Übersicht/00-01_Masterdokumentation.md)
 
 
 # Tag 5: Qualitätssicherung & Projektcontrolling (Ergänzung)

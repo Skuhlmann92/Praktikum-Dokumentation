@@ -78,7 +78,7 @@
 > 5. Systeme isolieren, nicht ausschalten
 
 → Verlinkte Dokumente:  
-[Phase 3 Security](Phase%203%20Security.md) | [Risiko-Register BetaTrade](Risiko-Register%20BetaTrade.md) | [ISO27001_Checkliste](ISO27001_Checkliste.md) | [Masterdokumentation](Masterdokumentation.md)
+[00-12 Phase 3 Security Konzept](00-12_Phase_3_Security_Konzept.md) | [00-41 Risiko-Register](../../03_Uebergabe_und_Archiv/00-41_Risiko_Register.md) | [00-12b ISO27001 Checkliste](00-12b_ISO27001_Checkliste.md) | [00-01 Masterdokumentation](../../00_Projekt-Übersicht/00-01_Masterdokumentation.md)
 
 **Letzte Aktualisierung:** 20.02.2026  
 **Nächste Überprüfung:** Nach Phase 3 Go-Live

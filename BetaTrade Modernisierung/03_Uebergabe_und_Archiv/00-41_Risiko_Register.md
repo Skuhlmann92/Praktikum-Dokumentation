@@ -55,7 +55,7 @@
 > - Woche 2: Erste Tests (Packet Tracer → real) & Update des Registers
 
 → Verlinkte Dokumente:  
-[BetaTrade Modernisierung](BetaTrade%20Modernisierung.md) | [2026-02-20_Tag_5](2026-02-20_Tag_5.md) | [Uebergabe_Netzwerk_Team](Uebergabe_Netzwerk_Team.md) | [Masterdokumentation](Masterdokumentation.md)
+[01-05 Tag 5 Puffer & Reflexion](../01-Projekt_Themenfelder/Woche_1_Tage/01-05_Tag_5_Puffer_Reflexion.md) | [00-42 Uebergabe-Protokoll](00-42_Uebergabe_Protokoll.md) | [00-01 Masterdokumentation](../00_Projekt-Übersicht/00-01_Masterdokumentation.md)
 
 **Letzte Aktualisierung:** 20.02.2026 – Projektassistenz  
 **Nächste Überprüfung:** 27.02.2026 (Ende Woche 1 Umsetzung)

@@ -25,7 +25,7 @@
     ```
     
 
-![Pasted image 20260309141928.png](Pasted%20image%2020260309141928.png)
+![Pasted image 20260309141928.png](../../../../Pasted%20image%2020260309141928.png)
 
 ### 1.2 Container-Verwaltung (Cleanup)
 
@@ -54,11 +54,15 @@
 
     ```
     
-![697](Pasted%20image%2020260309142950.png)
+![697](../../../../Pasted%20image%2020260309142950.png)
+
+![Fehlerbild: docker-compose nicht gefunden](../../_assets/docker_compose_not_found.png)
+
+![Umstellung auf Docker Compose v2](../../_assets/docker_compose_v2_fix.png)
 
 
-![Pasted image 20260309143550.png](Pasted%20image%2020260309143550.png)
-![Pasted image 20260309143944.png](Pasted%20image%2020260309143944.png)
+![Pasted image 20260309143550.png](../../../../Pasted%20image%2020260309143550.png)
+![Pasted image 20260309143944.png](../../../../Pasted%20image%2020260309143944.png)
 ### 2.2 Verbindung zur Datenbank
 
 - **Login-Befehl:**
@@ -89,7 +93,11 @@ In Google Sheets exportieren
 - **Befehl:** `DESCRIBE customers;`
     
 
-> **[SCREENSHOT 4: Tabellenstruktur der 'customers' Tabelle]**
+![Tabellenstruktur customers](../../_assets/sql_describe_customers.png)
+
+![Tabellenstruktur accounts](../../_assets/sql_describe_accounts.png)
+
+![Tabellenstruktur trades](../../_assets/sql_describe_trades.png)
 
 ***
 

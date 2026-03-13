@@ -5,6 +5,7 @@ tags:
   - #packet-tracer
   - #troubleshooting
   - #cisco
+  - #pfsense
 ---
 # 📂 Projekt: Labor ID 13 | Themenfeld 2 (Woche 2)
 
@@ -66,6 +67,24 @@ ip route 10.13.20.0 255.255.255.0 10.0.1.1   # IT Data
 ip route 10.13.30.0 255.255.255.0 10.0.2.1   # HR Data
 write
 ```
+
+### ➕ Zusatz Tag 1: pfSense Gateway-Konfiguration
+
+Um das interne Netz (Labor) mit dem WAN zu verbinden, wurde die virtuelle Firewall `pfSense` (`192.168.13.1`) grundkonfiguriert.
+
+**Interfaces & Zuweisung:**
+*   **WAN (em0):** DHCP (Bridged Mode zum Host-Netz)
+*   **LAN (em1):** `192.168.13.1/24`
+
+**Routing (Static Routes):**
+Damit die Firewall die internen VLANs hinter dem Core-Switch erreicht, musste eine Gateway-Route eingetragen werden.
+*   **Gateway:** `192.168.13.254` (Core-Switch Uplink IP)
+*   **Destination Network:** `10.13.0.0/16` → Gateway `192.168.13.254`
+
+**DHCP-Relay (Services):**
+Aktivierung unter `Services > DHCP Relay`:
+*   **Interface:** LAN
+*   **Destination Server:** `192.168.13.10` (Windows Server)
 
 ***
 

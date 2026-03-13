@@ -72,6 +72,8 @@ Während der Tests wurde festgestellt, dass zwar der VPN-Tunnel (`tun0`) aufgeba
 
 Die Diagnose via `ip route` ergab ein falsches Gateway-Mapping. Ursache war eine Fehlkonfiguration in den OpenVPN-Servereinstellungen der pfSense.
 
+![VPN-Diagnose mit Debug-Skript und Tunnel-Restarts](../../_assets/vpn_diagnose_debug_script.png)
+
 ### 3.2 Korrektur in pfSense (Tunnel Settings)
 
 	Folgende Parameter wurden korrigier | Parameter | Vorher | Nachher (Korrekt) || :--- | :--- | :--- | | **IPv4 Tunnel Network** | `10.8.13.0/24` | `10.8.13.0/24` | | **IPv4 Local network(s)** | `10.8.13.0/24` (falsch) | `192.168.13.0/24` |

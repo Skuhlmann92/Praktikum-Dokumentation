@@ -17,4 +17,6 @@
 - LDAP-Integration Mailserver
 - Optimierung DHCP/DNS (zentral auf Admin-VM)
 
-## Abhängigkeits-Graph ![Screenshot 2026-02-20 121823 1.png](Screenshot%202026-02-20%20121823%201.png)
+## Abhaengigkeits-Graph
+
+![Screenshot 2026-02-20 121823 1.png](../../_assets/Screenshot%202026-02-20%20121823%201.png)

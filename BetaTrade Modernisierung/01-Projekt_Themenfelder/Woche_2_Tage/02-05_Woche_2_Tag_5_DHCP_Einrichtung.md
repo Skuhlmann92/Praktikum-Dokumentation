@@ -104,6 +104,10 @@ Innerhalb des Assistenten wurden die kritischen Netzwerkeinstellungen für die C
 ## 4. Headless DHCP-Installation
 - **Umsetzung:** Installation der DHCP-Server-Rolle direkt über die bereitgestellte PowerShell-Verbindung ohne GUI-Abhängigkeit:
   `Install-WindowsFeature DHCP -IncludeManagementTools`
+## Screenshot-Nachweis
+
+![DHCP-Leases auf dem Windows Server](../../_assets/dhcp_leases_windows_server.png)
+
 ## 💡 Zusammenfassung für die Dokumentation
 
 > **SUCCESS:** Konfigurations-Checklist

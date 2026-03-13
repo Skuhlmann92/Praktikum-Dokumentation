@@ -70,6 +70,8 @@ graph TD
 
 Zu Beginn der Schicht meldeten PCs in den Abteilungen HR und Sales den Fehler `DHCP request failed`. Die Rechner wiesen sich selbst Adressen aus dem Bereich `169.254.x.x` zu.
 
+![Packet Tracer Client mit APIPA-Adresse](../../_assets/packet_tracer_apipa_client.png)
+
 ### Die drei Fehlerquellen:
 
 1. **Layer 1 (Physical):** Die IP-Telefone fungieren als 3-Port-Switches. Ohne eigene Stromversorgung (da kein PoE am Switch-PT vorhanden ist) bleibt der interne Switch des Telefons inaktiv. Der PC erhält kein Signal.
@@ -86,6 +88,8 @@ Zu Beginn der Schicht meldeten PCs in den Abteilungen HR und Sales den Fehler `D
 ### A. Die "IP-Helper" Logik (DHCP Relay)
 
 Da der DHCP-Server in einem separaten VLAN (VLAN 50) steht, erreichen ihn die Broadcast-Anfragen der PCs (`255.255.255.255`) nicht. **Lösung:** Auf jedem VLAN-Interface (SVI) der Distribution-Switches wurde der Befehl `ip helper-address 192.168.50.100` implementiert. Dieser wandelt den Broadcast in einen gezielten Unicast um.
+
+![HR-DistroSwitch mit aktiven SVIs und Routed Ports](../../_assets/packet_tracer_hr_distro_switch.png)
 
 ### B. VLAN-Datenbank & Port-Konfiguration
 

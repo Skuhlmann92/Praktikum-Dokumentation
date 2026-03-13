@@ -21,39 +21,40 @@ Damit der Mailserver das AD finden kann, muss der interne DNS-Resolver (Unbound)
 
 Datei: `/opt/mailcow-dockerized/data/conf/unbound/unbound.conf`
 ```conf
-local-zone: "beta." transparent
-domain-insecure: "beta"
+local-zone: "net13.beta." transparent
+domain-insecure: "net13.beta"
 
 stub-zone:
-  name: "beta"
-  stub-addr: 10.0.x.x  # IP des Windows Domain Controllers
+  name: "net13.beta"
+  stub-addr: 192.168.13.10  # IP des Windows Domain Controllers
 ```
 *Nach der Änderung:* `docker compose restart unbound-mailcow`
 
 ### 2.2 AD-Seitige Vorbereitung
 1. Erstellung eines **LDAP-Bind-Users** (z. B. `svc_mailcow`) im Active Directory.
 2. Sammeln der Parameter:
-   - **Base DN:** `OU=Users,DC=beta,DC=local` (Beispiel)
-   - **Bind DN:** `CN=svc_mailcow,OU=ServiceAccounts,DC=beta,DC=local`
+   - **Base DN:** `DC=net13,DC=beta`
+   - **Bind DN:** `CN=LDAP Service,OU=Service Account,DC=net13,DC=beta`
 
 ## 3. LDAP-Konfiguration in Mailcow
 Die Konfiguration erfolgt über das Admin-Panel (`mail.betatrade.beta/admin`).
 
 | Feld               | Wert (Beispiel)                                |
 | :----------------- | :--------------------------------------------- |
-| **Hostname**       | `dc01.beta.local`                              |
+| **Hostname**       | `192.168.13.10`                                |
 | **Port**           | `636` (LDAPS)                                  |
-| **Base DN**        | `DC=beta,DC=local`                             |
+| **Base DN**        | `DC=net13,DC=beta`                             |
 | **Username Field** | `sAMAccountName`                               |
 | **Filter**         | `(&(objectClass=user)(objectCategory=person))` |
 
-> **TIP:** > **Screenshot-Platzhalter:** Hier Screenshot der ausgefüllten LDAP-Maske in Mailcow einfügen.
-> `![mailcow_ldap_config.png](mailcow_ldap_config.png)`
+![Mailcow LDAP-Konfiguration](../../_assets/mailcow_ldap_configuration.png)
 
 ## 4. Validierung & Test
 1. **Verbindungstest:** Schaltfläche "Test Connection" in Mailcow nutzen.
 2. **Login-Test:** Anmeldung am SOGo Webinterface (`mail.betatrade.beta/sogo`) mit einem AD-User.
 3. **Log-Prüfung:** `docker compose logs --tail=100 dovecot-mailcow` bei Login-Problemen.
+
+![LDAPS-Verbindungstest auf Port 636](../../_assets/ldp_ldaps_port_636_test.png)
 
 ## 5. Visualisierung
 ```mermaid

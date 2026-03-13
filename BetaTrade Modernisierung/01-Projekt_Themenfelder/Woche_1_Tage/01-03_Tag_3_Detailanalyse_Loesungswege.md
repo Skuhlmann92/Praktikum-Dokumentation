@@ -63,7 +63,7 @@ In Mainz müssen viele Dienste gleichzeitig modernisiert werden. Um Ausfälle zu
 
 ### Netzwerk-Topologie Kaiserslautern 
 
-![Screenshot 2026-02-20 120200.png](Screenshot%202026-02-20%20120200.png)
+![Screenshot 2026-02-20 120200.png](../../_assets/Screenshot%202026-02-20%20120200.png)
 
 # Tag 3: Architektur-Entscheidungen & Vorlagen (Ergänzung)
 

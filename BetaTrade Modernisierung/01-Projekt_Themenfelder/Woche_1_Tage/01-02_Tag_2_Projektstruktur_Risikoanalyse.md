@@ -56,16 +56,20 @@ gantt
     IDS-Konfiguration & Alarmtest    :2026-03-23, 4d
     ISO 27001 Anpassung              :milestone, after previous, 0d
 ```
-**Risiken (7 identifiziert)**:
 
-1. DHCP-Migration → Adresskonflikte / Ausfall
-2. Fehlende STP-Konfig → Broadcast-Sturm
-3. VPN-Konfig sperrt Admin aus
-4. VoIP-Jitter / Paketverlust
-5. Zeitverzug Zertifikatsausstellung
-6. Backup-Restore fehlschlägt
-7. Benutzer blockieren Umstellung (Change-Management)
+### Detaillierte Risiko-Analyse
 
+Zusätzlich zur Identifikation wurde eine Bewertung nach Eintrittswahrscheinlichkeit (W) und Auswirkung (A) vorgenommen (Skala 1-3).
+
+| # | Risiko | W | A | Prio (WxA) | Maßnahme |
+|---|---|---|---|---|---|
+| 1 | **DHCP-Migration** (Adresskonflikte) | 3 | 2 | **6 (Hoch)** | Parallelbetrieb + kurze Leases |
+| 2 | **VPN-Lockout** (Admin ausgesperrt) | 2 | 3 | **6 (Hoch)** | Lokaler Notfall-User auf Konsole |
+| 3 | **STP-Loop** (Broadcast-Sturm) | 2 | 3 | **6 (Hoch)** | Rapid-PVST + BPDU Guard |
+| 4 | **VoIP-Qualität** (Jitter) | 2 | 2 | 4 (Mittel) | QoS-Policy + Voice-VLAN 40 |
+| 5 | **Zertifikats-Verzug** | 2 | 2 | 4 (Mittel) | Nutzung interner CA |
+| 6 | **Backup-Restore Fehler** | 1 | 3 | 3 (Mittel) | Wöchentlicher Restore-Test |
+| 7 | **User-Akzeptanz** | 2 | 2 | 4 (Mittel) | Frühzeitige Kommunikation |
 
 # Tag 2: Vertiefte Projektplanung & Methodik (Ergänzung)
 
