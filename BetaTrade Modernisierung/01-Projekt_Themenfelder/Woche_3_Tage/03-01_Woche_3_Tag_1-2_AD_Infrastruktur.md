@@ -81,9 +81,167 @@ foreach ($row in $users) {
     Add-ADGroupMember -Identity $groupName -Members $row.Benutzername
 }
 ```
+# BetaTrade AD-Setup Skript
+# Erstellt OUs, Security Groups und User basierend auf CSV
 
+Import-Module ActiveDirectory
+
+# VARIABLEN ANPASSEN
+$DomainID = "net13" # Deine ID aus dem Labor
+$CSVPath = ".\BetaTrade_Mitarbeiterliste_net13.csv"
+$DefaultPassword = ConvertTo-SecureString "BetaTrade@TQ3b!" -AsPlainText -Force
+$DNSDomain = "$DomainID.beta"
+$MailDomain = "betatrade.beta"
+
+# 1. OU STRUKTUR ERSTELLEN
+$OUs = @("Corporate", "IT", "Marketing")
+$BaseOU = "DC=$DomainID,DC=beta"
+
+foreach ($OU in $OUs) {
+    if (-not (Get-ADOrganizationalUnit -Filter "Name -eq '$OU'")) {
+        New-ADOrganizationalUnit -Name $OU -Path $BaseOU -Description "Haupt-OU fuer $OU"
+        Write-Host "OU $OU erstellt." -ForegroundColor Cyan
+    }
+}
+
+# 2. CSV IMPORT UND VERARBEITUNG
+$Users = Import-Csv -Path $CSVPath -Delimiter ","
+
+foreach ($User in $Users) {
+    # Abteilung splitten (z.B. IT-Security -> IT = Parent, Security = Child)
+    $DeptParts = $User.Abteilung -split "-"
+    $ParentOU = $DeptParts[0]
+    $SubOU = if ($DeptParts.Count -gt 1) { $DeptParts[1] } else { $null }
+    
+    $TargetPath = "OU=$ParentOU,$BaseOU"
+    
+    # Unter-OU erstellen falls vorhanden
+    if ($SubOU) {
+        $SubOUPath = "OU=$SubOU,$TargetPath"
+        if (-not (Get-ADOrganizationalUnit -Filter "Name -eq '$SubOU'")) {
+            New-ADOrganizationalUnit -Name $SubOU -Path $TargetPath
+        }
+        $TargetPath = $SubOUPath
+    }
+
+    # Security Group pro Abteilung/Unter-OU erstellen (RBAC)
+    $GroupName = "GS_$($User.Abteilung)"
+    if (-not (Get-ADGroup -Filter "Name -eq '$GroupName'")) {
+        New-ADGroup -Name $GroupName -GroupCategory Security -GroupScope Global -Path $TargetPath
+        Write-Host "Gruppe $GroupName erstellt." -ForegroundColor Yellow
+    }
+
+    # BENUTZER ANLEGEN
+    $UPN = "$($User.Benutzername)@$DNSDomain"
+    
+    if (-not (Get-ADUser -Filter "SamAccountName -eq '$($User.Benutzername)'")) {
+        $UserParams = @{
+            Name                  = "$($User.Vorname) $($User.Nachname)"
+            GivenName             = $User.Vorname
+            Surname               = $User.Nachname
+            SamAccountName        = $User.Benutzername
+            UserPrincipalName     = $UPN
+            EmailAddress          = $User.Email
+            Title                 = $User.Position
+            OfficePhone           = $User.Telefon
+            Path                  = $TargetPath
+            AccountPassword       = $DefaultPassword
+            Enabled               = $true
+            ChangePasswordAtLogon = $false # Wichtig fuer RDP-Zugriff!
+        }
+        
+        New-ADUser @UserParams
+        
+        # In Gruppe aufnehmen
+        Add-ADGroupMember -Identity $GroupName -Members $User.Benutzername
+        
+        # RDP Rechte vergeben (Remote Desktop Users Gruppe)
+        Add-ADGroupMember -Identity "Remote Desktop Users" -Members $User.Benutzername
+        
+        Write-Host "User $($User.Benutzername) in $TargetPath angelegt." -ForegroundColor Green
+    }
+}
 ***
+# BetaTrade AD-Setup Skript
+# Erstellt OUs, Security Groups und User basierend auf CSV
 
+Import-Module ActiveDirectory
+
+# VARIABLEN ANPASSEN
+$DomainID = "net13" # Deine ID aus dem Labor
+$CSVPath = ".\BetaTrade_Mitarbeiterliste_net13.csv"
+$DefaultPassword = ConvertTo-SecureString "BetaTrade@TQ3b!" -AsPlainText -Force
+$DNSDomain = "$DomainID.beta"
+$MailDomain = "betatrade.beta"
+
+# 1. OU STRUKTUR ERSTELLEN
+$OUs = @("Corporate", "IT", "Marketing")
+$BaseOU = "DC=$DomainID,DC=beta"
+
+foreach ($OU in $OUs) {
+    if (-not (Get-ADOrganizationalUnit -Filter "Name -eq '$OU'")) {
+        New-ADOrganizationalUnit -Name $OU -Path $BaseOU -Description "Haupt-OU fuer $OU"
+        Write-Host "OU $OU erstellt." -ForegroundColor Cyan
+    }
+}
+
+# 2. CSV IMPORT UND VERARBEITUNG
+$Users = Import-Csv -Path $CSVPath -Delimiter ","
+
+foreach ($User in $Users) {
+    # Abteilung splitten (z.B. IT-Security -> IT = Parent, Security = Child)
+    $DeptParts = $User.Abteilung -split "-"
+    $ParentOU = $DeptParts[0]
+    $SubOU = if ($DeptParts.Count -gt 1) { $DeptParts[1] } else { $null }
+    
+    $TargetPath = "OU=$ParentOU,$BaseOU"
+    
+    # Unter-OU erstellen falls vorhanden
+    if ($SubOU) {
+        $SubOUPath = "OU=$SubOU,$TargetPath"
+        if (-not (Get-ADOrganizationalUnit -Filter "Name -eq '$SubOU'")) {
+            New-ADOrganizationalUnit -Name $SubOU -Path $TargetPath
+        }
+        $TargetPath = $SubOUPath
+    }
+
+    # Security Group pro Abteilung/Unter-OU erstellen (RBAC)
+    $GroupName = "GS_$($User.Abteilung)"
+    if (-not (Get-ADGroup -Filter "Name -eq '$GroupName'")) {
+        New-ADGroup -Name $GroupName -GroupCategory Security -GroupScope Global -Path $TargetPath
+        Write-Host "Gruppe $GroupName erstellt." -ForegroundColor Yellow
+    }
+
+    # BENUTZER ANLEGEN
+    $UPN = "$($User.Benutzername)@$DNSDomain"
+    
+    if (-not (Get-ADUser -Filter "SamAccountName -eq '$($User.Benutzername)'")) {
+        $UserParams = @{
+            Name                  = "$($User.Vorname) $($User.Nachname)"
+            GivenName             = $User.Vorname
+            Surname               = $User.Nachname
+            SamAccountName        = $User.Benutzername
+            UserPrincipalName     = $UPN
+            EmailAddress          = $User.Email
+            Title                 = $User.Position
+            OfficePhone           = $User.Telefon
+            Path                  = $TargetPath
+            AccountPassword       = $DefaultPassword
+            Enabled               = $true
+            ChangePasswordAtLogon = $false # Wichtig fuer RDP-Zugriff!
+        }
+        
+        New-ADUser @UserParams
+        
+        # In Gruppe aufnehmen
+        Add-ADGroupMember -Identity $GroupName -Members $User.Benutzername
+        
+        # RDP Rechte vergeben (Remote Desktop Users Gruppe)
+        Add-ADGroupMember -Identity "Remote Desktop Users" -Members $User.Benutzername
+        
+        Write-Host "User $($User.Benutzername) in $TargetPath angelegt." -ForegroundColor Green
+    }
+}
 ## 3. Phase 2: Fileserver & Berechtigungsmatrix
 
 Für die Zusammenarbeit wurden zentrale Verzeichnisse auf `C:\BetaTrade` eingerichtet.
