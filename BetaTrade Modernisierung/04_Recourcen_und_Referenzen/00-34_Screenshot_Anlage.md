@@ -216,6 +216,20 @@ Diese Anlage sammelt die verbleibenden Original-Screenshots, die nicht direkt in
 
 ![Screenshot 2026-02-20 121823.png](../_assets/Screenshot%202026-02-20%20121823.png)
 
+## 7. Zusaetzliche Funde aus `C:\Users\User\Documents\Praktikum`
+
+**Phase-2 Roadmap / Abhaengigkeiten**
+
+![Phase-2 Roadmap](../_assets/phase2_dependency_roadmap.png)
+
+**Hostbasierter Netzwerkalarm (simplewall)**
+
+![simplewall Python HTTPS Alert](../_assets/simplewall_python_https_alert.png)
+
+**Wireshark Filter Referenz**
+
+![Wireshark Filters Reference](../_assets/wireshark_filters_reference.jpg)
+
 ## Hinweis zur Auswahl
 
 Nicht jede urspruengliche Screenshot-Datei wurde in diese Anlage uebernommen. Entfernt wurden vor allem:

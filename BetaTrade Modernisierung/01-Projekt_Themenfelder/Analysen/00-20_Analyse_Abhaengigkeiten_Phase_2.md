@@ -19,4 +19,12 @@
 
 ## Abhaengigkeits-Graph
 
-![Screenshot 2026-02-20 121823 1.png](../../_assets/Screenshot%202026-02-20%20121823%201.png)
+![Phase-2 Roadmap und kritische Abhaengigkeiten](../../_assets/phase2_dependency_roadmap.png)
+
+Die Grafik zeigt die kritischen Pfade der Mainzer Umsetzung in verdichteter Form:
+
+- `IP Migration` und `Subnet DHCP Relay Configuration` bilden die technische Basis fuer die spaetere Zentralisierung.
+- `AD Integration`, `GPO Configuration` und `LDAP/SSO path` haengen direkt an der sauberen Netz- und DNS-Erreichbarkeit.
+- `VPN Setup`, `pfSense Certificate Configuration` und `Certificate Management` sichern den administrativen Fernzugriff ab.
+- `Cloud Backup`, `Backup Jobs` und `Restore Test` laufen parallel, muessen aber vor dem eigentlichen Go-Live belastbar nachgewiesen sein.
+- `LDAP Integration`, `Mailserver Connection` und `SSO Setup` liegen spaet im Ablauf und profitieren von bereits verifizierten Zertifikaten, DNS und AD.

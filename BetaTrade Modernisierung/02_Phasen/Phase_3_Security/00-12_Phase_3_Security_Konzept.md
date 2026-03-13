@@ -18,6 +18,24 @@
 - Review der Backup- und Restore-Nachweise
 - Auditvorbereitung mit Control-Mapping und Lueckenanalyse
 
+## Zusaetzliche Nachweise und sinnvolle Erweiterungen
+
+### Beispiel fuer hostbasiertes Alerting
+
+![simplewall Warnung fuer ausgehende Python-HTTPS-Verbindung](../../_assets/simplewall_python_https_alert.png)
+
+Der Screenshot aus dem Praktikumsordner zeigt einen konkreten Netzwerkwarnfall auf Host-Ebene. Auch wenn Phase 3 noch nicht operativ umgesetzt ist, laesst sich daraus ein sinnvoller Baustein fuer die Security-Phase ableiten:
+
+- ausgehende Verbindungen unbekannter Prozesse sichtbar machen
+- Freigabe- und Blockierentscheidungen dokumentieren
+- Host-Alerts mit Netzwerk- und Server-Logs korrelieren
+
+### Analyse- und Triage-Referenz
+
+![Wireshark Filter Referenz](../../_assets/wireshark_filters_reference.jpg)
+
+Die Wireshark-Filterreferenz eignet sich als operative Hilfe fuer die geplante Incident-Erkennung, insbesondere fuer DNS-, DHCP-, TLS- und VLAN-bezogene Untersuchungen.
+
 ## Relevante Dokumente
 
 - [00-12a Incident Response Plan](00-12a_Incident_Response_Plan.md)

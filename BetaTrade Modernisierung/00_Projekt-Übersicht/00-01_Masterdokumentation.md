@@ -24,7 +24,7 @@
 |---|---|---|---|
 | Woche 2 | Netzwerk-Infrastruktur | pfSense Routing, DHCP-Relay, DHCP, DNS, VPN | Abgeschlossen |
 | Woche 3 | System-Infrastruktur | AD, GPOs, VPN-Haertung, Dokumentationsbereinigung | Abgeschlossen |
-| Woche 4 | Applikations-Ebene | Docker, SQL, Mailcow LDAP, SSH/VPN Optimierung | Abgeschlossen |
+| Woche 4 | Applikations-Ebene | Docker, SQL, Mailcow LDAP, SSH/VPN Optimierung, Security-Vorbereitung | Abgeschlossen |
 
 ## Phasen-Uebersicht
 
@@ -46,6 +46,7 @@
 - [03-01 Active Directory Infrastruktur](../01-Projekt_Themenfelder/Woche_3_Tage/03-01_Woche_3_Tag_1-2_AD_Infrastruktur.md)
 - [00-24 Guide Docker & SQL](../01-Projekt_Themenfelder/Analysen/00-24_Guide_Docker_SQL.md)
 - [00-25 Guide Mailcow AD Integration](../01-Projekt_Themenfelder/Analysen/00-25_Guide_Mailcow_AD_Integration.md)
+- [04-05 Monitoring und Security Vorbereitung](../01-Projekt_Themenfelder/Woche_4_Tage/04-05_Woche_4_Tag_4_Monitoring_Security_Vorbereitung.md)
 
 ### Management und Abschluss
 - [00-41 Risiko-Register](../03_Uebergabe_und_Archiv/00-41_Risiko_Register.md)

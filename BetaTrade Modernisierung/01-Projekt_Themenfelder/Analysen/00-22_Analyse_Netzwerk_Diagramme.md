@@ -1,5 +1,19 @@
 # 📊 Netzwerk-Diagramme (Mermaid Sammlung)
 
+## 0. Importierte Architektur-Skizzen
+
+### Standort- und Rollenuebersicht
+
+![Mainz IT Infrastructure Uebersicht](../../_assets/Screenshot%202026-02-20%20120006.png)
+
+Die Skizze verankert das Projekt fachlich zwischen `Mainz` als Zentrale und `Kaiserslautern` als Regional-Hub. Sie eignet sich als Management-Uebersicht vor den technischen Detaildiagrammen.
+
+### Layer-Topologie Mainz
+
+![Layer-Topologie mit Core, Access und pfSense](../../_assets/Screenshot%202026-02-20%20120200.png)
+
+Die Darstellung passt zur dokumentierten Zielarchitektur mit redundanter Core-Schicht, getrennten Access-Segmenten und Firewall-Uplink zur pfSense.
+
 ## 1. Physische & Logische Topologie
 ```mermaid
 graph TD

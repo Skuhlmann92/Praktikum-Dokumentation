@@ -39,6 +39,7 @@
 2. **Identification** (Erkennung)
    - Quellen: IDS-Alerts, Syslog, Benutzer-Meldungen, Monitoring-Dashboard
    - Erste Bewertung: Ist es echt? Priorität?
+   - Hilfsmittel: Wireshark-Filter, pfSense-Logs, Windows Event Viewer, Firewall-/Host-Alerts
 
 3. **Containment** (Eindämmung)
    - Kurzfristig: Isolieren betroffener Systeme (VLAN abschalten, Port shut)
@@ -69,6 +70,11 @@
 - GF: +49 6xxx xxx xxx
 - Externer Datenschutz: datenschutz@betatrade.de
 - Notfall-Hotline Provider (z. B. pfSense-Support): …
+
+## 6. Operative Hilfsmittel fuer die Erkennung
+
+- Wireshark-Filterreferenz: [Wireshark Filters Reference](../../_assets/wireshark_filters_reference.jpg)
+- Phase-3-Kontext mit Host-Alert-Beispiel: [00-12 Phase 3 Security Konzept](00-12_Phase_3_Security_Konzept.md)
 
 > **TIP:** Schnell-Checkliste bei Vorfall
 > 1. Ruhe bewahren  

@@ -2,6 +2,8 @@
 
 **Branche:** Mittelständischer Aktien- und Wertpapierhandel **Größe:** ca. 25 Mitarbeiter **Standorte:** Zentrale Mainz, neue Filiale Kaiserslautern (Regional-Hub)
 
+![Standort- und Rollenuebersicht Mainz und Kaiserslautern](../_assets/Screenshot%202026-02-20%20120006.png)
+
 ***
 
 ## 🏗️ Ist-Zustand (Zentrale Mainz)
