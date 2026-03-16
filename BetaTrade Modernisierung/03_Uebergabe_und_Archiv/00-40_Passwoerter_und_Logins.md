@@ -17,7 +17,7 @@ _Gehärtete Zugangsdaten für die pfSense-Umgebung und Kern-Dienste._
 
 | Gerät / Dienst                                                                 | Benutzername                                                                   | Geändertes Passwort           | Status           |
 | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | ----------------------------- | ---------------- |
-| **pfSense WebGUI**                                                             | `admin`                                                                        | Ug5U3pL]>=rDA5X               | ✅ Geändert       |
+| **pfSense WebGUI**                                                             | `admin`                                                                        | qwerasdfyxcv123               | ✅ Geändert       |
 | **pfSense Console**                                                            | `root`                                                                         | `[Dein_Neues_PW_Hier]`        | ✅ Synchron       |
 | **pfSense SSH**                                                                | `admin`                                                                        | `[Dein_Neues_PW_Hier]`        | ✅ Aktiv          |
 | **VPN (CA-Key)**                                                               | `Passphrase`                                                                   | `[CA_Sicherheits_PW]`         | 🔐 Verschlüsselt |
