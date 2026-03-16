@@ -200,3 +200,34 @@ Am Ende des Tages wurde folgendes verifiziert:
     
 
 #networking #cisco #it-documentation #packettracer #ospf #vlan #voip
+
+enable
+configure terminal
+interface GigabitEthernet1/0/3
+ no switchport
+ description Verbindung_zu_Core_Switch_1_Gig1/0/3
+ ip address 10.0.50.2 255.255.255.252
+ no shutdown
+ Exit
+Exit
+write
+
+
+
+enable
+configure terminal
+interface GigabitEthernet1/0/3
+ no switchport
+ description Verbindung_zu_Distro_Switch_Gig1/0/3
+ ip address 10.0.50.1 255.255.255.252
+ no shutdown
+ Exit
+Exit
+write
+
+
+conf t
+router ospf 1
+ network 10.0.10.0 0.0.0.3 area 0
+ network 10.0.50.0 0.0.0.3 area 0
+ exit
