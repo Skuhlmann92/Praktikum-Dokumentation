@@ -24,6 +24,7 @@ _Gehärtete Zugangsdaten für die pfSense-Umgebung und Kern-Dienste._
 | **Linux Mail-Server**                                                          | `root`                                                                         | `[Linux_Root_PW]`      | ✅ Geändert       |
 | windows dc                                                                     | Student                                                                        | qwerasdfxycv           | ✅ Geändert       |
 | [rene@mindrefined.de](mailto:rene@mindrefined.de "mailto:rene@mindrefined.de") | [rene@mindrefined.de](mailto:rene@mindrefined.de "mailto:rene@mindrefined.de") |                        |                  |
+|                                                                                |                                                                                | Ug5U3pL]>=rDA5X        |                  |
 **E-Mail Adresse:** student.samuel@mindrefined.de
 
 **Username Dashboard:** student.samuel@mindrefined.de
@@ -31,7 +32,7 @@ _Gehärtete Zugangsdaten für die pfSense-Umgebung und Kern-Dienste._
 **Password Dashboard**: N8yvJ8Y6gD$p
 
 **Interne ID Netzwerk:** 13
-Ug5U3pL]>=rDA5X
+	Ug5U3pL]>=rDA5X
 ***
 
 ## 🏢 2. Active Directory & Windows (DC13)
