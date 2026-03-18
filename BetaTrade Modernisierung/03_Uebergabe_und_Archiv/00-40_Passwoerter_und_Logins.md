@@ -32,7 +32,7 @@ _Gehärtete Zugangsdaten für die pfSense-Umgebung und Kern-Dienste._
 **Password Dashboard**: N8yvJ8Y6gD$p
 
 **Interne ID Netzwerk:** 13
-	Ug5U3pL]>=rDA5X
+Ug5U3pL]>=rDA5X
 ***
 
 ## 🏢 2. Active Directory & Windows (DC13)
