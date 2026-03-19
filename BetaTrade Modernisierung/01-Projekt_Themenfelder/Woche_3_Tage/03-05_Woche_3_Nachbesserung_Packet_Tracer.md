@@ -2,7 +2,6 @@
 
 **Projekt:** Enterprise Multi-VLAN & VoIP Infrastructure Deployment
 
-**Status:** Stabilisiert & Optimiert
 
 **Verantwortlicher Admin:** Samuel Kuhlmann
 

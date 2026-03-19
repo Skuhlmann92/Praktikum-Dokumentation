@@ -11,7 +11,6 @@ status: done
 
 **Datum:** 04.03.2026  
 **Bearbeiter:** Samuel (via AI-Assistent)  
-**Status:** ✅ Erledigt
 
 ## 🎯 Tagesziele
 - [x] Vault-Struktur bereinigen (Root-Verzeichnis aufräumen)

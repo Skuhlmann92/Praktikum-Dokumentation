@@ -12,7 +12,6 @@ status: done
 
 **Datum:** 09.03.2026  
 **Bearbeiter:** Samuel (via AI-Assistent)  
-**Status:** ✅ Erledigt
 
 ## 🎯 Tagesziele
 - [x] Docker-Umgebung auf Ubuntu-Server verifizieren

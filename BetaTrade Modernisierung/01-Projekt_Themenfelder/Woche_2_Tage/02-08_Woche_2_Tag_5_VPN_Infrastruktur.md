@@ -5,7 +5,6 @@
 
 **Verfasser:** Student 13
 
-**Status:** Meilenstein 3 abgeschlossen – Sicherer Fernzugriff etabliert ✅
 
 ***
 

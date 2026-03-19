@@ -7,33 +7,9 @@
 
 ***
 
-## 🗺️ Netzwerk-Planfigur (Mermaid)
-
+## 🗺️ Netzwerk-Planfigur 
 Diese Grafik visualisiert den aktuellen Stand nach der DHCP-Implementierung und zeigt den Weg des DHCP-Relays.
 
-
-
-```mermaid
-graph TD
-    subgraph Management_Netz
-        Admin[Ubuntu Admin VM<br/>10.8.13.2]
-    end
-
-    subgraph Labor_Netz_13 [192.168.13.0/24]
-        direction TB
-        PFS[pfSense Gateway<br/>192.168.13.1]
-        WIN[Windows Server 2025<br/>192.168.13.10<br/>DHCP & DNS Role]
-        UBU[Ubuntu Server<br/>192.168.13.20]
-        SEC[Security Server<br/>192.168.13.15]
-        CLI[Windows 11 Client<br/>DHCP Pool]
-    end
-
-    Admin -- "Statische Route via 10.8.13.3" --> PFS
-    PFS -- "DHCP Relay (Unicast)" --> WIN
-    WIN -- "IP-Zuweisung (.100-.130)" --> CLI
-    WIN -- "Reservierung (via MAC)" --> UBU
-    WIN -- "Reservierung (via MAC)" --> SEC
-```
 
 ![Netzwerkplan mit DHCP-Relay, Reservierungen und Rollenverteilung](../../_assets/dhcp_dns_network_plan.png)
 

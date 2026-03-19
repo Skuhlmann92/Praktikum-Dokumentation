@@ -12,7 +12,6 @@ status: done
 
 **Datum:** 10.03.2026  
 **Bearbeiter:** Samuel (via AI-Assistent)  
-**Status:** ✅ Erledigt
 
 ## 🎯 Tagesziele
 - [x] Mailcow-Container-Stack bereitstellen & analysieren

@@ -26,7 +26,7 @@ Statt einer manuellen Anlage wurde die Struktur basierend auf den Abteilungen au
 *   `OU=Marketing` (für Digital, Events)
 
 ### 1.2 PowerShell-Import (Umsetzung)
-Zur Fehlervermeidung und Standardisierung wurde folgendes Skript entwickelt und ausgeführt:
+Zur Fehlervermeidung und Standardisierung wurde folgendes Skript entwickelt und ausgefuehrt. Im final korrigierten Ablauf wurden zuerst die OUs und Sicherheitsgruppen in `DC=net13,DC=beta` angelegt, danach erfolgte der User-Import.
 
 ```powershell
 # BetaTrade AD-Setup Skript
@@ -94,6 +94,12 @@ foreach ($User in $Users) {
     }
 }
 ```
+### 1.3 Troubleshooting: Sicherheitsgruppe vor User-Import
+**Problem:** Beim Ausfuehren des PowerShell-Skripts zur automatisierten Benutzeranlage erschien der Fehler `Cannot find an object with identity: 'SG_Corporate'`.
+
+**Ursache:** Das Skript versuchte, Benutzer einer Sicherheitsgruppe zuzuweisen, die in der Domaene `DC=net13,DC=beta` zu diesem Zeitpunkt noch nicht existierte.
+
+**Loesung:** Die Ausfuehrungsreihenfolge wurde korrigiert. Zuerst wurden die benoetigten OUs und Gruppen angelegt, anschliessend wurde der User-Import erneut ausgefuehrt.
 
 ***
 

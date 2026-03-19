@@ -13,7 +13,6 @@ status: done
 
 **Datum:** 13.03.2026  
 **Bearbeiter:** Samuel (via AI-Assistent)  
-**Status:** ✅ Dokumentiert
 
 ## Tagesziele
 

@@ -2,103 +2,53 @@
 datum: 2026-02-20
 tags:
   - #qualitaetssicherung
-  - #controlling
-  - #lessons-learned
+  - #review
+  - #dokumentation
 ---
-# 2026-02-20_Tag_5
+# Tag 5: Qualitaetssicherung und Abschluss der Planungswoche
 
-## Tag 5: Puffer, Reflexion & finale Übergabe
+**Datum:** 20.02.2026  
+**Rolle:** Planung / Review
 
-**Datum:** 20.02.2026 | **Status:** ✅ Abgeschlossen
+## Ziel des Tages
+Die Planungsdokumente wurden auf Vollstaendigkeit geprueft, offene Risiken nachgeschaerft und der erwartete Kundennutzen nachvollziehbar beschrieben.
 
-### Tagesziele (PM-5)
+## Durchgefuehrte Arbeitsschritte
+1. Querverweise, Struktur und Vollstaendigkeit der Woche-1-Dokumente geprueft.
+2. Risikoeintraege aus der Planungswoche mit Gegenmassnahmen abgeglichen.
+3. Erwartete Projektnutzen fuer Betrieb, Verfuegbarkeit und Sicherheit formuliert.
+4. Kennzahlen vorbereitet, mit denen die Umsetzung spaeter bewertet werden kann.
+5. Offene Punkte fuer die naechste Umsetzungswoche gesammelt.
 
-- [x] Offene Punkte aus Woche 1 nacharbeiten
-- [x] Übergabe-Dokumentation final überarbeiten
-- [x] Erweiterte Risikoanalyse + Gegenmaßnahmen
-- [x] Kundennutzen quantifizieren
-- [x] Projektcontrolling-Kennzahlen definieren
-- [x] Persönliche Wochenreflexion
+## Entscheidung und Begruendung
+**Ausgangslage:** Vor dem Start der Umsetzung musste sichergestellt sein, dass die Planungsunterlagen konsistent und fuer Dritte nachvollziehbar sind.
 
-### Ergebnisse
+**Gewaehlte Option:** Die Inhalte wurden als Qualitaetscheck mit Risikoabgleich und als erwarteter Kundennutzen zusammengefasst.
 
-#### 1. Finalisierte Übergabe an Netzwerk-Team
-- Dokument: [Uebergabe Netzwerk Team](Uebergabe%20Netzwerk%20Team.md)
-- Ergänzungen: HSRP-Konfig-Beispiel, QoS für VoIP, 802.1X-Empfehlung für IT-VLAN
-- Offene Klärungen an Kunden weitergeleitet (VoIP-Telefonie-Hardware, Zertifikatsstelle)
+**Warum diese Option:** Der Kunde soll erkennen koennen, dass die technische Umsetzung auf geprueften Unterlagen basiert und die Nutzenannahmen nicht als bereits realisierte Messwerte missverstanden werden.
 
-#### 2. Erweiterte Risikoanalyse
+**Nachweis:** Risiko-Register, Uebergabeprotokoll und die bereinigte Wochenstruktur referenzieren denselben Planungsstand.
 
-| Risiko                                      | Wahrscheinlichkeit | Auswirkung | Gegenmaßnahme / Mitigation                                 |
-|---------------------------------------------|--------------------|------------|-------------------------------------------------------------|
-| DHCP-Migration → Adresskonflikte / Ausfall  | Hoch               | Mittel     | Parallelbetrieb 1 Woche, Test-Scope, Rollback-Skript        |
-| VPN-Konfig sperrt Admin-Zugriff             | Mittel             | Hoch       | Fallback-Local-Admin + Zertifikats-Backup + Pilot-Gruppe   |
-| Layer-2-Loop durch fehlendes STP            | Mittel             | Hoch       | Rapid-PVST + BPDU Guard + Root-Guard auf Core-Switches     |
-| VoIP-Paketverlust / Jitter                  | Mittel             | Mittel     | QoS-Policy (Voice VLAN highest priority), Jitter-Test       |
-| Zeitverzug Zertifikats-Management           | Mittel             | Mittel     | Frühe Beantragung + interne Test-CA bis Produktion         |
-| Cloud-Backup nicht wiederherstellbar        | Niedrig            | Hoch       | Monatlicher Restore-Test, 3-2-1-Regel, Snapshot vor Migration |
+## Ergebnis des Tages
+- Dokumentationsqualitaet fuer die Umsetzungsphase vorbereitet
+- Risiken und Gegenmassnahmen konsistent festgehalten
+- erwarteter Kundennutzen transparent als Annahme gekennzeichnet
+- Bewertungskriterien fuer die spaetere Uebergabe vorbereitet
 
-#### 3. Quantifizierter Kundennutzen
+## Erwarteter Kundennutzen
+Die folgenden Punkte beschreiben den erwarteten Nutzen der geplanten Modernisierung und stellen noch keine gemessenen Betriebswerte dar:
+- weniger Administrationsaufwand durch zentrale Dienste
+- bessere Ausfallsicherheit durch Segmentierung und definierte Betriebswege
+- hoehere Nachvollziehbarkeit durch standardisierte Dokumentation
+- verbesserte Sicherheitsbasis fuer spaetere Security-Massnahmen
 
-- **Zeitersparnis Admin**: ca. 8–12 h/Woche durch zentrales DHCP & AD-Optimierung  
-- **Reduzierung Support-Tickets**: geschätzt -40 % (von ~50 → ~30/Monat)  
-- **Downtime-Reduktion**: VLAN-Segmentierung + HSRP → Ausfallzeit -60–70 % bei Switch-Ausfall  
-- **Sicherheitsgewinn**: Passwort → Zertifikats-VPN → Risiko unbefugter Zugriffe -90 %  
-- **Kosteneinsparung/Jahr**: ca. 12.000–18.000 € (weniger Ausfälle, weniger Support, Compliance)
+## Screenshot-Hinweise
+1. Ueberblick ueber die bereinigte Dokumentationsstruktur
+2. Risiko-Register mit aktualisierten Massnahmen
+3. Review- oder Checkliste fuer die Vollstaendigkeit der Unterlagen
+4. Darstellung des erwarteten Kundennutzens oder der KPIs
 
-#### 4. Projektcontrolling – Kennzahlen
-
-- Meilensteinerreichung [%]
-- Geplante vs. tatsächliche Stunden pro Phase
-- Anzahl kritischer Incidents pro Woche
-- Nutzerzufriedenheit (Umfrage nach Go-Live: Skala 1–10)
-- Anzahl Security-Vorfälle pre/post Projekt
-- Backup-Restore-Test-Erfolg (Ja/Nein)
-
-### Wochenreflexion
-
-**Was lief besonders gut?**  
-- Sehr strukturierte Tagesdokumentation → leicht nachvollziehbar  
-- Gute Abstimmung VLAN- & IP-Konzept (einheitlich über alle Phasen)  
-- Packet-Tracer-Analyse hat viele potenzielle Stolpersteine früh gezeigt
-
-**Was war herausfordernd?**  
-- Abhängigkeiten Phase 2 schwer exakt zu timen (VPN vor Backup?)  
-- VoIP-Anforderungen noch etwas vage → Klärungsbedarf mit Kunden  
-- Quantifizierung von Nutzen & Risiken subjektiv (keine echten Zahlen vom Kunden)
-
-**Bewertung eigene Arbeitsweise (1–10)**  
-Struktur & Dokumentation: **9**  
-Technisches Verständnis: **8**  
-Team-Kommunikation (simuliert): **8,5**
-
-**Verbesserungsvorschläge für Themenfeld 2**  
-- Früher reale Tests (statt nur Planung)  
-- Wöchentliche 15-min Stand-ups fix einplanen  
-- Automatische KPI-Übersicht (z. B. via Excel oder Power BI)
-
-→ [00-41 Risiko-Register](../../03_Uebergabe_und_Archiv/00-41_Risiko_Register.md) | [00-42 Uebergabe-Protokoll](../../03_Uebergabe_und_Archiv/00-42_Uebergabe_Protokoll.md) | [00-01 Masterdokumentation](../../00_Projekt-Übersicht/00-01_Masterdokumentation.md)
-
-
-# Tag 5: Qualitätssicherung & Projektcontrolling (Ergänzung)
-
-> **INFO:** Fokus
-> Finaler Review der Phase 1, Optimierung der Export-Dokumente und Definition von Messgrößen für den Projekterfolg.
-
-## 1. Qualitätssicherung (QA) der Dokumentation
-- **Review-Prozess:** Prüfung der gesamten Vault-Struktur auf einheitliche Formatierung, funktionierende Querverweise (Wikilinks) und inhaltliche Vollständigkeit vor dem PDF-Export.
-
-## 2. PDF-Export-Optimierung
-- **CSS-Anpassungen:** Technische Feineinstellungen für den Obsidian-PDF-Export vorgenommen (z. B. saubere Seitenumbrüche vor Überschriften, Generierung eines Inhaltsverzeichnisses).
-
-## 3. KPIs und Controlling-Setup
-> **ABSTRACT:** Erfolgsmetriken
-> Definition von Kennzahlen für das künftige Projektcontrolling:
-> - Meilensteinerreichung in Prozent.
-> - Geplante vs. tatsächliche Stunden pro Phase.
-> - Anzahl kritischer Netzwerk-Incidents pro Woche während der Rollout-Phase.
-
-## 4. Erweiterte Lessons Learned
-- **Was lief gut:** Die frühe Einigung auf Markdown/Obsidian hat viel Zeit beim Formatieren gespart.
-- **Herausforderungen:** Die Abgrenzung der Phasen (Kaiserslautern vs. Mainz) war anfangs unscharf.
-- **Maßnahmen für Phase 2:** Noch engere Abstimmung mit dem simulierten Kunden bezüglich der Firewall-Hardware-Anforderungen.
+## Verweise
+- [00-41_Risiko_Register.md](../../03_Uebergabe_und_Archiv/00-41_Risiko_Register.md)
+- [00-42_Uebergabe_Protokoll.md](../../03_Uebergabe_und_Archiv/00-42_Uebergabe_Protokoll.md)
+- [00-27_Learnings_und_Entscheidungen.md](../Analysen/00-27_Learnings_und_Entscheidungen.md)

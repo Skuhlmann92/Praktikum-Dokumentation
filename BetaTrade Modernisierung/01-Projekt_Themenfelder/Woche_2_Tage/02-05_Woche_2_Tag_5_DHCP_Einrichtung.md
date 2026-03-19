@@ -96,14 +96,8 @@ Innerhalb des Assistenten wurden die kritischen Netzwerkeinstellungen für die C
 > Set-Service -Name sshd -StartupType 'Automatic'
 > ```
 
-## 3. Active Directory PowerShell-Fehler
-- **Problem:** Beim Ausführen des Skripts zur automatisierten Benutzeranlage erschien: `Cannot find an object with identity: 'SG_Corporate'`.
-- **Ursache:** Das Skript versuchte, Benutzer einer Sicherheitsgruppe zuzuweisen, die in der Domäne (`DC=net13,DC=beta`) noch nicht existierte.
-- **Lösung:** Reihenfolge korrigiert. Erst müssen die OUs und Gruppen angelegt werden, danach erfolgt der User-Import.
 
-## 4. Headless DHCP-Installation
-- **Umsetzung:** Installation der DHCP-Server-Rolle direkt über die bereitgestellte PowerShell-Verbindung ohne GUI-Abhängigkeit:
-  `Install-WindowsFeature DHCP -IncludeManagementTools`
+
 ## Screenshot-Nachweis
 
 ![DHCP-Leases auf dem Windows Server](../../_assets/dhcp_leases_windows_server.png)
