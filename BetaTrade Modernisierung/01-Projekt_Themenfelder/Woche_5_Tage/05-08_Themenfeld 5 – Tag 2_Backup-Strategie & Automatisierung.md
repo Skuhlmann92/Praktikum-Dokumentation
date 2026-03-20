@@ -114,7 +114,16 @@ docker-compose exec postgres pg_dump -U trader betatrade > betatrade-backup.sql
 ```
 
 ---
-
+student15@student15-linux-server:~$ sudo docker exec -it backrest sh  
+[sudo] password for student15:   
+/ # find /restore_db_test  
+/restore_db_test  
+/restore_db_test/betatrade_sql_database  
+/restore_db_test/betatrade_sql_database/.git  
+/restore_db_test/betatrade_sql_database/.git/info  
+/restore_db_test/betatrade_sql_database/.git/info/exclude  
+/restore_db_test/betatrade_sql_database/.git/HEAD  
+/restore_db_test/betatrade_sql_databas
 ## 🧠 Erklärung
 
 - `docker-compose exec postgres` → im Container ausführen
