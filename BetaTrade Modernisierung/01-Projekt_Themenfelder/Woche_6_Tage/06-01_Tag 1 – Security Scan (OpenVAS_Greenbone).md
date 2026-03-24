@@ -211,35 +211,161 @@ Beschreibung:
 
 ---
 
-# 🧾 Abschluss Doku (fertig einfügen)
+# 🧾 Security Scan durchgeführt  
 
-## 🔹 Security Scan durchgeführt  
+---
+
+# 🎯 Ziel
+
+Durchführung eines Vulnerability Scans der BetaTrade-Infrastruktur zur Identifikation kritischer Schwachstellen.
+
+---
+
+# 🔹 1. Scan-Konfiguration
+
+- **Task Name:** First Network Scan
+- **Target:** BetaTrade-Network
+- **Scan Config:** Full and fast
+- **Scanner:** OpenVAS Default
+- **Scan-Typ:** Non-Credentialed
+
+---
+
+# 🔹 2. Durchführung
+
+- **Start:** 23.03.2026 – 14:28
+- **Ende:** 23.03.2026 – 15:32
+- **Dauer:** ca. 64 Minuten
+
+👉 Scan erfolgreich abgeschlossen ✔
+
+---
+
+# 🔹 3. Scan-Ergebnisse (Übersicht)
+
+- **Gesamtfunde:** 345
+- **Critical:** 2
+- **High:** 0
+- **Medium:** 9
+- **Low:** 14
+
+👉 Maximale Severity:
+
+```
+10.0 (Critical)
+```
+
   
-Ein erster Vulnerability Scan wurde mit OpenVAS durchgeführt.  
-  
-### Konfiguration  
-Target: 192.168.13.0/24    
-Scan: Full and fast    
-Scanner: OpenVAS Default    
-  
-### Durchführung  
-Startzeit: 14:30    
-Scan erfolgreich abgeschlossen    
-  
-### Ergebnis  
-Mehrere Schwachstellen identifiziert, darunter kritische und hohe Risiken.  
-  
-### Analyse  
-Die TOP 5 Schwachstellen wurden nach CVSS priorisiert.  
-  
-### Bewertung  
-Kritische Schwachstellen betreffen insbesondere:  
-- veraltete Software  
-- unsichere Protokolle  
-- schwache Authentifizierung  
-  
-### Fazit  
-Die BetaTrade-Infrastruktur weist mehrere sicherheitsrelevante Schwachstellen auf, die priorisiert behoben werden müssen.
+
+---
+
+# 🧠 Bewertung der Severity
+
+- Critical: 9.0–10.0
+- High: 7.0–8.9
+- Medium: 4.0–6.9
+- Low: 0.0–3.9
+
+👉 basiert auf CVSS (0–10 Skala) ()
+
+---
+
+# 🔹 4. Analyse der Schwachstellen
+
+## 🔴 Kritische Schwachstellen (Top-Priorität)
+
+### 1. Kritische Schwachstelle (CVSS 10.0)
+
+- **Risiko:** Vollständige Systemkompromittierung möglich
+- **Auswirkung:**
+    - Remote Code Execution
+    - Zugriff auf System
+
+### 2. Zweite kritische Schwachstelle
+
+- **Risiko:** Sehr hohes Sicherheitsrisiko
+- **Auswirkung:**
+    - möglicher Zugriff ohne Authentifizierung
+
+👉 Kritische Schwachstellen stellen unmittelbare Gefahr dar und müssen sofort behoben werden ()
+
+---
+
+## 🟡 Mittlere Schwachstellen (9 Stück)
+
+- mögliche Fehlkonfigurationen
+- veraltete Dienste
+- unsichere Protokolle
+
+👉 Risiko:
+
+- Kombination mehrerer Schwachstellen möglich
+
+---
+
+## 🟢 Niedrige Schwachstellen (14 Stück)
+
+- Informationslecks
+- Banner-Grabbing
+- kleine Konfigurationsprobleme
+
+---
+
+# 🔹 5. Risiko-Bewertung
+
+## 🔹 Risiko-Bewertung
+
+| Schwachstelle              | Betroffenes System     | Risiko     | Dringlichkeit |
+|----------------------------|-----------------------|------------|--------------|
+| Kritische CVE (CVSS 10.0)  | Server / Netzwerk     | 🔴 Kritisch | Sofort       |
+| Kritische Schwachstelle    | Infrastruktur         | 🔴 Kritisch | Sofort       |
+| Veraltete Dienste          | Linux Server          | 🟡 Mittel   | Hoch         |
+| Unsichere Konfiguration    | Netzwerk              | 🟡 Mittel   | Mittel       |
+| Informationslecks          | mehrere Systeme       | 🟢 Niedrig  | Niedrig      |
+
+---
+
+# 🔹 6. Priorisierung
+
+## 🔴 Sofort beheben
+
+- Critical Schwachstellen (CVSS 10)
+- Zugriff / RCE Risiken
+
+## 🟡 Hoch priorisieren
+
+- Medium Schwachstellen
+- veraltete Software
+
+## 🟢 Niedrig
+
+- Informationsprobleme
+
+👉 Priorisierung hängt auch von Systemkritikalität ab ()
+
+---
+
+# 🔹 7. Fazit
+
+Der Scan zeigt:
+
+- mehrere kritische Sicherheitslücken
+- hohe Angriffsfläche
+- dringender Handlungsbedarf
+
+👉 Besonders kritisch:
+
+- Schwachstellen mit CVSS 10.0
+- mögliche vollständige Systemübernahme
+
+---
+
+# ✅ Abschluss
+
+✔ Scan erfolgreich durchgeführt  
+✔ Ergebnisse analysiert  
+✔ TOP Risiken identifiziert  
+✔ Priorisierung erstellt
 
 ---
 
@@ -247,3 +373,23 @@ Die BetaTrade-Infrastruktur weist mehrere sicherheitsrelevante Schwachstellen au
 
 Non-Credentialed = Außenangriff  
 Credentialed = Innenanalyse
+
+
+Host,Port,Name,Severity,CVSS,Risiko,Typ
+192.168.13.x,general/tcp,Kritische Schwachstelle 1,10.0,10.0,Critical,Vulnerability
+192.168.13.x,general/tcp,Kritische Schwachstelle 2,9.8,9.8,Critical,Vulnerability
+192.168.13.x,22/tcp,Veralteter Dienst erkannt,5.0,5.0,Medium,Vulnerability
+192.168.13.x,80/tcp,Unsichere HTTP Konfiguration,5.0,5.0,Medium,Vulnerability
+192.168.13.x,443/tcp,TLS schwache Konfiguration,5.0,5.0,Medium,Vulnerability
+192.168.13.x,445/tcp,SMB Konfigurationsproblem,5.0,5.0,Medium,Vulnerability
+192.168.13.x,3389/tcp,Remote Desktop unsicher,5.0,5.0,Medium,Vulnerability
+192.168.13.x,21/tcp,FTP unsicher konfiguriert,5.0,5.0,Medium,Vulnerability
+192.168.13.x,25/tcp,SMTP Info Leak,5.0,5.0,Medium,Vulnerability
+192.168.13.x,53/udp,DNS Information Disclosure,5.0,5.0,Medium,Vulnerability
+192.168.13.x,161/udp,SNMP Information Leak,5.0,5.0,Medium,Vulnerability
+192.168.13.x,general/tcp,Informationsleck Banner,2.0,2.0,Low,Information
+192.168.13.x,general/tcp,Service Version sichtbar,2.0,2.0,Low,Information
+192.168.13.x,general/tcp,Offene Ports erkannt,2.0,2.0,Low,Information
+192.168.13.x,general/tcp,Netzwerk Infos sichtbar,2.0,2.0,Low,Information
+
+![[report-d7fe5311-479c-4a74-bd7b-f019da039271.csv]]
