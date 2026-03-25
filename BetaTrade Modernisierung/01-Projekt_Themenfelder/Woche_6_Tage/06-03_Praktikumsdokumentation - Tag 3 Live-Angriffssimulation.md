@@ -16,8 +16,8 @@
 ## 2. Angriff 1: Netzwerk-Portscan durchführen
 
 **Durchgeführte Schritte:**  
-- Terminal auf dem Security-Server geöffnet  
-- Command ausgeführt: `nmap -sV 192.168.13.15`  
+- Terminal auf dem Security-Server geöffnet cCc 
+- Command ausgeführt: nmap -sV 192.168.13.1 
 
 **Beobachtungen während des Scans:**  
 - Zu Kibana gewechselt  
