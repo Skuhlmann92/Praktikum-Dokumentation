@@ -32,16 +32,16 @@ Du machst dich mit der Umgebung von Freescout vertraut und hast für alle Betatr
 - Navigiere zu **Admin > Benutzer**.
 - Klicke auf **Neuer Benutzer** und erstelle 2–3 weitere User Accounts für Betatrade-Mitarbeiter.
   - **Role:** User
-  - **Email:** <Nutzername>@ticket.betatrade.beta (z. B. max.mustermann@ticket.betatrade.beta)
+  - **Email:** nutzername@ticket.betatrade.beta (z. B. max.mustermann@ticket.betatrade.beta)
   - **Passwort:** BetaTrade@TQ3b! (Haken bei *Send an invite Email* entfernen, damit das Passwort manuell vergeben wird).
-- Weise jedem neuen Benutzer eine noch nicht vorhandene Mailbox zu (siehe Schritt 1.3).
+- Weise jedem neuen Benutzer eine noch nicht vorhandene Mailbox zu (siehe Schritt 1.3)
 
 
 ### 1.3 Mailboxen erstellen
 - Gehe zu **Admin > Mailboxen** und klicke auf **Neue Mailbox**.
 - Orientiere dich an den bereits vorhandenen Mailboxen:
   - **Name:** Vor- und Nachname des Mitarbeiters (z. B. Max Mustermann)
-  - **Email-Adresse:** <Nutzername>@ticket.betatrade.beta
+  - **Email-Adresse:** nutzername@ticket.betatrade.beta
   - **Typ:** IMAP + SMTP (oder wie bestehende)
   - **Verbindungsdaten:** Bei Sending und Fetching Emails jeweils die vollständige E-Mail-Adresse + Standardpasswort (gleich wie beim Mailcow‑Account).
 - Teste die Verbindung mittels **Connection Test**.

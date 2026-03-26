@@ -21,15 +21,14 @@
 
 **Beobachtungen während des Scans:**  
 - Zu Kibana gewechselt  
-- Neue Events sichtbar? **[HIER EINFÜGEN: Ja/Nein + kurze Beschreibung, z. B. "Event-Rate steigt auf 25 Events/Minute"]**
+- Neue Events sichtbar? Eventrate steigt für eine Minute auf 2000 Events an. 
 
-**Screenshot der Kibana-Anzeige (nach dem Scan):**  
-![Kibana nach Portscan](assets/kibana-portscan.png)  
+![[Pasted image 20260326105138.png]]
 
 **Dokumentation:**  
-- Wurde der Scan erkannt? **Ja / Nein** **[HIER AUSFÜLLEN]**  
-- Anzahl der generierten Events: **[HIER EINFÜGEN, z. B. "12 Events"]**  
-- Event-Typen: **[HIER EINFÜGEN, z. B. "SCAN: Possible Port Scan Detected", "attempted-recon"]**
+- Wurde der Scan erkannt? Ja 
+- Anzahl der generierten Events: 2000
+- Event-Typen: ![[Pasted image 20260326105424.png]]
 
 ---
 

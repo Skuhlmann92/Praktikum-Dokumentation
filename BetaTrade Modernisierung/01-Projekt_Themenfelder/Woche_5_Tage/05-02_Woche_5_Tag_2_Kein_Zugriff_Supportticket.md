@@ -1,4 +1,3 @@
----
 datum: 2026-04-17
 tags:
   - #woche5
