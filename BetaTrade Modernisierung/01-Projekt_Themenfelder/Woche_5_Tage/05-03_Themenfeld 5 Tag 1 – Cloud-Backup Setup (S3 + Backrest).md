@@ -44,16 +44,6 @@ Daten werden als Objekte gespeichert.
     
 - ideal für Backups
     
-
----
-
-📸 **Screenshot einfügen:**  
-MinIO Dashboard (Übersicht der Buckets)
-
-```
-![[minio-dashboard.png]]
-```
-
 ---
 
 ## ⚡ Backup-Verhalten
@@ -105,28 +95,10 @@ Passwort: MR_Stuxx@net13
 
 ---
 
-📸 **Screenshot einfügen:**  
-Login oder Dashboard nach Login
-
-```
-![[minio-login.png]]
-```
-
----
-
 ## 🪣 Bucket erstellt
 
 ```
 backups-student13
-```
-
----
-
-📸 **Screenshot einfügen:**  
-Bucket Erstellung
-
-```
-![[bucket-created.png]]
 ```
 
 ---
@@ -149,30 +121,11 @@ docker run -d \
 
 ---
 
-📸 **Screenshot einfügen:**  
-Terminal mit Docker Container
-
-```
-![[docker-backrest.png]]
-```
-
----
-
 ## 🌐 Web UI
 
 ```
 http://<linux-ip>:9898
 ```
-
----
-
-📸 **Screenshot einfügen:**  
-Backrest UI Startseite
-
-```
-![[backrest-ui-linux.png]]
-```
-
 ---
 
 # 🔹 Aufgabe 3: Backrest Windows
@@ -185,16 +138,6 @@ Backrest UI Startseite
     
 
 ---
-
-📸 **Screenshot einfügen:**  
-Backrest Windows UI
-
-```
-![[backrest-windows-ui.png]]
-```
-
----
-
 # 🔹 Aufgabe 4: Repository
 
 ---
@@ -211,15 +154,6 @@ s3:https://training13.s3.mindrefined.de/backups-student13/linux-server
 
 ```
 s3:https://training13.s3.mindrefined.de/backups-student13/windows-server
-```
-
----
-
-📸 **Screenshot einfügen:**  
-Repository Einstellungen
-
-```
-![[repository-config.png]]
 ```
 
 ---
@@ -264,15 +198,6 @@ C:\Backup
 
 ---
 
-📸 **Screenshot einfügen:**  
-Backup Plan in Backrest
-
-```
-![[backup-plan.png]]
-```
-
----
-
 # 🔹 Aufgabe 6: Backup Test
 
 ---
@@ -292,31 +217,12 @@ touch test1.txt test2.txt test3.txt
 
 ---
 
-📸 **Screenshot einfügen:**  
-Backup läuft
-
-```
-![[backup-running.png]]
-```
-
----
-
 ## 📊 Ergebnis
 
 - Backup erfolgreich
     
 - Daten im S3 Bucket sichtbar
     
-
----
-
-📸 **Screenshot einfügen:**  
-MinIO Bucket mit Dateien
-
-```
-![[bucket-data.png]]
-```
-
 ---
 
 # 🔹 Aufgabe 7: Restore Test
@@ -333,30 +239,12 @@ Restore → `/restore/`
 
 ---
 
-📸 **Screenshot einfügen:**  
-Restore Auswahl
-
-```
-![[restore-select.png]]
-```
-
----
-
 ## 🪟 Windows
 
 - Datei gelöscht
     
 - Restore to path
     
-
----
-
-📸 **Screenshot einfügen:**  
-Restore Ergebnis
-
-```
-![[restore-success.png]]
-```
 
 ---
 
@@ -367,15 +255,6 @@ Restore Ergebnis
 |Backup|~30–40 Sekunden|
 |Restore|~1–3 Minuten|
 
----
-
-# ✅ Abschluss Tag 1
-
-✔ S3 Zugriff funktioniert  
-✔ Bucket erstellt  
-✔ Backrest läuft  
-✔ Backup erfolgreich  
-✔ Restore erfolgreich
 
 ---
 
@@ -410,14 +289,3 @@ Diagnostics → Backup & Restore
 ```
 
 ---
-
-📸 **Screenshot einfügen:**  
-pfSense Backup Download
-
-```
-![[pfsense-backup.png]]
-```
-
----
-
-# 🏁 Ende Tag 1

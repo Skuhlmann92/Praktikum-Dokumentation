@@ -380,7 +380,7 @@ Ein Port-Scan ist typischerweise die Vorbereitungsphase eines Angriffs (Reconnai
 ## 🔗 Verknüpfte Notizen
 
 - [[06-01_Tag 1 – Security Scan (OpenVAS_Greenbone)]]
-- [[06-02_ELK-Stack & Suricata (Tag 2 + Tag 3)]]
+- [[06-02_ELK-Stack & Suricata Tag 2]]
 - [[06-03_Praktikumsdokumentation - Tag 3 Live-Angriffssimulation]]
 
 ---

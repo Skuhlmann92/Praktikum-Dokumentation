@@ -59,16 +59,6 @@ Support / Administrator – BetaTrade GmbH
 
 ---
 
-📸 Screenshot einfügen:
-
-```
-![[ping-test.png]]
-```
-
-👉 Bilder können in Obsidian einfach per Drag & Drop eingefügt werden und erscheinen als `![[datei.png]]` ()
-
----
-
 # 🧠 2. Hypothesen
 
 Mögliche Ursachen:
@@ -94,14 +84,6 @@ ping -M do -s 1472 192.168.13.10
 
 ```
 message too long, mtu=1380
-```
-
----
-
-📸 Screenshot einfügen:
-
-```
-![[mtu-test.png]]
 ```
 
 ---
@@ -149,15 +131,6 @@ mtu: 1380
 ```
 sudo netplan apply
 ```
-
----
-
-📸 Screenshot:
-
-```
-![[netplan-config.png]]
-```
-
 ---
 
 ## 🔧 Windows Server Fix
@@ -168,14 +141,6 @@ netsh interface ipv4 show subinterfaces
 
 ```
 netsh interface ipv4 set subinterface "Ethernet" mtu=1380 store=persistent
-```
-
----
-
-📸 Screenshot:
-
-```
-![[windows-mtu.png]]
 ```
 
 ---
@@ -192,14 +157,6 @@ Wert:
 
 ```
 Maximum MSS = 1340
-```
-
----
-
-📸 Screenshot:
-
-```
-![[pfsense-mss.png]]
 ```
 
 ---
@@ -224,14 +181,6 @@ VPN verbunden aber:
 ```
 FRAG_IN error: FRAG_TEST not implemented
 Inactivity timeout
-```
-
----
-
-📸 Screenshot:
-
-```
-![[vpn-error.png]]
 ```
 
 ---
@@ -266,14 +215,6 @@ keepalive 10 60
 
 ---
 
-📸 Screenshot:
-
-```
-![[vpn-config.png]]
-```
-
----
-
 # ✅ 7. Verifikation
 
 ## Tests:
@@ -286,14 +227,6 @@ keepalive 10 60
     
 - kein Timeout ✔
     
-
----
-
-📸 Screenshot:
-
-```
-![[final-test.png]]
-```
 
 ---
 
@@ -336,37 +269,3 @@ Durch:
     
 
 konnte das System vollständig stabilisiert werden.
-
----
-
-# 📌 Obsidian Tipps
-
-## Screenshot einfügen:
-
-```
-![[bild.png]]
-```
-
-## Überschriften:
-
-```
-# Titel
-## Abschnitt
-```
-
-## Codeblöcke:
-
-```
-sudo ip a
-```
-
-👉 Codeblöcke werden mit ``` erstellt ()
-
----
-
-# ✅ Abschluss
-
-✔ Problem identifiziert  
-✔ Ursache behoben  
-✔ System stabil  
-✔ Dokumentation vollständig

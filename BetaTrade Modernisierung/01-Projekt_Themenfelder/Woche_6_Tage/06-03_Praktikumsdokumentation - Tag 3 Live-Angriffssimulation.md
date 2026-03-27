@@ -182,20 +182,3 @@ Netzwerk-Traffic
 |---|---|
 |Ohne Suricata|ELK hat keine netzwerkbasierten Security-Events|
 |Ohne ELK|Suricata-Alerts sind schwer skalierbar zu analysieren|
-
----
-
-## Zusammenfassung & Nächste Schritte
-
-> [!success] Lernerfolg Du hast live gesehen, wie ein **Portscan** in Suricata erkannt wird und im ELK-Stack (Kibana) sichtbar wird. Du kennst jetzt Alert-Kategorien, Regel-Mechanik und die Rollen von Suricata + ELK.
-
-### TODO
-
-- [ ] Screenshots einfügen und beschriften
-- [ ] Eigene Beobachtungen aus dem Lab ergänzen
-- [ ] Task 2 verfeinern
-- [ ] Weitere Regeln analysieren
-
----
-
-_Zuletzt bearbeitet: {{date}}_

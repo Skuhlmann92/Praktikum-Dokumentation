@@ -1,6 +1,6 @@
-# 📘 ELK-Stack & Suricata (Tag 2 + Tag 3)
+# 📘 ELK-Stack & Suricata Tag 2 
 
-## Rolle: IT-Security-Analyst*in, AlphaTech GmbH
+## Rolle: IT-Security-Analyst, AlphaTech GmbH
 ## Thema: Netzwerk-Traffic überwachen, analysieren, normal vs. verdächtig unterscheiden
 ## Datum: 2026-03-24
 
@@ -92,8 +92,6 @@ Technisch gilt:
 ![[20260324_130521_663468_mRemoteNG_-_confCons.xml_-_Ubuntu_Desktop.png]]![[Pasted image 20260324130658.png]]![[Pasted image 20260324130727.png]]![[Pasted image 20260324130846.png]]![[Pasted image 20260324130822.png]]
 
 ---
-
-## Tag 3 – Log-Analyse & Alert-Signaturen
 
 ## 4) Log-Analyse in Discover
 

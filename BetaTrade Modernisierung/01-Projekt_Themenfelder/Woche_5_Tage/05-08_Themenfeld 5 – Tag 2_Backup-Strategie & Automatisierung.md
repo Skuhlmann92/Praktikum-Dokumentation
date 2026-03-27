@@ -12,6 +12,10 @@
     
 - PostgreSQL Dump erstellen
     
+- Disaster-Recovery-Plan erstellen
+    
+- Disaster-Szenario simulieren und Wiederherstellung testen
+    
 
 ---
 
@@ -44,15 +48,6 @@
 
 ---
 
-📸 Screenshot einfügen:  
-Ordnerstruktur Datenbank
-
-```markdown
-![[database-folder.png]]
-```
-
----
-
 # 🔹 Aufgabe 2: Datenbank-Backup einrichten
 
 ---
@@ -68,7 +63,7 @@ Ordnerstruktur Datenbank
 2. Dump-Datei sichern
     
 
-➡️ Standard Vorgehen (turn0search1)
+➡️ Standard Vorgehen
 
 ---
 
@@ -77,14 +72,6 @@ Ordnerstruktur Datenbank
 ```bash
 cd /home/student13/betatrade-database/
 ls
-```
-
----
-
-📸 Screenshot einfügen:
-
-```markdown
-![[database-files.png]]
 ```
 
 ---
@@ -99,14 +86,6 @@ docker ps
 
 ---
 
-📸 Screenshot einfügen:
-
-```markdown
-![[docker-ps.png]]
-```
-
----
-
 👉 Dump erstellen:
 
 ```bash
@@ -114,16 +93,7 @@ docker-compose exec postgres pg_dump -U trader betatrade > betatrade-backup.sql
 ```
 
 ---
-student15@student15-linux-server:~$ sudo docker exec -it backrest sh  
-[sudo] password for student15:   
-/ # find /restore_db_test  
-/restore_db_test  
-/restore_db_test/betatrade_sql_database  
-/restore_db_test/betatrade_sql_database/.git  
-/restore_db_test/betatrade_sql_database/.git/info  
-/restore_db_test/betatrade_sql_database/.git/info/exclude  
-/restore_db_test/betatrade_sql_database/.git/HEAD  
-/restore_db_test/betatrade_sql_databas
+
 ## 🧠 Erklärung
 
 - `docker-compose exec postgres` → im Container ausführen
@@ -137,15 +107,7 @@ student15@student15-linux-server:~$ sudo docker exec -it backrest sh
 - `>` → Ausgabe in Datei
     
 
-👉 PostgreSQL Dumps sind notwendig für konsistente Backups (turn0search10)
-
----
-
-📸 Screenshot einfügen:
-
-```markdown
-![[pg-dump.png]]
-```
+👉 PostgreSQL Dumps sind notwendig für konsistente Backups
 
 ---
 
@@ -159,14 +121,6 @@ ls -lh
 
 ```text
 betatrade-backup.sql  25MB
-```
-
----
-
-📸 Screenshot einfügen:
-
-```markdown
-![[dump-file.png]]
 ```
 
 ---
@@ -186,14 +140,6 @@ Retention: 7 daily
 
 ---
 
-📸 Screenshot einfügen:
-
-```markdown
-![[backup-plan-db.png]]
-```
-
----
-
 # 🔧 Schritt 5: Backup durchführen
 
 👉 Backrest:
@@ -204,13 +150,6 @@ Backup Now
 
 ---
 
-📸 Screenshot einfügen:
-
-```markdown
-![[backup-db-run.png]]
-```
-
----
 
 # 🔍 Schritt 6: Backup prüfen
 
@@ -219,13 +158,6 @@ Backup Now
 
 ---
 
-📸 Screenshot einfügen:
-
-```markdown
-![[minio-db.png]]
-```
-
----
 
 # 📊 Ergebnis
 
@@ -243,7 +175,7 @@ Backup Now
     
 - immer Dump verwenden
     
-- sonst Inkonsistenz möglich (turn0search10)
+- sonst Inkonsistenz möglich
     
 
 ---
@@ -273,10 +205,227 @@ Die Datenbank wurde erfolgreich:
 
 ---
 
-# ✅ Ergebnis
+# 🔹 Aufgabe 3: Disaster-Recovery-Plan erstellen
 
-✔ Datenbank gesichert  
-✔ Backup-Plan erstellt  
-✔ Grundlage für Automatisierung gelegt
+---
+
+## 🧠 Prioritäten-Reihenfolge
+
+Bei BetaTrade wurde die Wiederherstellung in folgender Reihenfolge geplant:
+
+1. **Kundendatenbank** – geschäftskritisch, ohne Datenbank funktionieren zentrale Abläufe nicht
+2. **Anwendungsdienste / Docker-Services** – nach Datenwiederherstellung müssen Container neu gestartet werden
+3. **Benutzer- und Infrastrukturkomponenten** – Active Directory, Netzwerkdienste, weitere Systemkomponenten
+4. **Abschließende Funktionskontrolle** – Prüfen ob die Umgebung wieder vollständig arbeitsfähig ist
+
+---
+
+## 👥 Verantwortlichkeiten
+
+|Bereich|Aufgabe|
+|---|---|
+|Systemadministration|Wiederherstellung der Linux-Umgebung und Backups|
+|Datenbank / Applikation|Rücksicherung der BetaTrade-Daten und Start der Container|
+|Netzwerk / Infrastruktur|Kontrolle der Erreichbarkeit und Konnektivität|
+|Dokumentation|Protokollierung aller Schritte und Zeiten|
+
+---
+
+## 🔑 Benötigte Zugangsdaten und Informationen
+
+- Zugang zur Backrest Web-Oberfläche
+- Zugriff auf das Restore-Verzeichnis
+- Zugriff auf den Linux-Server
+- Kenntnisse über den Speicherort der BetaTrade-Daten
+- Zugriff auf die Docker-Umgebung
+- Pfade und Befehle zur Wiederherstellung
+
+Wichtige Pfade:
+
+```text
+/home/student13/betatrade-database/
+/restore/
+```
+
+---
+
+# 🔹 Aufgabe 4: „Datacenter Failure"-Szenario simulieren
+
+---
+
+## ⏱️ Zeitdokumentation
+
+Zu Beginn der Simulation wird die Startzeit des Vorfalls notiert, um die Recovery-Dauer mit dem geplanten RTO vergleichen zu können:
+
+```text
+Start der Störung:        Uhrzeit dokumentieren
+Beginn der Wiederherstellung: Uhrzeit dokumentieren
+Ende nach Funktionstest:  Uhrzeit dokumentieren
+```
+
+---
+
+## 🔧 Schritt 1: BetaTrade-Datenbank stoppen
+
+```bash
+cd /home/student13/betatrade-database/
+docker-compose stop
+```
+
+## 🧠 Erklärung
+
+👉 Mit diesem Befehl werden die BetaTrade-Container gestoppt, damit während der Wiederherstellung keine laufenden Prozesse auf die Daten zugreifen.
+
+---
+
+## 🔧 Schritt 2: Datenverlust simulieren
+
+```bash
+mv docker-compose.yml /tmp/docker-compose.yml.backup
+```
+
+## 🧠 Erklärung
+
+👉 Durch das Umbenennen der `docker-compose.yml` ist die ursprüngliche Startkonfiguration nicht mehr direkt verfügbar.  
+👉 Damit wird ein realistisches Störungsszenario nachgebildet, bei dem ein zentraler Bestandteil der Anwendung fehlt.
+
+---
+
+# 🔹 Aufgabe 5: Service-Recovery durchführen
+
+---
+
+## 🔧 Schritt 1: Backrest Web-Oberfläche öffnen
+
+```text
+http://192.168.13.20:9898
+```
+
+👉 Passendes Backup für die BetaTrade-Datenbank auswählen.
+
+---
+
+## 🔧 Schritt 2: Letzten Snapshot auswählen
+
+👉 Worauf zu achten ist:
+
+- Status des Backups: **erfolgreich**
+- korrekter Backup-Plan
+- aktueller Sicherungszeitpunkt
+
+---
+
+## 🔧 Schritt 3: Restore-Ziel festlegen
+
+👉 Wiederherstellung in das vorgesehene Restore-Verzeichnis:
+
+```text
+/restore/
+```
+
+👉 Das Restore-Verzeichnis dient als Zwischenablage – Daten werden zuerst geprüft, dann zurückkopiert.
+
+---
+
+## 🔧 Schritt 4: Wiederhergestellte Dateien zurückkopieren
+
+```bash
+cp /restore/home/student13/betatrade-database/* /home/student13/betatrade-database/
+```
+
+## 🧠 Erklärung
+
+👉 Die wiederhergestellten Dateien werden aus dem Restore-Verzeichnis in das produktive Verzeichnis zurückgespielt.
+
+---
+
+## 🔧 Schritt 5: Services erneut starten
+
+```bash
+cd /home/student13/betatrade-database/
+docker-compose up -d
+```
+
+## 🧠 Erklärung
+
+👉 Die Container werden im Hintergrund wieder gestartet.
+
+---
+
+## 🔍 Schritt 6: Funktionstest durchführen
+
+```bash
+docker ps
+```
+
+👉 Prüfen ob:
+
+- alle Container laufen
+- die Anwendung erreichbar ist
+- die Datenbank antwortet
+- alle wichtigen Dateien wieder vorhanden sind
+
+---
+
+# 📊 Recovery-Zeiten auswerten
+
+| Phase                     | Start | Ende  | Dauer     |
+| ------------------------- | ----- | ----- | --------- |
+| Ausfall erkannt           | 10:00 | 10:02 | 2min      |
+| Backup identifiziert      | 10:02 | 10:05 | 3min      |
+| Restore gestartet         | 10:05 | 10:10 | 5min      |
+| Dateien kopiert           | 10:10 | 10:13 | 3min      |
+| Services gestartet        | 10:13 | 10:16 | 3min      |
+| Funktionstest erfolgreich | 10:16 | 10:20 | 4min      |
+| **Gesamt**                | 10:00 | 10:20 | **20min** |
+
+---
+
+# 📊 Vergleich mit RTO und RPO
+
+| Ziel                    | Geplant   | Erreicht | Ergebnis |
+| ----------------------- | --------- | -------- | -------- |
+| RTO (max. Ausfallzeit)  | 2 Stunden | 20min    | ✔ / ✔    |
+| RPO (max. Datenverlust) | 1 Stunde  | 20min    | ✔ / ✔    |
+
+---
+
+# ⚠️ Lessons Learned
+
+## ✅ Was gut funktioniert hat
+
+- Backup war vorhanden und nutzbar
+- Wiederherstellung konnte strukturiert durchgeführt werden
+- Rücksicherung in das Zielverzeichnis war nachvollziehbar
+- Services ließen sich nach dem Restore wieder starten
+
+## ⏳ Was länger gedauert hat als erwartet
+
+- Identifizieren des richtigen Backups kann Zeit kosten
+- Manuelles Zurückkopieren der Dateien ist fehleranfällig
+- Wenn Pfade nicht dokumentiert sind, verlängert sich die Wiederherstellung
+
+## 🔧 Was beim nächsten Mal verbessert werden sollte
+
+- Recovery-Schritte noch genauer dokumentieren
+- Checkliste für den Wiederanlauf vorbereiten
+- Wiederherstellung regelmäßig testen
+- Restore-Prozess möglichst standardisieren
+- Kritische Befehle zentral dokumentieren
+- Backups zusätzlich auf Konsistenz prüfen
+- Zeitmessung bei jedem Testlauf mitführen
+
+---
+
+# ⚠️ Fallstricke und Lösungen
+
+|Problem|Lösung|
+|---|---|
+|Falscher Snapshot gewählt|Backup-Zeitpunkt genau prüfen|
+|Restore im falschen Verzeichnis|Pfade vor Start kontrollieren|
+|Dateien unvollständig kopiert|Inhalt des Restore-Ordners prüfen|
+|Dienste starten nicht korrekt|`docker ps` und Logs kontrollieren|
+|Zeitdokumentation fehlt|Jeden Schritt sofort protokollieren|
+
 
 ---

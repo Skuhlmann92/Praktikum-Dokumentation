@@ -70,13 +70,6 @@ Du machst dich mit der Umgebung von Freescout vertraut und hast für alle Betatr
 - Test‑Mails zwischen den Accounts und an support@betatrade.beta wurden gesendet und empfangen.
 - Vorbereitung für die Screenshot‑Dokumentation abgeschlossen – sämtliche relevanten Bildschirme sind bereit zum Einfügen.
 
-## Screenshot-Hinweise
-1. Login‑Bildschirm von Freescout mit Admin‑Zugang.
-2. Übersicht der Mailboxen mit erfolgreich durchgeführtem Connection Test.
-3. Liste der User Accounts inkl. der neu angelegten Konten.
-4. Detailansicht einer Mailbox‑Konfiguration (IMAP/SMTP‑Einstellungen).
-5. Postfachansicht mit empfangener Test‑Mail (z. B. von max.mustermann@ticket.betatrade.beta an support@betatrade.beta).
-6. Ausgehende Test‑Mail im Gesendet‑Ordner eines Test‑Accounts.
 
 ## Verweise
 - [00-33_Digitale_Kundenakte.md](../../04_Recourcen_und_Referenzen/00-33_Digitale_Kundenakte.md)

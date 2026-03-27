@@ -282,9 +282,6 @@ Die Datei wurde erfolgreich:
 ```text
 --target /restore
 ```
-
-([Ralphs Blog](https://golb.hplar.ch/2020/04/backup-restic.html?utm_source=chatgpt.com "Backup with restic"))
-
 ---
 
 # 🧾 Fazit
@@ -299,13 +296,5 @@ Der Restore-Test war erfolgreich:
     
 
 👉 Backup-System gilt als validiert
-
----
-
-# ✅ Ergebnis
-
-✔ Restore funktioniert  
-✔ Daten vollständig  
-✔ Backup zuverlässig
 
 ---

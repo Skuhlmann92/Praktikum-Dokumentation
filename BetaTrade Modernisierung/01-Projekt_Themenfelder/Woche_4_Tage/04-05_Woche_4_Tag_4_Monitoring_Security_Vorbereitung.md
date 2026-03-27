@@ -1,25 +1,8 @@
----
-datum: 2026-03-13
-tags:
-  - #security
-  - #monitoring
-  - #incident-response
-  - #wireshark
-  - #tagesprotokoll
-status: done
----
 
 # Tag 4 (Woche 4): Monitoring- und Security-Vorbereitung
 
 **Datum:** 13.03.2026  
-**Bearbeiter:** Samuel (via AI-Assistent)  
-
-## Tagesziele
-
-- [x] vorhandene Security-Artefakte aus dem Praktikumsordner sichten
-- [x] verwertbare Monitoring- und Alarmierungsnachweise fuer den Vault uebernehmen
-- [x] operative Hilfsmittel fuer Incident-Erkennung definieren
-- [x] Phase-3-Vorbereitung fachlich in Woche 4 einordnen
+**Bearbeiter:** Samuel
 
 ## Einordnung
 
