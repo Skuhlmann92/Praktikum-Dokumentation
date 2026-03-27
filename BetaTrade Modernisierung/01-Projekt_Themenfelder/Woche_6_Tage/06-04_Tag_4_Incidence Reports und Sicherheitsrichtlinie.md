@@ -1,5 +1,3 @@
-# Tag 4 – Incidence Reports und Sicherheitsrichtlinie
-
 **Rolle:** IT-Security-Analyst*in bei AlphaTech GmbH **Datum:** 2026-03-26 **Status:** #abgeschlossen
 
 ---
@@ -373,16 +371,3 @@ Ein Port-Scan ist typischerweise die Vorbereitungsphase eines Angriffs (Reconnai
 |**Schweregrad**|Mittel (Simulation) → Hoch (reale Umgebung mit bekannten Schwachstellen)|
 |**Folgeaktionen erforderlich**|Ja: Richtlinienergänzungen, Playbook Port-Scan|
 |**Besonderheit**|Kontext zu Tag 1: EternalBlue auf Port 445 gefunden → Portscan wäre direkter Angriffsvorläufer|
-
-
----
-
-## 🔗 Verknüpfte Notizen
-
-- [[06-01_Tag 1 – Security Scan (OpenVAS_Greenbone)]]
-- [[06-02_ELK-Stack & Suricata Tag 2]]
-- [[06-03_Praktikumsdokumentation - Tag 3 Live-Angriffssimulation]]
-
----
-
-_Tags: #security #incident-response #betatrade #tag4 #portscan #suricata #elk #openvas_

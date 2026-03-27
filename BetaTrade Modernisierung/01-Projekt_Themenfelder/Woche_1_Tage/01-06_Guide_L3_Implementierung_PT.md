@@ -1,4 +1,3 @@
-# 📑 Dokumentation: Implementierung der L3-Netzwerkinfrastruktur
 
 ## 1. Projektübersicht
 

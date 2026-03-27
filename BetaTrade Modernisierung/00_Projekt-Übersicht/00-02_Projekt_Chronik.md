@@ -9,7 +9,7 @@
 | 16.02.2026 | Projektstart, Onboarding und Kundenakte-Analyse | Abgeschlossen | [01-01 Tag 1](../01-Projekt_Themenfelder/Woche_1_Tage/01-01_Tag_1_Onboarding_Analyse.md) |
 | 17.02.2026 | Gantt-Plan, Risikoanalyse und Scope-Definition | Abgeschlossen | [01-02 Tag 2](../01-Projekt_Themenfelder/Woche_1_Tage/01-02_Tag_2_Projektstruktur_Risikoanalyse.md) |
 | 18.02.2026 | Detailanalyse Phase 1 und 2, Loesungswege | Abgeschlossen | [01-03 Tag 3](../01-Projekt_Themenfelder/Woche_1_Tage/01-03_Tag_3_Detailanalyse_Loesungswege.md) |
-| 19.02.2026 | Uebergabevorbereitung und Packet-Tracer-Analyse | Abgeschlossen | [01-04 Tag 4](../01-Projekt_Themenfelder/Woche_1_Tage/01-04_Tag_4_Finalisierung_Uebergabe.md) |
+| 19.02.2026 | Uebergabevorbereitung und Packet-Tracer-Analyse | Abgeschlossen | [01-04 Tag 4](01-04_Tag_4_Finalisierung_Übergabe.md) |
 | 20.02.2026 | QA, Reflexion, Risiko- und KPI-Schaerfung | Abgeschlossen | [01-05 Tag 5](../01-Projekt_Themenfelder/Woche_1_Tage/01-05_Tag_5_Puffer_Reflexion.md) |
 | 23.02.-27.02.2026 | Netzwerkumsetzung in Mainz und Labor 13 | Abgeschlossen | [Woche 2](../01-Projekt_Themenfelder/Woche_2_Tage/02-01_Woche_2_Tag_1-3_Netzwerkimplementierung.md) |
 | 27.02.2026 | VPN-Infrastruktur und PKI aufgebaut | Abgeschlossen | [02-08 VPN Infrastruktur](../01-Projekt_Themenfelder/Woche_2_Tage/02-08_Woche_2_Tag_5_VPN_Infrastruktur.md) |

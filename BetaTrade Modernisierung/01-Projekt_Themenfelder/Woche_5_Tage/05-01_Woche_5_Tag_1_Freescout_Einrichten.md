@@ -1,10 +1,3 @@
-datum: 2026-04-16
-tags:
-  - #woche5
-  - #tag1
-  - #freescout
-# Tag 1: Freescout einrichten
-
 **Datum:** 01.04.2026
 **Rolle:** Admin bei Betatrade GmbH
 **Email:** admin@betatrade.beta
@@ -70,8 +63,3 @@ Du machst dich mit der Umgebung von Freescout vertraut und hast für alle Betatr
 - Test‑Mails zwischen den Accounts und an support@betatrade.beta wurden gesendet und empfangen.
 - Vorbereitung für die Screenshot‑Dokumentation abgeschlossen – sämtliche relevanten Bildschirme sind bereit zum Einfügen.
 
-
-## Verweise
-- [00-33_Digitale_Kundenakte.md](../../04_Recourcen_und_Referenzen/00-33_Digitale_Kundenakte.md)
-- [00-01_Masterdokumentation.md](../../00_Projekt-Übersicht/00-01_Masterdokumentation.md)
-- [00-27_Learnings_und_Entscheidungen.md](../Analysen/00-27_Learnings_und_Entscheidungen.md)

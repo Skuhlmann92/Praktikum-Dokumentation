@@ -1,6 +1,3 @@
-# 🛡️ Tag 1 – Security Scan (OpenVAS / Greenbone)
-
----
 
 ## 📋 Scan-Metadaten
 

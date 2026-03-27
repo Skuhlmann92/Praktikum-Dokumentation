@@ -1,11 +1,4 @@
----
-datum: 2026-02-20
-tags:
-  - #qualitaetssicherung
-  - #review
-  - #dokumentation
----
-# Tag 5: Qualitaetssicherung und Abschluss der Planungswoche
+## Qualitaetssicherung und Abschluss der Planungswoche
 
 **Datum:** 20.02.2026  
 **Rolle:** Planung / Review

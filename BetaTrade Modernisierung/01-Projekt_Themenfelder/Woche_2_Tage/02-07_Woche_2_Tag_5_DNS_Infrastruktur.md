@@ -1,40 +1,6 @@
-
-***
-
-# 🌐 Projektdokumentation: DNS-Infrastruktur (Labor 13)
-
 ## 🗺️ DNS-Struktur (Mermaid)
 
 Die folgende Grafik zeigt die Hierarchie der Zonen und die Zuordnung der Dienste auf dem Windows Server 2025.
-
-Code-Snippet
-
-```mermaid
-graph TD
-    subgraph "DNS Server (192.168.13.10)"
-        direction TB
-        FLZ[Forward Lookup Zones]
-        RLZ[Reverse Lookup Zones]
-        FWD[Forwarders / Weiterleitung]
-    end
-
-    subgraph "net13.beta (Intern)"
-        FLZ --> N1[linux-server -> 192.168.13.20]
-        FLZ --> N2[security -> 192.168.13.15]
-    end
-
-    subgraph "betatrade.beta (Services)"
-        FLZ --> B1[mail -> 192.168.13.20]
-        FLZ --> B2[ticket -> 192.168.13.20]
-        FLZ --> MX[MX-Record -> mail.betatrade.beta]
-    end
-
-    subgraph "13.168.192.in-addr.arpa"
-        RLZ --> PTR[.20 -> mail.betatrade.beta]
-    end
-
-    FWD --> EXT[Internet / 8.8.8.8]
-```
 
 ***
 ```mermaid

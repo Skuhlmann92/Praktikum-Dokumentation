@@ -6,9 +6,6 @@ tags:
   - #gpo
   - #windows-server
 ---
-
-# 📂 Projekt: Labor ID 13 | Themenfeld 2 (Woche 3)
-
 **Thema:** Active Directory Infrastruktur & Automatisierung
 **Zeitraum:** Tag 1 - 2
 **Verantwortlich:** Systemadministrator (AlphaTech)

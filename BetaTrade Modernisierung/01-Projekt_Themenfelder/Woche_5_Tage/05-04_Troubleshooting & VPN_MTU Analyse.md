@@ -1,14 +1,4 @@
-#  Troubleshooting & VPN/MTU Analyse
-
-## 📅 Datum
-
-19.03.2026
-
-## 👤 Rolle
-
-Support / Administrator – BetaTrade GmbH
-
----
+## 📅 Datum 19.03.2026
 
 # 🎯 Ziel
 

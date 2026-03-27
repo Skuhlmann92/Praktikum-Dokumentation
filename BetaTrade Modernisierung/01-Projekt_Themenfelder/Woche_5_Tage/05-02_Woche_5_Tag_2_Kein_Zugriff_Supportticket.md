@@ -1,8 +1,5 @@
 datum: 2026-04-17
-tags:
-  - #woche5
-  - #tag2
-  - #support
+
 # Tag 2: Support – Kein Zugriff (Ticket 2)
 
 **Datum:** 01.04.2026
@@ -82,7 +79,3 @@ Ein Nutzer kann nicht mehr auf den IT-Support Netzwerkordner zugreifen, der das 
    *Berechtigungen für Daniel Zimmermann*
 3. [![Zugriffstest](C:\Pfad\zu\screenshot3.png)](url)
    *Erfolgreicher Zugriffstest vom Nutzer*
-
-## Verweise
-- [00-02_Masterdokumentation.md](../../00_Projekt-Übersicht/00-02_Masterdokumentation.md)
-- [00-28_Support-Prozesse.md](../Analysen/00-28_Support-Prozesse.md)

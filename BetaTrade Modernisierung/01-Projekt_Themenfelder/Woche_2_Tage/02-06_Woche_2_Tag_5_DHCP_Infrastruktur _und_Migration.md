@@ -1,8 +1,4 @@
 
-***
-
-# 📑 Labor-Dokumentation: Tag 4-6 – DHCP-Infrastruktur & Migration
-
 **Projekt:** pfSense-Infrastruktur Modernisierung Zentrale Mainz **Auftraggeber:** BetaTrade AG **Techniker:** AlphaTech / Student 13 **Status:** 🟢 DHCP-Migration abgeschlossen
 
 ***

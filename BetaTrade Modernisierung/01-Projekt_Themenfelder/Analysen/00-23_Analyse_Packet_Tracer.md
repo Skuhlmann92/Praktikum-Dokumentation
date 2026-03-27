@@ -43,4 +43,4 @@
 - IOS-Version der 3650 unterstützt HSRP + Rapid-PVST?
 
 → Naechster Schritt: Alle Luecken in TF-2 schliessen und Test-Konfiguration erstellen  
-→ Verlinkung: [01-04 Tag 4 Finalisierung & Uebergabe](../Woche_1_Tage/01-04_Tag_4_Finalisierung_Uebergabe.md) | [00-10 Phase 1 Kaiserslautern Konzept](../../02_Phasen/Phase_1_Kaiserslautern/00-10_Phase_1_Kaiserslautern_Konzept.md)
+→ Verlinkung: [01-04 Tag 4 Finalisierung & Uebergabe](01-04_Tag_4_Finalisierung_Übergabe.md) | [00-10 Phase 1 Kaiserslautern Konzept](../../02_Phasen/Phase_1_Kaiserslautern/00-10_Phase_1_Kaiserslautern_Konzept.md)

@@ -1,11 +1,3 @@
----
-datum: 2026-02-17
-tags:
-  - #projektplanung
-  - #risikomanagement
-  - #scope
----
-# Tag 2: Projektstruktur und Risikoanalyse
 
 **Datum:** 17.02.2026  
 **Rolle:** Projektassistenz / Planung

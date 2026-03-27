@@ -1,8 +1,5 @@
-# Arbeitsprotokoll: SSH-Troubleshooting & VPN-Optimierung
 
 **Datum:** 2026-03-09 **Projekt:** Stabilisierung der Administrations-Infrastruktur **Status:** ✅ Optimiert
-
-***
 
 ## 6. Fehlerbehebung: SSH Host Key Verification
 

@@ -1,6 +1,3 @@
-i# 🔄 Restore-Test (Backrest / Restic)
-
----
 
 ## 🎯 Ziel
 

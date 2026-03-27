@@ -1,5 +1,5 @@
 
-# Tag 2 (Woche 4): Windows-Linux Integration (Mailserver)
+## Windows-Linux Integration (Mailserver)
 
 **Datum:** 10.03.2026  
 **Bearbeiter:** Samuel 

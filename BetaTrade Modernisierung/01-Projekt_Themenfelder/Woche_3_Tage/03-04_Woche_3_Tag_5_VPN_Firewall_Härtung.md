@@ -1,8 +1,4 @@
 
-***
-
-# Arbeitsprotokoll: VPN-Infrastruktur & Firewall-Härtung
-
 **Datum:** 2026-03-06 **Projekt:** Sicherer Administrationszugriff via OpenVPN (pfSense) **Status:** ✅ Abgeschlossen
 
 ***

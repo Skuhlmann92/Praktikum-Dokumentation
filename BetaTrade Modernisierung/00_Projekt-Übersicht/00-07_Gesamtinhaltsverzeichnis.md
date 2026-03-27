@@ -50,7 +50,7 @@
 - [01-01 Tag 1 Onboarding & Analyse](../01-Projekt_Themenfelder/Woche_1_Tage/01-01_Tag_1_Onboarding_Analyse.md)
 - [01-02 Tag 2 Projektstruktur & Risikoanalyse](../01-Projekt_Themenfelder/Woche_1_Tage/01-02_Tag_2_Projektstruktur_Risikoanalyse.md)
 - [01-03 Tag 3 Detailanalyse & Lösungswege](../01-Projekt_Themenfelder/Woche_1_Tage/01-03_Tag_3_Detailanalyse_Loesungswege.md)
-- [01-04 Tag 4 Finalisierung & Übergabe](../01-Projekt_Themenfelder/Woche_1_Tage/01-04_Tag_4_Finalisierung_Uebergabe.md)
+- [01-04 Tag 4 Finalisierung & Übergabe](01-04_Tag_4_Finalisierung_Übergabe.md)
 - [01-05 Tag 5 Puffer & Reflexion](../01-Projekt_Themenfelder/Woche_1_Tage/01-05_Tag_5_Puffer_Reflexion.md)
 - [01-06 Guide L3-Implementierung (PT)](../01-Projekt_Themenfelder/Woche_1_Tage/01-06_Guide_L3_Implementierung_PT.md)
 
@@ -58,14 +58,14 @@
 - [02-01 Woche 2 Tag 1-3 Netzwerkimplementierung](../01-Projekt_Themenfelder/Woche_2_Tage/02-01_Woche_2_Tag_1-3_Netzwerkimplementierung.md)
 - [02-04 Woche 2 Tag 4 Connectivity & DHCP](../01-Projekt_Themenfelder/Woche_2_Tage/02-04_Woche_2_Tag_4_Connectivity_DHCP_Vorbereitung.md)
 - [02-05 Woche 2 Tag 5 DHCP Einrichtung](../01-Projekt_Themenfelder/Woche_2_Tage/02-05_Woche_2_Tag_5_DHCP_Einrichtung.md)
-- [02-06 Woche 2 Tag 5 DHCP Migration](../01-Projekt_Themenfelder/Woche_2_Tage/02-06_Woche_2_Tag_5_DHCP_Migration.md)
+- [02-06 Woche 2 Tag 5 DHCP Migration](02-06_Woche_2_Tag_5_DHCP_Infrastruktur%20_und_Migration.md)
 - [02-07 Woche 2 Tag 5 DNS Infrastruktur](../01-Projekt_Themenfelder/Woche_2_Tage/02-07_Woche_2_Tag_5_DNS_Infrastruktur.md)
 - [02-08 Woche 2 Tag 5 VPN Infrastruktur](../01-Projekt_Themenfelder/Woche_2_Tage/02-08_Woche_2_Tag_5_VPN_Infrastruktur.md)
 
 ### 5.3 Woche 3: Systeme
 - [03-01 Woche 3 Tag 1-2 AD Infrastruktur](../01-Projekt_Themenfelder/Woche_3_Tage/03-01_Woche_3_Tag_1-2_AD_Infrastruktur.md)
 - [03-03 Woche 3 Tag 3 Vault Optimierung](../01-Projekt_Themenfelder/Woche_3_Tage/03-03_Woche_3_Tag_3_Vault_Optimierung.md)
-- [03-04 Woche 3 Tag 5 VPN & Firewall Härtung](../01-Projekt_Themenfelder/Woche_3_Tage/03-04_Woche_3_Tag_5_VPN_Firewall_Haertung.md)
+- [03-04 Woche 3 Tag 5 VPN & Firewall Härtung](03-04_Woche_3_Tag_5_VPN_Firewall_Härtung.md)
 - [03-05 Woche 3 Nachbesserung Packet Tracer](../01-Projekt_Themenfelder/Woche_3_Tage/03-05_Woche_3_Nachbesserung_Packet_Tracer.md)
 
 ### 5.4 Woche 4: Integration

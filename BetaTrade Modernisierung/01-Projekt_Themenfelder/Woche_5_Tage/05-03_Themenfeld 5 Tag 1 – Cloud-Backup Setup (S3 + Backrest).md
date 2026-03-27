@@ -1,10 +1,4 @@
-## 🛠️ Tag 1 – Cloud-Backup Setup (S3 + Backrest)
-
----
-
-## 📅 Datum
-
-19.03.2026
+## 📅 Datum 19.03.2026
 
 ## 👤 Rolle
 

@@ -1,13 +1,3 @@
----
-datum: 2026-02-23
-tags:
-  - #umsetzung
-  - #packet-tracer
-  - #troubleshooting
-  - #cisco
-  - #pfsense
----
-# 📂 Projekt: Labor ID 13 | Themenfeld 2 (Woche 2)
 
 > **ABSTRACT:** Projekt-Überblick
 > 

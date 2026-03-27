@@ -1,11 +1,3 @@
----
-datum: 2026-02-16
-tags:
-  - #projektstart
-  - #analyse
-  - #dokumentation
----
-# Tag 1: Onboarding und Analyse
 
 **Datum:** 16.02.2026  
 **Rolle:** Projektassistenz / technische Dokumentation

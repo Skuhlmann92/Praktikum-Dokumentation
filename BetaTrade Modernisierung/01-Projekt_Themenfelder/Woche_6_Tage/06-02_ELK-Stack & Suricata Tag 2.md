@@ -1,12 +1,6 @@
-# 📘 ELK-Stack & Suricata Tag 2 
-
-## Rolle: IT-Security-Analyst, AlphaTech GmbH
+### Rolle: IT-Security-Analyst, AlphaTech GmbH
 ## Thema: Netzwerk-Traffic überwachen, analysieren, normal vs. verdächtig unterscheiden
 ## Datum: 2026-03-24
-
----
-
-## Tag 2 – ELK-Stack und Suricata Oberfläche
 
 ## 1) Kibana Web-Interface erkunden
 
@@ -350,7 +344,7 @@ Typische Ursache:
 
 ---
 
-## Konkrete Beobachtungen aus deinen Daten (für Bewertung)
+## Konkrete Beobachtungen aus meinen Daten (für Bewertung)
 
 1. Hoher DNS-Durchsatz (dns_udp sehr hoch)
 → eher normal für aktive Clients, aber DNS-Tunneling-Check empfohlen.

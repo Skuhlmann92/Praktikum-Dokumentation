@@ -1,11 +1,3 @@
----
-datum: 2026-02-18
-tags:
-  - #architektur
-  - #vlan
-  - #entscheidungen
----
-# Tag 3: Detailanalyse und Loesungswege
 
 **Datum:** 18.02.2026  
 **Rolle:** Planung / technische Analyse

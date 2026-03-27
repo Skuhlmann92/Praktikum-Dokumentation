@@ -1,5 +1,3 @@
-# Tag 3: Live-Angriffssimulation
-
 ## 1. Vorbereitung: Baseline-Check
 
 **Durchgeführte Schritte:**  

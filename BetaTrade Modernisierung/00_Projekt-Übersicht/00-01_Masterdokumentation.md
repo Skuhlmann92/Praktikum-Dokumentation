@@ -40,7 +40,7 @@
 - [00-10a Netzplan Kaiserslautern](../02_Phasen/Phase_1_Kaiserslautern/00-10a_Netzplan_Kaiserslautern.md)
 - [00-10b VLAN & IP Matrix](../02_Phasen/Phase_1_Kaiserslautern/00-10b_VLAN_IP_Matrix.md)
 - [00-31 Cisco Config TF2](../04_Recourcen_und_Referenzen/00-31_Cisco_Config_TF2.md)
-- [03-04 VPN & Firewall Haertung](../01-Projekt_Themenfelder/Woche_3_Tage/03-04_Woche_3_Tag_5_VPN_Firewall_Haertung.md)
+- [03-04 VPN & Firewall Haertung](03-04_Woche_3_Tag_5_VPN_Firewall_Härtung.md)
 
 ### Systeme und Applikationen
 - [03-01 Active Directory Infrastruktur](../01-Projekt_Themenfelder/Woche_3_Tage/03-01_Woche_3_Tag_1-2_AD_Infrastruktur.md)

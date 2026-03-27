@@ -1,6 +1,4 @@
 
-# Tag 4 (Woche 4): Monitoring- und Security-Vorbereitung
-
 **Datum:** 13.03.2026  
 **Bearbeiter:** Samuel
 

@@ -1,5 +1,4 @@
 
-# 🛡️ Tätigkeitsbericht: VPN-Infrastruktur für BetaTrade AG (Labor 13)
 
 **Datum:** 27.02.2026
 

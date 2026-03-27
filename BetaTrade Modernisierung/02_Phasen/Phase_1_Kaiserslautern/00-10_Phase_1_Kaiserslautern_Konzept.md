@@ -27,7 +27,7 @@
 - [01-01 Tag 1 Onboarding & Analyse](../../01-Projekt_Themenfelder/Woche_1_Tage/01-01_Tag_1_Onboarding_Analyse.md)
 - [01-02 Tag 2 Projektstruktur & Risikoanalyse](../../01-Projekt_Themenfelder/Woche_1_Tage/01-02_Tag_2_Projektstruktur_Risikoanalyse.md)
 - [01-03 Tag 3 Detailanalyse & Loesungswege](../../01-Projekt_Themenfelder/Woche_1_Tage/01-03_Tag_3_Detailanalyse_Loesungswege.md)
-- [01-04 Tag 4 Finalisierung & Uebergabe](../../01-Projekt_Themenfelder/Woche_1_Tage/01-04_Tag_4_Finalisierung_Uebergabe.md)
+- [01-04 Tag 4 Finalisierung & Uebergabe](01-04_Tag_4_Finalisierung_Übergabe.md)
 
 ## Ergebnis von Phase 1
 

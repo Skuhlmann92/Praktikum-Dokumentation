@@ -21,7 +21,7 @@
 - [01-01 Tag 1 Onboarding & Analyse](../01-Projekt_Themenfelder/Woche_1_Tage/01-01_Tag_1_Onboarding_Analyse.md)
 - [01-02 Tag 2 Projektstruktur & Risikoanalyse](../01-Projekt_Themenfelder/Woche_1_Tage/01-02_Tag_2_Projektstruktur_Risikoanalyse.md)
 - [01-03 Tag 3 Detailanalyse & Loesungswege](../01-Projekt_Themenfelder/Woche_1_Tage/01-03_Tag_3_Detailanalyse_Loesungswege.md)
-- [01-04 Tag 4 Finalisierung & Uebergabe](../01-Projekt_Themenfelder/Woche_1_Tage/01-04_Tag_4_Finalisierung_Uebergabe.md)
+- [01-04 Tag 4 Finalisierung & Uebergabe](01-04_Tag_4_Finalisierung_Übergabe.md)
 - [01-05 Tag 5 Puffer & Reflexion](../01-Projekt_Themenfelder/Woche_1_Tage/01-05_Tag_5_Puffer_Reflexion.md)
 
 #### Woche 2 bis 4: Umsetzung
@@ -31,7 +31,7 @@
 - [02-07 Woche 2 DNS Infrastruktur](../01-Projekt_Themenfelder/Woche_2_Tage/02-07_Woche_2_Tag_5_DNS_Infrastruktur.md)
 - [02-08 Woche 2 VPN Infrastruktur](../01-Projekt_Themenfelder/Woche_2_Tage/02-08_Woche_2_Tag_5_VPN_Infrastruktur.md)
 - [03-01 Woche 3 AD Infrastruktur](../01-Projekt_Themenfelder/Woche_3_Tage/03-01_Woche_3_Tag_1-2_AD_Infrastruktur.md)
-- [03-04 Woche 3 VPN & Firewall Haertung](../01-Projekt_Themenfelder/Woche_3_Tage/03-04_Woche_3_Tag_5_VPN_Firewall_Haertung.md)
+- [03-04 Woche 3 VPN & Firewall Haertung](03-04_Woche_3_Tag_5_VPN_Firewall_Härtung.md)
 - [04-01 Woche 4 Docker & SQL Infrastruktur](../01-Projekt_Themenfelder/Woche_4_Tage/04-01_Woche_4_Tag_1_Docker_SQL_Infrastruktur.md)
 - [04-02 Woche 4 Mailcow AD Integration](../01-Projekt_Themenfelder/Woche_4_Tage/04-02_Woche_4_Tag_2_Mailcow_AD_Integration.md)
 - [04-03 Woche 4 SSH Troubleshooting & VPN Optimierung](../01-Projekt_Themenfelder/Woche_4_Tage/04-03_Woche_4_SSH_Troubleshooting_VPN_Optimierung.md)

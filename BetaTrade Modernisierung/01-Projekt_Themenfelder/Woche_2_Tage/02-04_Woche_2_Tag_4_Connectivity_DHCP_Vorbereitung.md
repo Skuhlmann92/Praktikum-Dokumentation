@@ -1,12 +1,4 @@
----
-datum: 2026-02-24
-tags:
-  - #umsetzung
-  - #pfsense
-  - #firewall
-  - #security
----
-# 📝 Labor-Doku: Netzwerk-Konnektivität & DHCP-Vorbereitung
+
 
 **Datum:** 2026-02-26 **Labor-ID:** 13 **Tags:** #Networking #pfSense #Ubuntu #Routing #DHCP-Migration
 
