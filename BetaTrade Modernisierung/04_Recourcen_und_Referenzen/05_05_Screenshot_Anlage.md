@@ -1,3 +1,5 @@
+# 05 05 Screenshot Anlage
+
 # Screenshot-Anlage – BetaTrade Modernisierung
 
 Diese Anlage sammelt die verbleibenden Original-Screenshots, die nicht direkt in den Fliesstext der Fachdokumente eingebaut wurden. Die fachlich wichtigsten Ausschnitte sind bereits in die operativen Dokumente integriert; diese Anlage dient als vollstaendige Bildreferenz fuer den Vault.

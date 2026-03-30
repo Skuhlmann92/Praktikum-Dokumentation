@@ -1,3 +1,5 @@
+# 02 01 Tag 3 Detailanalyse Loesungswege
+
 
 **Datum:** 18.02.2026  
 **Rolle:** Planung / technische Analyse

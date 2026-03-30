@@ -1,3 +1,5 @@
+# 02 02 Tag 5 DHCP Infrastruktur und Migration
+
 
 **Projekt:** pfSense-Infrastruktur Modernisierung Zentrale Mainz **Auftraggeber:** BetaTrade AG **Techniker:** AlphaTech / Student 13 **Status:** 🟢 DHCP-Migration abgeschlossen
 

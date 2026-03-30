@@ -1,3 +1,5 @@
+# 03 01 Phase 1 Kaiserslautern Konzept
+
 # Phase 1: Regional-Hub Kaiserslautern
 
 **Zeitraum:** Woche 1  
@@ -32,4 +34,3 @@
 ## Ergebnis von Phase 1
 
 Phase 1 ist keine Live-Umsetzung, sondern die abgeschlossene Planungs- und Vorbereitungsphase fuer Kaiserslautern. Die fachliche Basis fuer VLANs, Adressierung, Routing, DHCP-Relay und Uebergabe an die spaetere Umsetzung ist vorhanden.
-

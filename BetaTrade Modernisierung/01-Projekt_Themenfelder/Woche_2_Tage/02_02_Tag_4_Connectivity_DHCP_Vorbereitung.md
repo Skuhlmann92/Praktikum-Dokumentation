@@ -1,3 +1,5 @@
+# 02 02 Tag 4 Connectivity DHCP Vorbereitung
+
 
 
 **Datum:** 2026-02-26 **Labor-ID:** 13 **Tags:** #Networking #pfSense #Ubuntu #Routing #DHCP-Migration

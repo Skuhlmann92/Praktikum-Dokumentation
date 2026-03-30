@@ -1,3 +1,5 @@
+# 02 02 Tag 5 DNS Infrastruktur
+
 ## 🗺️ DNS-Struktur (Mermaid)
 
 Die folgende Grafik zeigt die Hierarchie der Zonen und die Zuordnung der Dienste auf dem Windows Server 2025.

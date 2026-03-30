@@ -5,6 +5,9 @@ status: Abgeschlossen
 datum: 2026-03-10
 ---
 
+# 01 06 Guide Mailcow AD Integration
+
+
 # 🛠️ Technischer Guide: Mailcow AD/LDAP Integration
 
 **Ziel:** Anbindung des Mailcow-Mailservers an das Windows Active Directory zur zentralen Benutzerauthentifizierung.

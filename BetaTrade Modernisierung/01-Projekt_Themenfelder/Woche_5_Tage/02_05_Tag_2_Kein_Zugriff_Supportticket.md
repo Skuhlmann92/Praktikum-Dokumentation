@@ -1,3 +1,5 @@
+# 02 05 Tag 2 Kein Zugriff Supportticket
+
 datum: 2026-04-17
 
 # Tag 2: Support – Kein Zugriff (Ticket 2)

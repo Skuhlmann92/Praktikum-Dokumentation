@@ -1,3 +1,5 @@
+# 03 01b VLAN IP Matrix
+
 # VLAN & IP-Matrix – Regional-Hub Kaiserslautern (Projekt-ID 13)
 
 **Stand:** 20.02.2026 (Ende Planungsphase)  

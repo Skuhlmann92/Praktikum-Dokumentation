@@ -6,6 +6,9 @@ tags:
   - #gpo
   - #windows-server
 ---
+
+# 02 03 Tag 1-2 AD Infrastruktur
+
 **Thema:** Active Directory Infrastruktur & Automatisierung
 **Zeitraum:** Tag 1 - 2
 **Verantwortlich:** Systemadministrator (AlphaTech)

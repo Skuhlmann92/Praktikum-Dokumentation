@@ -4,6 +4,9 @@ kategorie: Hardening
 status: Fertig
 ---
 
+# 01 02 Analyse Firewall Hardening
+
+
 # 🛡️ Firewall-Härtung pfSense (Zentrale Mainz)
 
 **Ziel:** Absicherung des internen Netzwerks durch Limitierung des VPN-Traffics auf administrativ notwendige Dienste (Least Privilege Prinzip).

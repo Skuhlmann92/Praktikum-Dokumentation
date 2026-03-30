@@ -1,3 +1,5 @@
+# 05 04 Digitale Kundenakte
+
 # 📄 Digitale Kundenakte: BetaTrade AG
 
 **Branche:** Mittelständischer Aktien- und Wertpapierhandel **Größe:** ca. 25 Mitarbeiter **Standorte:** Zentrale Mainz, neue Filiale Kaiserslautern (Regional-Hub)

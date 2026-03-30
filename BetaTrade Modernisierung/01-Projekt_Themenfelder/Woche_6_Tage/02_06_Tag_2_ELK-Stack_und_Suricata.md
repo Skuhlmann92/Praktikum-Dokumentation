@@ -1,3 +1,5 @@
+# 02 06 Tag 2 ELK-Stack und Suricata
+
 ### Rolle: IT-Security-Analyst, AlphaTech GmbH
 ## Thema: Netzwerk-Traffic überwachen, analysieren, normal vs. verdächtig unterscheiden
 ## Datum: 2026-03-24

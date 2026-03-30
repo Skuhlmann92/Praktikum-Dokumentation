@@ -1,3 +1,5 @@
+# 02 05 Tag 1 Freescout Einrichten
+
 **Datum:** 01.04.2026
 **Rolle:** Admin bei Betatrade GmbH
 **Email:** admin@betatrade.beta
@@ -62,4 +64,3 @@ Du machst dich mit der Umgebung von Freescout vertraut und hast für alle Betatr
 - Für alle neuen Accounts wurden funktionierende Mailboxen eingerichtet.
 - Test‑Mails zwischen den Accounts und an support@betatrade.beta wurden gesendet und empfangen.
 - Vorbereitung für die Screenshot‑Dokumentation abgeschlossen – sämtliche relevanten Bildschirme sind bereit zum Einfügen.
-

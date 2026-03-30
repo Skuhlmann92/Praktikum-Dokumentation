@@ -1,3 +1,5 @@
+# 02 06 Tag 1 Security Scan (OpenVAS Greenbone)
+
 
 ## 📋 Scan-Metadaten
 
@@ -324,5 +326,4 @@ Drei mittelschwere Schwachstellen (CVSS 4.0–5.0) auf dem RDP-Port 3389 und dem
 |Empfehlung|Credentialed Scan nach Behebung der kritischen Lücken|
 
 ---
-
 

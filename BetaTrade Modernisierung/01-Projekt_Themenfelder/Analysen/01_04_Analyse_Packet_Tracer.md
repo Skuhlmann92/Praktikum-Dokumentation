@@ -1,3 +1,5 @@
+# 01 04 Analyse Packet Tracer
+
 # Packet Tracer Analyse – Kaiserslautern_initial.pkt
 
 **Datum der Sichtung:** 19.02.2026 (Tag 4)  
@@ -44,4 +46,3 @@
 
 → Naechster Schritt: Alle Luecken in TF-2 schliessen und Test-Konfiguration erstellen  
 → Verlinkung: [02_01_Tag_4_Finalisierung_Übergabe.md](../Woche_1_Tage/02_01_Tag_4_Finalisierung_Übergabe.md) | [03_01_Phase_1_Kaiserslautern_Konzept.md](../../02_Phasen/Phase_1_Kaiserslautern/03_01_Phase_1_Kaiserslautern_Konzept.md)
-

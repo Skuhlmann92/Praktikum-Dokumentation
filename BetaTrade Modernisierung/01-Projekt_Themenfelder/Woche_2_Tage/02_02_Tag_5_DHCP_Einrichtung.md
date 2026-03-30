@@ -1,3 +1,5 @@
+# 02 02 Tag 5 DHCP Einrichtung
+
 
 **Datum:** 2026-02-26 **System:** Windows Server 2025 (`192.168.13.10`) **Status:** ✅ Abgeschlossen
 
