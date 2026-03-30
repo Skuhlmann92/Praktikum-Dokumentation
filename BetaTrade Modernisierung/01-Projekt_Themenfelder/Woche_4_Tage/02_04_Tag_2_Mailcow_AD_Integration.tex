@@ -1,0 +1,252 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\documentclass[
+]{article}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\newenvironment{Shaded}{}{}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.50,0.00}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{#1}}
+\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.50,0.00}{\textbf{#1}}}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs,array}
+\newcounter{none} % for unnumbered tables
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={02\_04\_Tag\_2\_Mailcow\_AD\_Integration},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{02\_04\_Tag\_2\_Mailcow\_AD\_Integration}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\subsection{Windows-Linux Integration
+(Mailserver)}\label{windows-linux-integration-mailserver}
+
+\textbf{Datum:} 10.03.2026\\
+\textbf{Bearbeiter:} Samuel
+
+\subsection{👥 Gruppenarbeit}\label{gruppenarbeit}
+
+\begin{enumerate}
+\tightlist
+\item
+  \textbf{Infrastruktur-Abstimmung:} Festlegung des Service-Accounts für
+  den LDAP-Bind im Windows-Team.
+\item
+  \textbf{DNS-Troubleshooting:} Behebung eines Auflösungsfehlers
+  (beta.local wurde intern nicht korrekt auf den DC geroutet).
+\end{enumerate}
+
+\subsection{2. Technische Umsetzung
+(Detail-Dokumentation)}\label{technische-umsetzung-detail-dokumentation}
+
+\subsubsection{2.1 Unbound
+DNS-Konfiguration}\label{unbound-dns-konfiguration}
+
+Damit der Mailserver die Domäne \texttt{net13.beta} und den DC
+\texttt{192.168.13.10} finden kann, musste der interne Resolver
+angepasst werden.
+
+\textbf{Datei:} \texttt{data/conf/unbound/unbound.conf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{server:}
+\NormalTok{  \# ... (bestehende Config)}
+  
+\NormalTok{  \# Stub{-}Zone für lokale Domäne}
+\NormalTok{  local{-}zone: "net13.beta." transparent}
+\NormalTok{  domain{-}insecure: "net13.beta"}
+
+\NormalTok{stub{-}zone:}
+\NormalTok{  name: "net13.beta"}
+\NormalTok{  stub{-}addr: 192.168.13.10  \# IP des Domain Controllers}
+\end{Highlighting}
+\end{Shaded}
+
+\emph{Aktion:} \texttt{docker\ compose\ restart\ unbound-mailcow}
+
+\subsubsection{2.2 LDAP-Anbindung (Mailcow
+UI)}\label{ldap-anbindung-mailcow-ui}
+
+Die Authentifizierung wurde im Admin-Panel unter
+\texttt{System\ \textgreater{}\ Configuration\ \textgreater{}\ Access\ \textgreater{}\ LDAP}
+konfiguriert.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+Parameter & Wert & Erklärung \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Server Address} & \texttt{192.168.13.10} & IP des DC \\
+\textbf{Port} & \texttt{389} (StartTLS) oder \texttt{636} (LDAPS) &
+Hier: 636 mit "Skip Verify" (Labor) \\
+\textbf{Base DN} & \texttt{DC=net13,DC=beta} & Suchbereich \\
+\textbf{Bind DN} & \texttt{CN=svc\_mailcow,OU=IT,DC=net13,DC=beta} &
+Service-User zum Lesen \\
+\textbf{User Filter} &
+\texttt{(\&(objectClass=user)(sAMAccountName=\%u))} & Login via
+sAMAccountName \\
+\textbf{Sync Interval} & \texttt{300} & Sync alle 5 Min \\
+\end{longtable}
+}
+
+\subsubsection{2.3 Validierung}\label{validierung}
+
+\begin{enumerate}
+\tightlist
+\item
+  \textbf{Verbindungstest:} Button "Test Connection" -\textgreater{}
+  \textbf{OK}.
+\item
+  \textbf{SOGo Login:} User \texttt{d.zimmermann} (HR) konnte sich mit
+  AD-Passwort anmelden.
+\item
+  \textbf{Log-Check:}
+  \texttt{docker\ compose\ logs\ -f\ dovecot-mailcow} zeigte
+  erfolgreichen Auth-Handshake.
+\end{enumerate}
+
+\subsection{📸 Dokumentation \&
+Screenshots}\label{dokumentation-screenshots}
+
+\pandocbounded{\includegraphics[keepaspectratio,alt={Mailcow Container-Status}]{C:/Users/User/Documents/SamuelDenkwerkstätte/_assets/mailcow_container_status.png}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Screenshot 1:} Status der Mailcow-Container in Docker
+  (\texttt{docker\ ps}).\\
+  Siehe Abbildung oben.
+\item
+  \textbf{Screenshot 2:} LDAP-Konfigurationsmaske (Test Connection
+  erfolgreich).\\
+  \pandocbounded{\includegraphics[keepaspectratio,alt={Mailcow LDAP-Konfigurationsmaske}]{C:/Users/User/Documents/SamuelDenkwerkstätte/_assets/mailcow_ldap_configuration.png}}
+\end{itemize}
+
+\subsubsection{Ergänzende Nachweise für
+LDAPS}\label{erguxe4nzende-nachweise-fuxfcr-ldaps}
+
+\pandocbounded{\includegraphics[keepaspectratio,alt={Windows Firewall Regelkonfiguration fuer LDAPS / Domain Services}]{C:/Users/User/Documents/SamuelDenkwerkstätte/_assets/windows_firewall_ldaps_rule.png}}
+
+\pandocbounded{\includegraphics[keepaspectratio,alt={LDAPS-Verbindungstest auf Port 636}]{C:/Users/User/Documents/SamuelDenkwerkstätte/_assets/ldp_ldaps_port_636_test.png}}
+
+\subsection{📝 Reflexion / Offene Punkte}\label{reflexion-offene-punkte}
+
+\begin{itemize}
+\tightlist
+\item
+  Die Integration vereinfacht die Benutzerverwaltung erheblich (Single
+  Source of Truth im AD).
+\item
+  \textbf{Lessons Learned:} Bei LDAP über Port 636 muss das Zertifikat
+  des DCs im Mailcow-Container bekannt sein (oder "Ignore SSL Errors"
+  temporär aktiv).
+\item
+  Nächster Schritt: Einrichtung der Backup-Strategie für das gesamte
+  Mail-System.
+\end{itemize}
+
+\end{document}

@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title>00-00_Projekt_Dashboard</title>
+        <title>00_03_Inhaltsverzeichnis</title>
         <meta charset='utf-8'/>
         <style>
  .ͼ1.cm-focused {outline: 1px dotted #212121;}
@@ -1257,6 +1257,245 @@ li.CodeMirror-hint-active {
     background: #08f;
     color: white;
 }
+ .zt-format {
+  border: 1px solid var(--background-modifier-border);
+  padding: 1rem;
+  background-color: var(--background-primary);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.zt-format__form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-bottom: 1rem;
+  max-width: 600px;
+}
+
+.zt-format__form:last-child {
+  margin-bottom: 0;
+}
+
+.zt-format__label {
+  font-size: 0.9em;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.is-deprecated .zt-format__label {
+  color: var(--text-error);
+}
+
+.zt-format__input-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.zt-format__input-wrapper textarea {
+  resize: vertical;
+}
+
+.zt-format__input-wrapper > *:not(.checkbox-container) {
+  width: 100% !important;
+}
+
+.is-deprecated .zt-format__input-wrapper button {
+  width: auto !important;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-left: 5px;
+}
+
+.zt-format__delete-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  padding: 7px 9px;
+  margin-left: 10px;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.zt-json-viewer {
+  font-size: 13px;
+}
+
+.zt-json-viewer .react-json-view {
+  padding: 1em;
+  border-radius: 10px;
+  margin-top: 1em;
+  overflow: auto;
+  font-family: var(--font-monospace) !important;
+}
+
+.zt-json-viewer__btns {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.zt-json-viewer__btns label {
+  display: block;
+  font-weight: bold;
+  padding-top: 1em;
+}
+
+.zt-json-viewer__btns select {
+  font-size: 1em;
+}
+
+.zt-json-viewer__btns button {
+  font-size: 1em;
+  margin-right: 5px;
+}
+
+.zt-json-viewer__preview,
+.zt-json-viewer__data {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 10px;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+.zt-json-viewer__preview.error {
+  background-color: #ff000011;
+  font-family: var(--font-monospace);
+}
+
+.zt-json-viewer__preview pre {
+  overflow: auto;
+  white-space: pre-wrap;
+  margin: 0;
+}
+
+.zt-json-viewer__preview pre,
+.zt-json-viewer__preview code {
+  font-family: inherit;
+}
+
+.zt-json-viewer__preview:not(.error) pre {
+  font-family: var(--font-text, --font-default, --default-font);
+  max-height: 70vh;
+  min-height: 400px;
+}
+
+.zt-multiselect {
+  width: 300px;
+  text-align: left;
+}
+
+.zt-multiselect input {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.zt-format__input-note {
+  font-style: italic;
+  font-size: 0.9em;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+.zt-setting-item pre,
+.zt-format__input-note pre {
+  display: inline-block;
+  margin: 0;
+  padding: 0 6px;
+  background-color: var(--background-secondary-alt);
+  border-radius: 4px;
+}
+
+.zt-asset-success {
+  text-align: left;
+  display: flex;
+}
+
+.zt-asset-success__icon {
+  color: var(--interactive-success);
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+.zt-asset-success__icon svg {
+  width: 1em !important;
+  height: 1em !important;
+}
+
+.zt-asset-success__message {
+  font-size: 0.9em;
+}
+
+.zt-suggest-title {
+  font-size: var(--font-ui-small);
+  color: var(--text-muted);
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-top: var(--size-4-1);
+}
+
+.zt-suggest-loading-wrapper {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding: var(--size-4-2) 0;
+}
+
+.zt-suggest-loading,
+.zt-suggest-loading:before,
+.zt-suggest-loading:after {
+  border-radius: 999px;
+  width: 1em;
+  height: 1em;
+  animation-fill-mode: both;
+  animation: bblFadInOut 1.6s infinite ease-in-out;
+}
+
+.zt-suggest-loading {
+  display: block;
+  color: var(--text-muted);
+  font-size: 7px;
+  position: relative;
+  animation-delay: -0.16s;
+  top: -1em;
+}
+.zt-suggest-loading:before,
+.zt-suggest-loading:after {
+  content: '';
+  position: absolute;
+}
+.zt-suggest-loading:before {
+  left: -2em;
+  animation-delay: -0.32s;
+}
+.zt-suggest-loading:after {
+  left: 2em;
+}
+
+.zt-color-chip {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-s);
+  margin-right: var(--size-4-1);
+}
+
+@keyframes bblFadInOut {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 1em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 1em 0 0;
+  }
+}
+ .setting-item.ex-setting-item{border-top:unset;padding-top:0}*[hidden]{display:none}
   .excalidraw__embeddable__outer .theme-light {
 --background-modifier-cover: rgba(220, 220, 220, 0.4) !important; --background-primary-alt: #fafafa !important; --background-secondary: #f6f6f6 !important; --background-secondary-alt: #fcfcfc !important; --background-modifier-border: #e0e0e0 !important; --text-normal: #222222 !important; --text-muted: #5c5c5c !important; --text-accent: hsl(104, 88%, 66%) !important; --text-accent-hover: hsl(calc(104 - 3), calc(88% * 1.02), calc(66% * 1.15)) !important; --text-faint: #ababab !important; --text-highlight-bg: rgba(255, 208, 0, 0.4) !important; --text-highlight-bg-active:  !important; --text-selection: hsla(104, 88%, 66%, 0.2) !important; --interactive-normal: #ffffff !important; --interactive-hover: #fafafa !important; --interactive-accent: hsl(calc(104 - 1), calc(88% * 1.01), calc(66% * 1.075)) !important; --interactive-accent-hover: hsl(calc(104 - 3), calc(88% * 1.02), calc(66% * 1.15)) !important; --scrollbar-bg: rgba(0, 0, 0, 0.05) !important; --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1) !important; --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2) !important; --tab-container-background: #f6f6f6 !important; --titlebar-background-focused: #fcfcfc !important; --background-primary: #FFFFFFE6 !important;
 } .excalidraw__embeddable__outer .theme-dark {
@@ -1273,93 +1512,106 @@ li.CodeMirror-hint-active {
 </style>
     </head>
     <body>
-<h1 data-heading="BetaTrade Modernisierung – Dashboard (Projekt-ID 13)" dir="auto">BetaTrade Modernisierung – Dashboard (Projekt-ID 13)</h1>
-<p dir="auto"><strong>Projektstatus:</strong> Phase 1 und Phase 2 abgeschlossen<br>
-<strong>Aktuelle Phase:</strong> Uebergabevorbereitung / Vorbereitung von Phase 3 Security<br>
-<strong>Letzter dokumentierter Meilenstein:</strong> Docker-, SQL- und Mailcow-Integration abgeschlossen (12.03.2026)<br>
-<strong>Stand:</strong> 12.03.2026</p>
-<h2 data-heading="Projektphasen" dir="auto">Projektphasen</h2>
-<table>
-<thead>
-<tr>
-<th>Phase</th>
-<th>Zeitraum</th>
-<th>Status</th>
-<th>Hauptziele</th>
-<th>Verantwortlich</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>Woche 1</td>
-<td>Abgeschlossen</td>
-<td>Kaiserslautern VLAN, DHCP-Relay, VoIP, Planungsunterlagen</td>
-<td>Netzwerk-Team TF2</td>
-</tr>
-<tr>
-<td>2</td>
-<td>Woche 2-4</td>
-<td>Abgeschlossen</td>
-<td>Mainz VPN, AD, DHCP, DNS, Docker, SQL, LDAP</td>
-<td>Netzwerk-Team TF2</td>
-</tr>
-<tr>
-<td>3</td>
-<td>Woche 5+</td>
-<td>Vorbereitet / offen</td>
-<td>Monitoring, IDS, Incident Response, ISO 27001</td>
-<td>Security-Team</td>
-</tr>
-</tbody>
-</table>
-<h2 data-heading="Schnellzugriffe" dir="auto">Schnellzugriffe</h2>
-<h3 data-heading="Daily Logs" dir="auto">Daily Logs</h3>
-<h4 data-heading="Woche 1: Planung und Analyse" dir="auto">Woche 1: Planung und Analyse</h4>
+<h2 data-heading="01_Projekt-Übersicht" dir="auto">01_Projekt-Übersicht</h2>
+<h3 data-heading="Kerndokumente" dir="auto">Kerndokumente</h3>
 <ul>
-<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_1_Tage/02_01_Tag_1_Onboarding_Analyse.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_1_Tage\02_01_Tag_1_Onboarding_Analyse.md" target="_blank" rel="noopener nofollow">01-01 Tag 1 Onboarding &amp; Analyse</a></li>
-<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_1_Tage/02_01_Tag_2_Projektstruktur_Risikoanalyse.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_1_Tage\02_01_Tag_2_Projektstruktur_Risikoanalyse.md" target="_blank" rel="noopener nofollow">01-02 Tag 2 Projektstruktur &amp; Risikoanalyse</a></li>
-<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_1_Tage/02_01_Tag_3_Detailanalyse_Loesungswege.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_1_Tage\02_01_Tag_3_Detailanalyse_Loesungswege.md" target="_blank" rel="noopener nofollow">01-03 Tag 3 Detailanalyse &amp; Loesungswege</a></li>
-<li dir="auto"><a class="internal-link" data-href="02_01_Tag_4_Finalisierung_Übergabe.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-04_Tag_4_Finalisierung_%C3%9Cbergabe.md" target="_blank" rel="noopener nofollow">01-04 Tag 4 Finalisierung &amp; Uebergabe</a></li>
-<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_1_Tage/02_01_Tag_5_Puffer_Reflexion.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_1_Tage\02_01_Tag_5_Puffer_Reflexion.md" target="_blank" rel="noopener nofollow">01-05 Tag 5 Puffer &amp; Reflexion</a></li>
+<li dir="auto"><a class="internal-link" data-href="00_01_Masterdokumentation.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\00_01_Masterdokumentation.md" target="_blank" rel="noopener nofollow">00_01_Masterdokumentation.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="00_02_Praktikums_Einleitung.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\00_02_Praktikums_Einleitung.md" target="_blank" rel="noopener nofollow">00_02_Praktikums_Einleitung.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="00_03_Inhaltsverzeichnis.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\00_03_Inhaltsverzeichnis.md" target="_blank" rel="noopener nofollow">00_03_Gesamtinhaltsverzeichnis.md</a></li>
 </ul>
-<h4 data-heading="Woche 2 bis 4: Umsetzung" dir="auto">Woche 2 bis 4: Umsetzung</h4>
+<h2 data-heading="02_Projekt_Themenfelder" dir="auto">02_Projekt_Themenfelder</h2>
+<h3 data-heading="Analysen" dir="auto">Analysen</h3>
 <ul>
-<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_2_Tage/02_02_Tag_1-3_Netzwerkimplementierung.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_2_Tage\02_02_Tag_1-3_Netzwerkimplementierung.md" target="_blank" rel="noopener nofollow">02-01 Woche 2 Tag 1-3 Netzwerkimplementierung</a></li>
-<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_2_Tage/02_02_Tag_4_Connectivity_DHCP_Vorbereitung.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_2_Tage\02_02_Tag_4_Connectivity_DHCP_Vorbereitung.md" target="_blank" rel="noopener nofollow">02-04 Woche 2 Tag 4 Connectivity &amp; DHCP Vorbereitung</a></li>
-<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_2_Tage/02_02_Tag_5_DHCP_Einrichtung.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_2_Tage\02_02_Tag_5_DHCP_Einrichtung.md" target="_blank" rel="noopener nofollow">02-05 Woche 2 DHCP Einrichtung</a></li>
-<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_2_Tage/02_02_Tag_5_DNS_Infrastruktur.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_2_Tage\02_02_Tag_5_DNS_Infrastruktur.md" target="_blank" rel="noopener nofollow">02-07 Woche 2 DNS Infrastruktur</a></li>
-<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_2_Tage/02_02_Tag_5_VPN_Infrastruktur.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_2_Tage\02_02_Tag_5_VPN_Infrastruktur.md" target="_blank" rel="noopener nofollow">02-08 Woche 2 VPN Infrastruktur</a></li>
-<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_3_Tage/02_03_Tag_1-2_AD_Infrastruktur.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_3_Tage\02_03_Tag_1-2_AD_Infrastruktur.md" target="_blank" rel="noopener nofollow">03-01 Woche 3 AD Infrastruktur</a></li>
-<li dir="auto"><a class="internal-link" data-href="02_03_Tag_5_VPN_Firewall_Härtung.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\03-04_Woche_3_Tag_5_VPN_Firewall_H%C3%A4rtung.md" target="_blank" rel="noopener nofollow">03-04 Woche 3 VPN &amp; Firewall Haertung</a></li>
-<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_4_Tage/02_04_Tag_1_Docker_SQL_Infrastruktur.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_4_Tage\02_04_Tag_1_Docker_SQL_Infrastruktur.md" target="_blank" rel="noopener nofollow">04-01 Woche 4 Docker &amp; SQL Infrastruktur</a></li>
-<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_4_Tage/02_04_Tag_2_Mailcow_AD_Integration.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_4_Tage\02_04_Tag_2_Mailcow_AD_Integration.md" target="_blank" rel="noopener nofollow">04-02 Woche 4 Mailcow AD Integration</a></li>
-<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_4_Tage/02_04_Tag_3_SSH_Troubleshooting_VPN_Optimierung.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_4_Tage\02_04_Tag_3_SSH_Troubleshooting_VPN_Optimierung.md" target="_blank" rel="noopener nofollow">04-03 Woche 4 SSH Troubleshooting &amp; VPN Optimierung</a></li>
-<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_4_Tage/02_04_Tag_3_Docker_SQL_DeepDive.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_4_Tage\02_04_Tag_3_Docker_SQL_DeepDive.md" target="_blank" rel="noopener nofollow">04-04 Woche 4 Docker &amp; SQL Deep Dive</a></li>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Analysen/01_01_Analyse_Abhaengigkeiten_Phase_2.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Analysen\01_01_Analyse_Abhaengigkeiten_Phase_2.md" target="_blank" rel="noopener nofollow">01_01_Analyse_Abhaengigkeiten_Phase_2.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Analysen/01_02_Analyse_Firewall_Hardening.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Analysen\01_02_Analyse_Firewall_Hardening.md" target="_blank" rel="noopener nofollow">01_02_Analyse_Firewall_Hardening.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Analysen/01_03_Analyse_Netzwerk_Diagramme.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Analysen\01_03_Analyse_Netzwerk_Diagramme.md" target="_blank" rel="noopener nofollow">01_03_Analyse_Netzwerk_Diagramme.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Analysen/01_04_Analyse_Packet_Tracer.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Analysen\01_04_Analyse_Packet_Tracer.md" target="_blank" rel="noopener nofollow">01_04_Analyse_Packet_Tracer.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Analysen/01_05_Guide_Docker_SQL.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Analysen\01_05_Guide_Docker_SQL.md" target="_blank" rel="noopener nofollow">01_05_Guide_Docker_SQL.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Analysen/01_06_Guide_Mailcow_AD_Integration.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Analysen\01_06_Guide_Mailcow_AD_Integration.md" target="_blank" rel="noopener nofollow">01_06_Guide_Mailcow_AD_Integration.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Analysen/01_07_Analyse_Zertifikats_Struktur.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Analysen\01_07_Analyse_Zertifikats_Struktur.md" target="_blank" rel="noopener nofollow">01_07_Analyse_Zertifikats_Struktur.md</a></li>
 </ul>
-<h3 data-heading="Phasen-Dokumente" dir="auto">Phasen-Dokumente</h3>
+<h3 data-heading="Woche_1_Tage" dir="auto">Woche_1_Tage</h3>
 <ul>
-<li dir="auto"><a class="internal-link" data-href="../02_Phasen/Phase_1_Kaiserslautern/03_01_Phase_1_Kaiserslautern_Konzept.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\02_Phasen\Phase_1_Kaiserslautern\03_01_Phase_1_Kaiserslautern_Konzept.md" target="_blank" rel="noopener nofollow">00-10 Phase 1 Kaiserslautern Konzept</a></li>
-<li dir="auto"><a class="internal-link" data-href="../02_Phasen/Phase_2_Mainz/03_02_Phase_2_Mainz_Konzept.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\02_Phasen\Phase_2_Mainz\03_02_Phase_2_Mainz_Konzept.md" target="_blank" rel="noopener nofollow">00-11 Phase 2 Mainz Konzept</a></li>
-<li dir="auto"><a class="internal-link" data-href="../02_Phasen/Phase_3_Security/03_03_Phase_3_Security_Konzept.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\02_Phasen\Phase_3_Security\03_03_Phase_3_Security_Konzept.md" target="_blank" rel="noopener nofollow">00-12 Phase 3 Security Konzept</a></li>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_1_Tage/02_01_Tag_1_Onboarding_Analyse.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_1_Tage\02_01_Tag_1_Onboarding_Analyse.md" target="_blank" rel="noopener nofollow">02_01_Tag_1_Onboarding_Analyse.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_1_Tage/02_01_Tag_2_Projektstruktur_Risikoanalyse.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_1_Tage\02_01_Tag_2_Projektstruktur_Risikoanalyse.md" target="_blank" rel="noopener nofollow">02_01_Tag_2_Projektstruktur_Risikoanalyse.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_1_Tage/02_01_Tag_3_Detailanalyse_Loesungswege.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_1_Tage\02_01_Tag_3_Detailanalyse_Loesungswege.md" target="_blank" rel="noopener nofollow">02_01_Tag_3_Detailanalyse_Loesungswege.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_1_Tage/02_01_Tag_4_Finalisierung_Übergabe.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_1_Tage\02_01_Tag_4_Finalisierung_%C3%9Cbergabe.md" target="_blank" rel="noopener nofollow">02<em>01_Tag_4_Finalisierung</em>Übergabe.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_1_Tage/02_01_Tag_5_Puffer_Reflexion.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_1_Tage\02_01_Tag_5_Puffer_Reflexion.md" target="_blank" rel="noopener nofollow">02_01_Tag_5_Puffer_Reflexion.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_1_Tage/02_01_Tag_6_Guide_L3_Implementierung_PT.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_1_Tage\02_01_Tag_6_Guide_L3_Implementierung_PT.md" target="_blank" rel="noopener nofollow">02_01_Tag_6_Guide_L3_Implementierung_PT.md</a></li>
 </ul>
-<h3 data-heading="Referenzen und Guides" dir="auto">Referenzen und Guides</h3>
+<h3 data-heading="Woche_2_Tage" dir="auto">Woche_2_Tage</h3>
 <ul>
-<li dir="auto"><a class="internal-link" data-href="00_01_Masterdokumentation.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\00_01_Masterdokumentation.md" target="_blank" rel="noopener nofollow">00-01 Masterdokumentation</a></li>
-<li dir="auto"><a class="internal-link" data-href="../02_Phasen/Phase_1_Kaiserslautern/03_01a_Netzplan_Kaiserslautern.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\02_Phasen\Phase_1_Kaiserslautern\03_01a_Netzplan_Kaiserslautern.md" target="_blank" rel="noopener nofollow">00-10a Netzplan Kaiserslautern</a></li>
-<li dir="auto"><a class="internal-link" data-href="../02_Phasen/Phase_1_Kaiserslautern/03_01b_VLAN_IP_Matrix.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\02_Phasen\Phase_1_Kaiserslautern\03_01b_VLAN_IP_Matrix.md" target="_blank" rel="noopener nofollow">00-10b VLAN &amp; IP Matrix</a></li>
-<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Analysen/01_05_Guide_Docker_SQL.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Analysen\01_05_Guide_Docker_SQL.md" target="_blank" rel="noopener nofollow">00-24 Guide Docker &amp; SQL</a></li>
-<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Analysen/01_06_Guide_Mailcow_AD_Integration.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Analysen\01_06_Guide_Mailcow_AD_Integration.md" target="_blank" rel="noopener nofollow">00-25 Guide Mailcow AD Integration</a></li>
-<li dir="auto"><a class="internal-link" data-href="../04_Recourcen_und_Referenzen/05_02_Cisco_Config_TF2.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\04_Recourcen_und_Referenzen\05_02_Cisco_Config_TF2.md" target="_blank" rel="noopener nofollow">00-31 Cisco Config TF2</a></li>
-<li dir="auto"><a class="internal-link" data-href="../04_Recourcen_und_Referenzen/05_05_Screenshot_Anlage.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\04_Recourcen_und_Referenzen\05_05_Screenshot_Anlage.md" target="_blank" rel="noopener nofollow">00-34 Screenshot-Anlage</a></li>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_2_Tage/02_02_Tag_1-3_Netzwerkimplementierung.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_2_Tage\02_02_Tag_1-3_Netzwerkimplementierung.md" target="_blank" rel="noopener nofollow">02_02_Tag_1-3_Netzwerkimplementierung.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_2_Tage/02_02_Tag_4_Connectivity_DHCP_Vorbereitung.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_2_Tage\02_02_Tag_4_Connectivity_DHCP_Vorbereitung.md" target="_blank" rel="noopener nofollow">02_02_Tag_4_Connectivity_DHCP_Vorbereitung.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_2_Tage/02_02_Tag_5_DHCP_Einrichtung.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_2_Tage\02_02_Tag_5_DHCP_Einrichtung.md" target="_blank" rel="noopener nofollow">02_02_Tag_5_DHCP_Einrichtung.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_2_Tage/02_02_Tag_5_DHCP_Infrastruktur_und_Migration.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_2_Tage\02_02_Tag_5_DHCP_Infrastruktur_und_Migration.md" target="_blank" rel="noopener nofollow">02_02_Tag_5_DHCP_Infrastruktur_und_Migration.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_2_Tage/02_02_Tag_5_DNS_Infrastruktur.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_2_Tage\02_02_Tag_5_DNS_Infrastruktur.md" target="_blank" rel="noopener nofollow">02_02_Tag_5_DNS_Infrastruktur.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_2_Tage/02_02_Tag_5_VPN_Infrastruktur.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_2_Tage\02_02_Tag_5_VPN_Infrastruktur.md" target="_blank" rel="noopener nofollow">02_02_Tag_5_VPN_Infrastruktur.md</a></li>
 </ul>
-<h3 data-heading="Management" dir="auto">Management</h3>
+<h3 data-heading="Woche_3_Tage" dir="auto">Woche_3_Tage</h3>
 <ul>
-<li dir="auto"><a class="internal-link" data-href="../03_Uebergabe_und_Archiv/04_02_Risiko_Register.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\03_Uebergabe_und_Archiv\04_02_Risiko_Register.md" target="_blank" rel="noopener nofollow">00-41 Risiko-Register</a></li>
-<li dir="auto"><a class="internal-link" data-href="00-02_Projekt_Chronik.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\00-02_Projekt_Chronik.md" target="_blank" rel="noopener nofollow">00-02 Projekt-Chronik</a></li>
-<li dir="auto"><a class="internal-link" data-href="../03_Uebergabe_und_Archiv/04_03_Uebergabe_Protokoll.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\03_Uebergabe_und_Archiv\04_03_Uebergabe_Protokoll.md" target="_blank" rel="noopener nofollow">00-42 Uebergabe-Protokoll</a></li>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_3_Tage/02_03_Tag_1-2_AD_Infrastruktur.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_3_Tage\02_03_Tag_1-2_AD_Infrastruktur.md" target="_blank" rel="noopener nofollow">02_03_Tag_1-2_AD_Infrastruktur.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_3_Tage/02_03_Tag_3_Vault_Optimierung.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_3_Tage\02_03_Tag_3_Vault_Optimierung.md" target="_blank" rel="noopener nofollow">02_03_Tag_3_Vault_Optimierung.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_3_Tage/02_03_Tag_5_VPN_Firewall_Härtung.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_3_Tage\02_03_Tag_5_VPN_Firewall_H%C3%A4rtung.md" target="_blank" rel="noopener nofollow">02_03_Tag_5_VPN_Firewall_Härtung.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_3_Tage/02_03_Tag_6_Nachbesserung_Packet_Tracer.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_3_Tage\02_03_Tag_6_Nachbesserung_Packet_Tracer.md" target="_blank" rel="noopener nofollow">02_03_Tag_6_Nachbesserung_Packet_Tracer.md</a></li>
+</ul>
+<h3 data-heading="Woche_4_Tage" dir="auto">Woche_4_Tage</h3>
+<ul>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_4_Tage/02_04_Tag_1_Docker_SQL_Infrastruktur.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_4_Tage\02_04_Tag_1_Docker_SQL_Infrastruktur.md" target="_blank" rel="noopener nofollow">02_04_Tag_1_Docker_SQL_Infrastruktur.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_4_Tage/02_04_Tag_2_Mailcow_AD_Integration.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_4_Tage\02_04_Tag_2_Mailcow_AD_Integration.md" target="_blank" rel="noopener nofollow">02_04_Tag_2_Mailcow_AD_Integration.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_4_Tage/02_04_Tag_3_Docker_SQL_DeepDive.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_4_Tage\02_04_Tag_3_Docker_SQL_DeepDive.md" target="_blank" rel="noopener nofollow">02_04_Tag_3_Docker_SQL_DeepDive.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_4_Tage/02_04_Tag_3_SSH_Troubleshooting_VPN_Optimierung.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_4_Tage\02_04_Tag_3_SSH_Troubleshooting_VPN_Optimierung.md" target="_blank" rel="noopener nofollow">02_04_Tag_3_SSH_Troubleshooting_VPN_Optimierung.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_4_Tage/02_04_Tag_4_Monitoring_Security_Vorbereitung.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_4_Tage\02_04_Tag_4_Monitoring_Security_Vorbereitung.md" target="_blank" rel="noopener nofollow">02_04_Tag_4_Monitoring_Security_Vorbereitung.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_4_Tage/04-04_Woche_4_Tag_3_Docker_SQL_DeepDive.docx" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_4_Tage\04-04_Woche_4_Tag_3_Docker_SQL_DeepDive.docx" target="_blank" rel="noopener nofollow">Export_DOCX_Tag_3_Docker_SQL_DeepDive.docx</a></li>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_4_Tage/04-04_Woche_4_Tag_3_Docker_SQL_DeepDive.html" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_4_Tage\04-04_Woche_4_Tag_3_Docker_SQL_DeepDive.html" target="_blank" rel="noopener nofollow">Export_HTML_Tag_3_Docker_SQL_DeepDive.html</a></li>
+</ul>
+<h3 data-heading="Woche_5_Tage" dir="auto">Woche_5_Tage</h3>
+<ul>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_5_Tage/02_05_Tag_1_Freescout_Einrichten.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_5_Tage\02_05_Tag_1_Freescout_Einrichten.md" target="_blank" rel="noopener nofollow">02_05_Tag_1_Freescout_Einrichten.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_5_Tage/02_05_Tag_2_Kein_Zugriff_Supportticket.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_5_Tage\02_05_Tag_2_Kein_Zugriff_Supportticket.md" target="_blank" rel="noopener nofollow">02_05_Tag_2_Kein_Zugriff_Supportticket.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_5_Tage/02_05_Tag_3_Cloud-Backup_Setup_(S3_+_Backrest).md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_5_Tage\02_05_Tag_3_Cloud-Backup_Setup_(S3_+_Backrest).md" target="_blank" rel="noopener nofollow">02<em>05_Tag_3_Cloud-Backup_Setup</em>(S3_+_Backrest).md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_5_Tage/02_05_Tag_3_Troubleshooting_VPN_MTU_Analyse.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_5_Tage\02_05_Tag_3_Troubleshooting_VPN_MTU_Analyse.md" target="_blank" rel="noopener nofollow">02_05_Tag_3_Troubleshooting_VPN_MTU_Analyse.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_5_Tage/02_05_Tag_4_Restore-Test_(Backrest_Restic).md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_5_Tage\02_05_Tag_4_Restore-Test_(Backrest_Restic).md" target="_blank" rel="noopener nofollow">02<em>05_Tag_4_Restore-Test</em>(Backrest_Restic).md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_5_Tage/02_05_Tag_5_Backup-Strategie_und_Automatisierung.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_5_Tage\02_05_Tag_5_Backup-Strategie_und_Automatisierung.md" target="_blank" rel="noopener nofollow">02_05_Tag_5_Backup-Strategie_und_Automatisierung.md</a></li>
+</ul>
+<h3 data-heading="Woche_6_Tage" dir="auto">Woche_6_Tage</h3>
+<ul>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_6_Tage/02_06_Tag_1_Security_Scan_(OpenVAS_Greenbone).md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_6_Tage\02_06_Tag_1_Security_Scan_(OpenVAS_Greenbone).md" target="_blank" rel="noopener nofollow">02<em>06_Tag_1_Security_Scan</em>(OpenVAS_Greenbone).md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_6_Tage/02_06_Tag_2_ELK-Stack_und_Suricata.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_6_Tage\02_06_Tag_2_ELK-Stack_und_Suricata.md" target="_blank" rel="noopener nofollow">02_06_Tag_2_ELK-Stack_und_Suricata.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_6_Tage/02_06_Tag_3_Live-Angriffssimulation.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_6_Tage\02_06_Tag_3_Live-Angriffssimulation.md" target="_blank" rel="noopener nofollow">02_06_Tag_3_Live-Angriffssimulation.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_6_Tage/02_06_Tag_4_Incidence_Reports_und_Sicherheitsrichtlinie.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_6_Tage\02_06_Tag_4_Incidence_Reports_und_Sicherheitsrichtlinie.md" target="_blank" rel="noopener nofollow">02_06_Tag_4_Incidence_Reports_und_Sicherheitsrichtlinie.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../01-Projekt_Themenfelder/Woche_6_Tage/report-d7fe5311-479c-4a74-bd7b-f019da039271.csv" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\01-Projekt_Themenfelder\Woche_6_Tage\report-d7fe5311-479c-4a74-bd7b-f019da039271.csv" target="_blank" rel="noopener nofollow">report-d7fe5311-479c-4a74-bd7b-f019da039271.csv</a></li>
+</ul>
+<h2 data-heading="03_Phasen" dir="auto">03_Phasen</h2>
+<h3 data-heading="Phase_1_Kaiserslautern" dir="auto">Phase_1_Kaiserslautern</h3>
+<ul>
+<li dir="auto"><a class="internal-link" data-href="../02_Phasen/Phase_1_Kaiserslautern/03_01_Phase_1_Kaiserslautern_Konzept.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\02_Phasen\Phase_1_Kaiserslautern\03_01_Phase_1_Kaiserslautern_Konzept.md" target="_blank" rel="noopener nofollow">03_01_Phase_1_Kaiserslautern_Konzept.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../02_Phasen/Phase_1_Kaiserslautern/03_01a_Netzplan_Kaiserslautern.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\02_Phasen\Phase_1_Kaiserslautern\03_01a_Netzplan_Kaiserslautern.md" target="_blank" rel="noopener nofollow">03_01a_Netzplan_Kaiserslautern.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../02_Phasen/Phase_1_Kaiserslautern/03_01b_VLAN_IP_Matrix.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\02_Phasen\Phase_1_Kaiserslautern\03_01b_VLAN_IP_Matrix.md" target="_blank" rel="noopener nofollow">03_01b_VLAN_IP_Matrix.md</a></li>
+</ul>
+<h3 data-heading="Phase_2_Mainz" dir="auto">Phase_2_Mainz</h3>
+<ul>
+<li dir="auto"><a class="internal-link" data-href="../02_Phasen/Phase_2_Mainz/03_02_Phase_2_Mainz_Konzept.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\02_Phasen\Phase_2_Mainz\03_02_Phase_2_Mainz_Konzept.md" target="_blank" rel="noopener nofollow">03_02_Phase_2_Mainz_Konzept.md</a></li>
+</ul>
+<h3 data-heading="Phase_3_Security" dir="auto">Phase_3_Security</h3>
+<ul>
+<li dir="auto"><a class="internal-link" data-href="../02_Phasen/Phase_3_Security/03_03_Phase_3_Security_Konzept.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\02_Phasen\Phase_3_Security\03_03_Phase_3_Security_Konzept.md" target="_blank" rel="noopener nofollow">03_03_Phase_3_Security_Konzept.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../02_Phasen/Phase_3_Security/03_03a_Incident_Response_Plan.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\02_Phasen\Phase_3_Security\03_03a_Incident_Response_Plan.md" target="_blank" rel="noopener nofollow">03_03a_Incident_Response_Plan.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../02_Phasen/Phase_3_Security/03_03b_ISO27001_Checkliste.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\02_Phasen\Phase_3_Security\03_03b_ISO27001_Checkliste.md" target="_blank" rel="noopener nofollow">03_03b_ISO27001_Checkliste.md</a></li>
+</ul>
+<h2 data-heading="04_Uebergabe_und_Archiv" dir="auto">04_Uebergabe_und_Archiv</h2>
+<ul>
+<li dir="auto"><a class="internal-link" data-href="../03_Uebergabe_und_Archiv/04_01_Passwoerter_und_Logins.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\03_Uebergabe_und_Archiv\04_01_Passwoerter_und_Logins.md" target="_blank" rel="noopener nofollow">04_01_Passwoerter_und_Logins.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../03_Uebergabe_und_Archiv/04_02_Risiko_Register.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\03_Uebergabe_und_Archiv\04_02_Risiko_Register.md" target="_blank" rel="noopener nofollow">04_02_Risiko_Register.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../03_Uebergabe_und_Archiv/04_03_Uebergabe_Protokoll.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\03_Uebergabe_und_Archiv\04_03_Uebergabe_Protokoll.md" target="_blank" rel="noopener nofollow">04_03_Uebergabe_Protokoll.md</a></li>
+</ul>
+<h2 data-heading="05_Recourcen_und_Referenzen" dir="auto">05_Recourcen_und_Referenzen</h2>
+<ul>
+<li dir="auto"><a class="internal-link" data-href="../04_Recourcen_und_Referenzen/05_01_Cisco_Cheatsheet.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\04_Recourcen_und_Referenzen\05_01_Cisco_Cheatsheet.md" target="_blank" rel="noopener nofollow">05_01_Cisco_Cheatsheet.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../04_Recourcen_und_Referenzen/05_02_Cisco_Config_TF2.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\04_Recourcen_und_Referenzen\05_02_Cisco_Config_TF2.md" target="_blank" rel="noopener nofollow">05_02_Cisco_Config_TF2.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../04_Recourcen_und_Referenzen/05_03_Default_Credentials.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\04_Recourcen_und_Referenzen\05_03_Default_Credentials.md" target="_blank" rel="noopener nofollow">05_03_Default_Credentials.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../04_Recourcen_und_Referenzen/05_04_Digitale_Kundenakte.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\04_Recourcen_und_Referenzen\05_04_Digitale_Kundenakte.md" target="_blank" rel="noopener nofollow">05_04_Digitale_Kundenakte.md</a></li>
+<li dir="auto"><a class="internal-link" data-href="../04_Recourcen_und_Referenzen/05_05_Screenshot_Anlage.md" href="C:\Users\User\Documents\SamuelDenkwerkstätte\doku repo\BetaTrade Modernisierung\00_Projekt-Übersicht\04_Recourcen_und_Referenzen\05_05_Screenshot_Anlage.md" target="_blank" rel="noopener nofollow">05_05_Screenshot_Anlage.md</a></li>
 </ul>
     </body>
 </html>
-
-

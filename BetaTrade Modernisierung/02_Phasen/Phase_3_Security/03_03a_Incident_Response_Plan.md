@@ -74,7 +74,7 @@
 ## 6. Operative Hilfsmittel fuer die Erkennung
 
 - Wireshark-Filterreferenz: [Wireshark Filters Reference](../../_assets/wireshark_filters_reference.jpg)
-- Phase-3-Kontext mit Host-Alert-Beispiel: [00-12 Phase 3 Security Konzept](00-12_Phase_3_Security_Konzept.md)
+- Phase-3-Kontext mit Host-Alert-Beispiel: [03_03_Phase_3_Security_Konzept.md](03_03_Phase_3_Security_Konzept.md)
 
 > **TIP:** Schnell-Checkliste bei Vorfall
 > 1. Ruhe bewahren  
@@ -84,7 +84,9 @@
 > 5. Systeme isolieren, nicht ausschalten
 
 → Verlinkte Dokumente:  
-[00-12 Phase 3 Security Konzept](00-12_Phase_3_Security_Konzept.md) | [00-41 Risiko-Register](../../03_Uebergabe_und_Archiv/00-41_Risiko_Register.md) | [00-12b ISO27001 Checkliste](00-12b_ISO27001_Checkliste.md) | [00-01 Masterdokumentation](../../00_Projekt-Übersicht/00-01_Masterdokumentation.md)
+[03_03_Phase_3_Security_Konzept.md](03_03_Phase_3_Security_Konzept.md) | [04_02_Risiko_Register.md](../../03_Uebergabe_und_Archiv/04_02_Risiko_Register.md) | [03_03b_ISO27001_Checkliste.md](03_03b_ISO27001_Checkliste.md) | [00_01_Masterdokumentation.md](../../00_Projekt-Übersicht/00_01_Masterdokumentation.md)
 
 **Letzte Aktualisierung:** 20.02.2026  
 **Nächste Überprüfung:** Nach Phase 3 Go-Live
+
+

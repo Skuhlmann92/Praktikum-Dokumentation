@@ -44,7 +44,9 @@
 - [ ] Dokumentation für externes Audit vorbereiten (PDF-Export aus Obsidian)
 
 > **NOTE:** Wichtig
-> ISO 27001:2022 fordert **risikobasierten Ansatz** → siehe [00-41 Risiko-Register](../../03_Uebergabe_und_Archiv/00-41_Risiko_Register.md)
+> ISO 27001:2022 fordert **risikobasierten Ansatz** → siehe [04_02_Risiko_Register.md](../../03_Uebergabe_und_Archiv/04_02_Risiko_Register.md)
 
 → Verlinkte Dokumente:  
-[00-12 Phase 3 Security Konzept](00-12_Phase_3_Security_Konzept.md) | [00-41 Risiko-Register](../../03_Uebergabe_und_Archiv/00-41_Risiko_Register.md) | [00-01 Masterdokumentation](../../00_Projekt-Übersicht/00-01_Masterdokumentation.md)
+[03_03_Phase_3_Security_Konzept.md](03_03_Phase_3_Security_Konzept.md) | [04_02_Risiko_Register.md](../../03_Uebergabe_und_Archiv/04_02_Risiko_Register.md) | [00_01_Masterdokumentation.md](../../00_Projekt-Übersicht/00_01_Masterdokumentation.md)
+
+
